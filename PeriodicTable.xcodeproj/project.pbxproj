@@ -13,6 +13,13 @@
 		6F1BF7071A85C6FD00E11C7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1BF7061A85C6FD00E11C7E /* Images.xcassets */; };
 		6F1BF70A1A85C6FD00E11C7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1BF7081A85C6FD00E11C7E /* LaunchScreen.xib */; };
 		6F1BF7161A85C6FE00E11C7E /* PeriodicTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BF7151A85C6FE00E11C7E /* PeriodicTableTests.swift */; };
+		6F65A1B81A85D21000FD97CB /* PeriodicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1B61A85D21000FD97CB /* PeriodicCollectionViewCell.swift */; };
+		6F65A1B91A85D21000FD97CB /* PeriodicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F65A1B71A85D21000FD97CB /* PeriodicCollectionViewCell.xib */; };
+		6F65A1BB1A85D7E800FD97CB /* PeriodicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1BA1A85D7E800FD97CB /* PeriodicViewController.swift */; };
+		6F65A1BD1A86176200FD97CB /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1BC1A86176200FD97CB /* Element.swift */; };
+		6F65A1BF1A8617AE00FD97CB /* PeriodicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1BE1A8617AE00FD97CB /* PeriodicModel.swift */; };
+		6F65A1C21A86425700FD97CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1C01A86425700FD97CB /* DetailViewController.swift */; };
+		6F65A1C31A86425700FD97CB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F65A1C11A86425700FD97CB /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		6F1BF70F1A85C6FE00E11C7E /* PeriodicTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriodicTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1BF7141A85C6FE00E11C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1BF7151A85C6FE00E11C7E /* PeriodicTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableTests.swift; sourceTree = "<group>"; };
+		6F65A1B61A85D21000FD97CB /* PeriodicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F65A1B71A85D21000FD97CB /* PeriodicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeriodicCollectionViewCell.xib; sourceTree = "<group>"; };
+		6F65A1BA1A85D7E800FD97CB /* PeriodicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicViewController.swift; sourceTree = "<group>"; };
+		6F65A1BC1A86176200FD97CB /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		6F65A1BE1A8617AE00FD97CB /* PeriodicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicModel.swift; sourceTree = "<group>"; };
+		6F65A1C01A86425700FD97CB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6F65A1C11A86425700FD97CB /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,13 @@
 			children = (
 				6F1BF6FF1A85C6FD00E11C7E /* AppDelegate.swift */,
 				6F1BF7011A85C6FD00E11C7E /* ViewController.swift */,
+				6F65A1BA1A85D7E800FD97CB /* PeriodicViewController.swift */,
+				6F65A1BE1A8617AE00FD97CB /* PeriodicModel.swift */,
+				6F65A1C01A86425700FD97CB /* DetailViewController.swift */,
+				6F65A1C11A86425700FD97CB /* DetailViewController.xib */,
+				6F65A1BC1A86176200FD97CB /* Element.swift */,
+				6F65A1B61A85D21000FD97CB /* PeriodicCollectionViewCell.swift */,
+				6F65A1B71A85D21000FD97CB /* PeriodicCollectionViewCell.xib */,
 				6F1BF7031A85C6FD00E11C7E /* Main.storyboard */,
 				6F1BF7061A85C6FD00E11C7E /* Images.xcassets */,
 				6F1BF7081A85C6FD00E11C7E /* LaunchScreen.xib */,
@@ -193,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1BF7051A85C6FD00E11C7E /* Main.storyboard in Resources */,
+				6F65A1B91A85D21000FD97CB /* PeriodicCollectionViewCell.xib in Resources */,
+				6F65A1C31A86425700FD97CB /* DetailViewController.xib in Resources */,
 				6F1BF70A1A85C6FD00E11C7E /* LaunchScreen.xib in Resources */,
 				6F1BF7071A85C6FD00E11C7E /* Images.xcassets in Resources */,
 			);
@@ -213,7 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1BF7021A85C6FD00E11C7E /* ViewController.swift in Sources */,
+				6F65A1BB1A85D7E800FD97CB /* PeriodicViewController.swift in Sources */,
 				6F1BF7001A85C6FD00E11C7E /* AppDelegate.swift in Sources */,
+				6F65A1B81A85D21000FD97CB /* PeriodicCollectionViewCell.swift in Sources */,
+				6F65A1BF1A8617AE00FD97CB /* PeriodicModel.swift in Sources */,
+				6F65A1BD1A86176200FD97CB /* Element.swift in Sources */,
+				6F65A1C21A86425700FD97CB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +435,7 @@
 				6F1BF71B1A85C6FE00E11C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F1BF71C1A85C6FE00E11C7E /* Build configuration list for PBXNativeTarget "PeriodicTableTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +444,7 @@
 				6F1BF71E1A85C6FE00E11C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

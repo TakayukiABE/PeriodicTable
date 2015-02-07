@@ -9,15 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var periodicView = PeriodicViewController()
+    var detailView = DetailViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        self.view.addSubview(periodicView.view)
+        self.view.addSubview(detailView.view)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
