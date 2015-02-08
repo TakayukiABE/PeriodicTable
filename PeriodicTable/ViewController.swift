@@ -12,12 +12,15 @@ class ViewController: UIViewController {
     
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
+    var sineView = sineViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        
         self.view.addSubview(periodicView.view)
         self.view.addSubview(detailView.view)
+        self.view.addSubview(sineView.view)
     }
 
     override func didReceiveMemoryWarning() {

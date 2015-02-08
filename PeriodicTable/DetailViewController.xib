@@ -4,15 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="PeriodicTable" customModuleProvider="target">
-            <connections>
-                <outlet property="category" destination="u09-Jn-9jJ" id="B4Y-gg-ssh"/>
-                <outlet property="elementName" destination="yEv-3o-iMI" id="goU-67-0zB"/>
-                <outlet property="massNumber" destination="HYi-Wh-Noj" id="8JK-ax-Rd9"/>
-                <outlet property="number" destination="dHw-Fh-0Bl" id="c66-4u-e6n"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="PeriodicTable" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>

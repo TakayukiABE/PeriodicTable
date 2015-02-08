@@ -35,7 +35,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 2
+        return 5
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,8 +44,15 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PeriodicCollectionViewCell
-        println(periodicModel.elementArray[indexPath.row][indexPath.section].symbol)
+        var element = periodicModel.elementArray[indexPath.row][indexPath.section]
         cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
+        if element.state == "気体" {
+            cell.alpha = 0.9
+        }else if element.state == "液体" {
+            cell.layer.cornerRadius = 15
+        }else if element.name == "empty" {
+            cell.backgroundColor = UIColor.blackColor()
+        }
         
         return cell
     }

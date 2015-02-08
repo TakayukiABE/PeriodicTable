@@ -12,6 +12,11 @@ struct Element {
     var symbol:String
     var name:String
     var number:Int
-    var massNumber:Int
-    
+    var massNumber:Double
+    var state:String
+    var boilingPoint:Int
+    var meltingPoint:Int
+    var ionization:Double
+    var affinity:Int
+    var orbit:String
 }
