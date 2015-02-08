@@ -13,6 +13,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     let Nib = UINib(nibName: "PeriodicCollectionViewCell", bundle: nil)
     
     var periodicTable = UICollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewFlowLayout())
+    var temperature = 25
     
     
     var periodicModel = PeriodicModel()
@@ -20,6 +21,10 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    
+        periodicTable.delegate = self
+        periodicTable.dataSource = self
+        
         self.periodicTable.registerNib(Nib, forCellWithReuseIdentifier: "cell")
        // self.periodicTable.registerClass(PeriodicCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         self.view.backgroundColor = UIColor.whiteColor()
@@ -29,8 +34,6 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         let frame = self.view.frame
         self.periodicTable.frame = CGRectMake(frame.origin.x + 27, 50, frame.size.width - 50, frame.size.height - 272)
         self.periodicTable.bounds = CGRectInset(self.view.frame, 30.0, 136)
-        periodicTable.delegate = self
-        periodicTable.dataSource = self
     }
     
     
@@ -44,16 +47,23 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PeriodicCollectionViewCell
+        cell.alpha = 1.0
+        cell.layer.cornerRadius = 0
+        cell.backgroundColor = UIColor.whiteColor()
         var element = periodicModel.elementArray[indexPath.row][indexPath.section]
         cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
-        if element.state == "気体" {
-            cell.alpha = 0.9
-        }else if element.state == "液体" {
+//        if element.state == "気体" {
+//            cell.alpha = 0.9
+//        }else if element.state == "液体" {
+//            cell.layer.cornerRadius = 15
+//        }else if element.name == "empty" {
+//            cell.backgroundColor = UIColor.blueColor()
+//        }
+        if temperature > element.meltingPoint {
+            cell.alpha = 0.8
+        }else if temperature > element.boilingPoint {
             cell.layer.cornerRadius = 15
-        }else if element.name == "empty" {
-            cell.backgroundColor = UIColor.blackColor()
         }
-        
         return cell
     }
     
@@ -67,7 +77,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
     }
     
-    
+    func setTemperature(newTemperature:Int) {
+        temperature = newTemperature
+    }
     
     
     
