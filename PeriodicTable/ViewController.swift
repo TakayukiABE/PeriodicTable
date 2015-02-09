@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var temperature = UILabel()
     var value = 25
     var newValue = Int()
-
+    var cursors = [UIButton]()
     
     
     var periodicView = PeriodicViewController()
@@ -44,8 +44,47 @@ class ViewController: UIViewController {
         self.view.addSubview(temperature)
         
         
+        initCursors()
         
     }
+    
+    
+    func request(completion: ()->Void) {
+        //渡されたクロージャを実行する
+        completion()
+        //しかしこれはクロージャcompletionがnilだとランタイムエラーでクラッシュするし
+        //そもそもこのメソッドにnilを渡そうとするとコンパイルできないはず
+    }
+    
+    func initCursors() {
+        for i in 0...3 {
+            cursors.append(UIButton())
+            cursors[i].tag = i
+            cursors[i].titleLabel?.font = UIFont.systemFontOfSize(100)
+            cursors[i].addTarget(self, action: "didTapOnCursor:", forControlEvents: .TouchUpInside)
+            cursors[i].backgroundColor = UIColor(red: 0, green: 1, blue: 1, alpha: 1)
+            cursors[i].setTitleColor(UIColor.blueColor(), forState: .Normal)
+            cursors[i].setTitleColor(UIColor.redColor(), forState: .Highlighted)
+            cursors[i].layer.borderWidth = 1
+            self.view.addSubview(cursors[i])
+        }
+        
+        cursors[0].setTitle("←", forState: .Normal)
+        cursors[1].setTitle("↓", forState: .Normal)
+        cursors[2].setTitle("↑", forState: .Normal)
+        cursors[3].setTitle("→", forState: .Normal)
+        
+        cursors[0].frame = CGRectMake(self.view.frame.size.width - 350, self.view.frame.height - 110, 100, 100)
+        cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
+        cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
+        cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
+        
+    }
+    
+    func didTapOnCursor(sender:UIButton) {
+        periodicView.changeCell(sender.tag)
+    }
+    
 
     func didChangeValue(slider:UISlider) {
         newValue = Int(slider.value)

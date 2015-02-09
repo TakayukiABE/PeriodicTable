@@ -11,16 +11,18 @@ import UIKit
 class DetailViewController: UIViewController {
 
 
-    
+    var detail = DetailView()
 
     override func awakeFromNib() {
-//        
-//        let view:UIView = UINib(nibName: "DetailViewController", bundle: nil).instantiateWithOwner(self, options: nil)[0] as UIView
-//        self.view.addSubview(view)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let detailView:UIView = UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as UIView
+        self.view.addSubview(detailView)
+        
 //symbol.frame = CGRectMake(10, 10, 100, 100)
         
         self.view.frame = CGRectMake(50, 550, 300, 300)
