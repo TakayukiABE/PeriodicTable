@@ -10,7 +10,13 @@ import UIKit
 
 class DetailView: UIView {
 
+    @IBOutlet weak var symbol: UILabel!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var massNumber: UILabel!
+    @IBOutlet weak var number: UILabel!
+    
+    
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

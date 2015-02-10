@@ -50,6 +50,10 @@ class ViewController: UIViewController, DetailViewDelegate {
     }
     func reloadDetailView(element:Element) {
         detailView.detailView.name.text = element.name
+        detailView.detailView.symbol.text = element.symbol
+        detailView.detailView.number.text = "\(element.number)"
+        detailView.detailView.massNumber.text = "\(element.massNumber)"
+        
             //element.symbol
     }
     
