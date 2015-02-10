@@ -82,11 +82,13 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        selectedCell[0] = indexPath.row
-        selectedCell[1] = indexPath.section
+        var element:Element = periodicModel.elementArray[indexPath.row][indexPath.section]
+        if element.number != 0 {
+            self.reloadDelegate.reloadDetailView(element)
+            selectedCell[0] = indexPath.row
+            selectedCell[1] = indexPath.section
+        }
         periodicTable.reloadData()
-        var element:Element = periodicModel.elementArray[selectedCell[0]][selectedCell[1]]
-        self.reloadDelegate.reloadDetailView(element)
         
     }
     

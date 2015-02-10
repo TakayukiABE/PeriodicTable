@@ -77,8 +77,9 @@ class PeriodicModel: NSObject {
         var Br = Element(symbol: "Br", name: "臭素", number: 35, massNumber: 79.904, state: "液体", boilingPoint: -7, meltingPoint: 59, ionization: 1139.9, affinity: 314, orbit: "K2L8M18N7")
         var Kr = Element(symbol: "Kr", name: "クリプトン", number: 36, massNumber: 83.798, state: "気体", boilingPoint: -157, meltingPoint: -153, ionization: 1350.8, affinity: -96, orbit: "K2L8M18N8")
         var Rb = Element(symbol: "Rb", name: "ルビジウム", number: 37, massNumber: 85.468, state: "個体", boilingPoint: 39, meltingPoint: 688, ionization: 403.0, affinity: 47, orbit: "K2L8M18N8O1")
-        
         var Sr = Element(symbol: "Sr", name: "スロトンチウム", number: 38, massNumber: 87.62, state: "個体", boilingPoint: 777, meltingPoint: 1414, ionization: 549.5, affinity: 5, orbit: "K2L8M18N8O2")
+        var Y = Element(symbol: "Y", name: "イットリウム", number: 39, massNumber: 88.906, state: "", boilingPoint: 1520, meltingPoint: 3388, ionization: 600, affinity: 30, orbit: "K2L8M18N9O2")
+        
         
         elementArray.append([empty, one, two, three, four])
         elementArray.append([one, H, Li, Na, K])
