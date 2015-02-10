@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DetailViewDelegate {
     
     
     var temperatureSlider = UISlider()
@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.periodicView.reloadDelegate = self
         
         self.view.addSubview(periodicView.view)
         self.view.addSubview(detailView.view)
@@ -47,14 +48,11 @@ class ViewController: UIViewController {
         initCursors()
         
     }
-    
-    
-    func request(completion: ()->Void) {
-        //渡されたクロージャを実行する
-        completion()
-        //しかしこれはクロージャcompletionがnilだとランタイムエラーでクラッシュするし
-        //そもそもこのメソッドにnilを渡そうとするとコンパイルできないはず
+    func reloadDetailView(element:Element) {
+        detailView.detailView.name.text = element.name
+            //element.symbol
     }
+    
     
     func initCursors() {
         for i in 0...3 {

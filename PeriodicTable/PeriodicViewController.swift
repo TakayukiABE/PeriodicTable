@@ -17,6 +17,8 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var selectedCell = [1,1]
     
+    var reloadDelegate:DetailViewDelegate!
+    
     var periodicModel = PeriodicModel()
     
     override func viewDidLoad() {
@@ -83,6 +85,8 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         selectedCell[0] = indexPath.row
         selectedCell[1] = indexPath.section
         periodicTable.reloadData()
+        var element:Element = periodicModel.elementArray[selectedCell[0]][selectedCell[1]]
+        self.reloadDelegate.reloadDetailView(element)
         
     }
     
@@ -192,3 +196,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
 }
+
+protocol DetailViewDelegate {
+    func reloadDetailView(element:Element) -> Void
+    
+}
+

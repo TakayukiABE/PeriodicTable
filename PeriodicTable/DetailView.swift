@@ -15,8 +15,15 @@ class DetailView: UIView {
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
     }
-    */
+*/
+  
+    
+    class func instance() -> DetailView {
+        return UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as DetailView
+    }
+
+    
+    
 
 }
