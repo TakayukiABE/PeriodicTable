@@ -41,7 +41,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 5
+        return 6
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

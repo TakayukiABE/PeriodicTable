@@ -53,6 +53,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         detailView.detailView.symbol.text = element.symbol
         detailView.detailView.number.text = "\(element.number)"
         detailView.detailView.massNumber.text = "\(element.massNumber)"
+        detailView.detailView.orbit.text = element.orbit
         
             //element.symbol
     }
