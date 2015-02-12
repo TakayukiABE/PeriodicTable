@@ -30,7 +30,6 @@ class DetailViewController: UIViewController {
 //symbol.frame = CGRectMake(10, 10, 100, 100)
         
         self.view.frame = CGRectMake(50, 550, 300, 300)
-        self.view.backgroundColor = UIColor.greenColor()
     }
     
     

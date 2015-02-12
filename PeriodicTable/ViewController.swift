@@ -16,10 +16,7 @@ class ViewController: UIViewController, DetailViewDelegate {
     var value = 25
     var newValue = Int()
     var cursors = [UIButton]()
-    
-
-
-    
+    var handSwitch = UISwitch()
     
     
     var periodicView = PeriodicViewController()
@@ -51,7 +48,41 @@ class ViewController: UIViewController, DetailViewDelegate {
         
         initCursors()
         
+        handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
+        handSwitch.tintColor = UIColor.blackColor()
+        handSwitch.on = true
+        handSwitch.addTarget(self, action: "changeHand:", forControlEvents: UIControlEvents.ValueChanged)
+        self.view.addSubview(handSwitch)
+        
+        
     }
+    
+    func changeHand(sender:UISwitch) {
+        if sender.on {
+            changeRightHand()
+        }else {
+            changeLeftHand()
+        }
+    }
+    
+    func changeRightHand() {
+        cursors[0].frame = CGRectMake(self.view.frame.size.width - 350, self.view.frame.height - 110, 100, 100)
+        cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
+        cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
+        cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
+        detailView.view.frame = CGRectMake(50, 550, 500, 500)
+        
+    }
+    
+    func changeLeftHand() {
+        cursors[0].frame = CGRectMake(50, self.view.frame.height - 110, 100, 100)
+        cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
+        cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
+        cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
+        detailView.view.frame = CGRectMake(500, 550, 500, 500)
+    }
+    
+    
     func reloadDetailView(element:Element) {
         detailView.detailView.name.text = element.name
         detailView.detailView.symbol.text = element.symbol
