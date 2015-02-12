@@ -31,7 +31,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         self.view.addSubview(detailView.view)
         
         temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
-        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: 550)
+        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: 530)
         temperatureSlider.minimumValue = -273
         temperatureSlider.maximumValue = 6000
         temperatureSlider.value = 25
@@ -49,7 +49,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         
         self.view.addSubview(temperatureSlider)
         temperature.frame = CGRectMake(0, 0, 200, 50)
-        temperature.center = CGPoint(x: self.view.frame.width/2, y: 530)
+        temperature.center = CGPoint(x: self.view.frame.width/2, y: 570)
         temperature.font = UIFont.systemFontOfSize(30)
         temperature.text = "25℃"
         temperature.textAlignment = NSTextAlignment.Center
@@ -82,7 +82,6 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
         detailView.view.frame = CGRectMake(50, 550, 500, 500)
-        
     }
     
     func changeLeftHand() {
@@ -111,27 +110,21 @@ class ViewController: UIViewController, DetailViewDelegate {
             cursors[i].tag = i
             cursors[i].titleLabel?.font = UIFont.systemFontOfSize(100)
             cursors[i].addTarget(self, action: "didTapOnCursor:", forControlEvents: .TouchUpInside)
-            cursors[i].backgroundColor = UIColor(red: 0, green: 1, blue: 1, alpha: 1)
+            cursors[i].backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)
             cursors[i].setTitleColor(UIColor.blueColor(), forState: .Normal)
-            cursors[i].setTitleColor(UIColor.redColor(), forState: .Highlighted)
+            cursors[i].setTitleColor(UIColor.blackColor(), forState: .Highlighted)
             cursors[i].layer.borderWidth = 1
             cursors[i].layer.cornerRadius = 5
             self.view.addSubview(cursors[i])
         }
-        
-
-
-        
         cursors[0].setTitle("←", forState: .Normal)
         cursors[1].setTitle("↓", forState: .Normal)
         cursors[2].setTitle("↑", forState: .Normal)
         cursors[3].setTitle("→", forState: .Normal)
-        
         cursors[0].frame = CGRectMake(self.view.frame.size.width - 350, self.view.frame.height - 110, 100, 100)
         cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-        
     }
     
     func didTapOnCursor(sender:UIButton) {
