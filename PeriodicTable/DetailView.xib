@@ -60,6 +60,18 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="沸点：-253℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a1-6Z-3aR">
+                    <rect key="frame" x="68" y="149" width="156" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="融点：-259℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-Ou-BPW">
+                    <rect key="frame" x="68" y="179" width="156" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -75,7 +87,9 @@
                 <constraint firstItem="46w-AX-42J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zcq-JK-g4l"/>
             </constraints>
             <connections>
+                <outlet property="boilingPoint" destination="5a1-6Z-3aR" id="hz6-ZT-eoN"/>
                 <outlet property="massNumber" destination="oaQ-nZ-mTn" id="Jo4-5O-C3X"/>
+                <outlet property="meltingPoint" destination="hd6-Ou-BPW" id="Vca-5l-esZ"/>
                 <outlet property="name" destination="TLH-3h-DMc" id="6pb-Xs-FGL"/>
                 <outlet property="number" destination="VcC-ap-qhI" id="Qoj-2Y-kAX"/>
                 <outlet property="orbit" destination="XqZ-rf-5ZH" id="S14-f1-Zp7"/>

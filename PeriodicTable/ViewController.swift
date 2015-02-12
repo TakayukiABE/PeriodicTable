@@ -36,6 +36,17 @@ class ViewController: UIViewController, DetailViewDelegate {
         temperatureSlider.maximumValue = 6000
         temperatureSlider.value = 25
         temperatureSlider.addTarget(self, action: "didChangeValue:", forControlEvents: UIControlEvents.ValueChanged)
+        var gradient = CAGradientLayer()
+        gradient.frame = temperatureSlider.bounds
+        var colors:NSArray = [UIColor.redColor().CGColor, UIColor.blueColor().CGColor]
+        gradient.colors = colors
+        var start = CGPoint(x: 1.0, y: 0.5)
+        var end = CGPoint(x: 0.0, y: 0.5)
+        gradient.startPoint = start
+        gradient.endPoint = end
+        gradient.cornerRadius = 15
+        temperatureSlider.layer.insertSublayer(gradient, atIndex: 0)
+        
         self.view.addSubview(temperatureSlider)
         temperature.frame = CGRectMake(0, 0, 200, 50)
         temperature.center = CGPoint(x: self.view.frame.width/2, y: 530)
@@ -48,7 +59,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         initCursors()
         
         handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
-        handSwitch.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
+        handSwitch.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 20)
         handSwitch.tintColor = UIColor.blackColor()
         handSwitch.on = true
         handSwitch.addTarget(self, action: "changeHand:", forControlEvents: UIControlEvents.ValueChanged)
@@ -79,7 +90,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(500, 550, 500, 500)
+        detailView.view.frame = CGRectMake(550, 550, 500, 500)
     }
     
     
@@ -89,8 +100,8 @@ class ViewController: UIViewController, DetailViewDelegate {
         detailView.detailView.number.text = "\(element.number)"
         detailView.detailView.massNumber.text = "\(element.massNumber)"
         detailView.detailView.orbit.text = element.orbit
-        
-            //element.symbol
+        detailView.detailView.meltingPoint.text = "融点：\(element.meltingPoint)℃"
+        detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
     }
     
     

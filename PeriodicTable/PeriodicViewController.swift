@@ -63,9 +63,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         
         cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
-        if temperature > element.meltingPoint {
+        if temperature > element.boilingPoint {
             cell.alpha = 0.8
-        }else if temperature > element.boilingPoint {
+        }else if temperature > element.meltingPoint {
             cell.layer.cornerRadius = 15
         }
         if indexPath.row == selectedCell[0] && indexPath.section == selectedCell[1] {

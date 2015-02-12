@@ -15,6 +15,8 @@ class DetailView: UIView {
     @IBOutlet weak var massNumber: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var orbit: UILabel!
+    @IBOutlet weak var meltingPoint: UILabel!
+    @IBOutlet weak var boilingPoint: UILabel!
     
     
     
