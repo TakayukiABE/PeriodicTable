@@ -21,7 +21,6 @@ class ViewController: UIViewController, DetailViewDelegate {
     
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
-    var sineView = sineViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,6 @@ class ViewController: UIViewController, DetailViewDelegate {
         
         self.view.addSubview(periodicView.view)
         self.view.addSubview(detailView.view)
-        self.view.addSubview(sineView.view)
         
         temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
         temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: 550)
@@ -39,16 +37,18 @@ class ViewController: UIViewController, DetailViewDelegate {
         temperatureSlider.value = 25
         temperatureSlider.addTarget(self, action: "didChangeValue:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(temperatureSlider)
-        temperature.frame = CGRectMake(0, 0, 50, 50)
-        temperature.center = CGPoint(x: self.view.frame.width/2, y: 600)
-        temperature.font = UIFont.systemFontOfSize(10)
+        temperature.frame = CGRectMake(0, 0, 200, 50)
+        temperature.center = CGPoint(x: self.view.frame.width/2, y: 530)
+        temperature.font = UIFont.systemFontOfSize(30)
         temperature.text = "25℃"
+        temperature.textAlignment = NSTextAlignment.Center
         self.view.addSubview(temperature)
         
         
         initCursors()
         
         handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
+        handSwitch.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
         handSwitch.tintColor = UIColor.blackColor()
         handSwitch.on = true
         handSwitch.addTarget(self, action: "changeHand:", forControlEvents: UIControlEvents.ValueChanged)

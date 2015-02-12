@@ -14,8 +14,8 @@ struct Element {
     var number:Int
     var massNumber:Double
     var state:String
-    var boilingPoint:Int
     var meltingPoint:Int
+    var boilingPoint:Int
     var ionization:Double
     var affinity:Int
     var orbit:String
