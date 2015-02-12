@@ -17,6 +17,10 @@ class ViewController: UIViewController, DetailViewDelegate {
     var newValue = Int()
     var cursors = [UIButton]()
     
+
+
+    
+    
     
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
@@ -69,8 +73,12 @@ class ViewController: UIViewController, DetailViewDelegate {
             cursors[i].setTitleColor(UIColor.blueColor(), forState: .Normal)
             cursors[i].setTitleColor(UIColor.redColor(), forState: .Highlighted)
             cursors[i].layer.borderWidth = 1
+            cursors[i].layer.cornerRadius = 5
             self.view.addSubview(cursors[i])
         }
+        
+
+
         
         cursors[0].setTitle("←", forState: .Normal)
         cursors[1].setTitle("↓", forState: .Normal)

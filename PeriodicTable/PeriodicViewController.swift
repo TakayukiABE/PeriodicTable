@@ -27,6 +27,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
         periodicTable.delegate = self
         periodicTable.dataSource = self
+        self.periodicTable.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1)
         
         self.periodicTable.registerNib(Nib, forCellWithReuseIdentifier: "cell")
        // self.periodicTable.registerClass(PeriodicCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
@@ -41,7 +42,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 6
+        return 8
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -54,6 +55,12 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.layer.cornerRadius = 0
         cell.backgroundColor = UIColor.whiteColor()
         var element = periodicModel.elementArray[indexPath.row][indexPath.section]
+        
+        if element.name == "empty" {
+            cell.backgroundColor = UIColor.blackColor()
+            return cell
+        }
+        
         cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
         if temperature > element.meltingPoint {
             cell.alpha = 0.8
