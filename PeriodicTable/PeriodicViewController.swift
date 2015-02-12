@@ -38,6 +38,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         let frame = self.view.frame
         self.periodicTable.frame = CGRectMake(frame.origin.x + 27, 50, frame.size.width - 50, frame.size.height - 300)
         self.periodicTable.bounds = CGRectInset(self.view.frame, 25.0, 156)
+        self.periodicTable.layer.cornerRadius = 12
     }
     
     
@@ -81,7 +82,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         return 1.0
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+        return UIEdgeInsets(top: 1, left: 10, bottom: 1, right: 10)
     }
     
     func setTemperature(newTemperature:Int) {
