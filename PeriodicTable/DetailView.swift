@@ -17,9 +17,9 @@ class DetailView: UIView {
     @IBOutlet weak var orbit: UILabel!
     @IBOutlet weak var meltingPoint: UILabel!
     @IBOutlet weak var boilingPoint: UILabel!
-    
-    
-    
+    @IBOutlet weak var category: UILabel!
+    @IBOutlet weak var ionization: UILabel!
+    @IBOutlet weak var affinity: UILabel!
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

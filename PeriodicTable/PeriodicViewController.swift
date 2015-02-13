@@ -86,6 +86,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
         if temperature > element.boilingPoint {
+            cell.alpha = 0.8
             cell.layer.cornerRadius = 24
             cell.elementName.textColor = UIColor.grayColor()
         }else if temperature > element.meltingPoint {
@@ -93,7 +94,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.elementName.textColor = UIColor.blueColor()
         }
         if indexPath.row == selectedCell[0] && indexPath.section == selectedCell[1] {
-            cell.backgroundColor = UIColor.whiteColor()
+            cell.backgroundColor = UIColor(red: 0.8,green: 0.2,blue: 0.4,alpha: 1)
         }
         
         return cell

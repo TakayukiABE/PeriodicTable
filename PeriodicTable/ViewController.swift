@@ -63,6 +63,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         handSwitch.tintColor = UIColor.blackColor()
         handSwitch.on = true
         handSwitch.addTarget(self, action: "changeHand:", forControlEvents: UIControlEvents.ValueChanged)
+        handSwitch.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
         self.view.addSubview(handSwitch)
         
         
@@ -101,6 +102,9 @@ class ViewController: UIViewController, DetailViewDelegate {
         detailView.detailView.orbit.text = element.orbit
         detailView.detailView.meltingPoint.text = "融点：\(element.meltingPoint)℃"
         detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
+        detailView.detailView.category.text = "\(element.category)"
+        detailView.detailView.ionization.text = "第1イオン化エネルギー：\(element.ionization)kJ/mol"
+        detailView.detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
     }
     
     
