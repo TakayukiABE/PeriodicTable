@@ -144,7 +144,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
                 selectedCell[0] = 2
                 selectedCell[1] = 3
             }else if row == 1 && section == 7 {
-                path = NSIndexPath(forRow: 11, inSection: 7)
+                path = NSIndexPath(forRow: 3, inSection: 7)
             }else if section == 1 && row == 18{
                 path = NSIndexPath(forRow: 1, inSection: 1)
             }
@@ -158,7 +158,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             break
         case 1:
-            if row == 12 && section == 6 {
+            if 4 <= row && row <= 12 && section == 6 {
                 movement = -2
             }
             else if section == 6 && 12 <= row && row < 18 {
@@ -166,7 +166,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             }else if section == 6 && row == 18 {
                 movement = -5
             }
-            else if 3 <= row && row <= 11 && section == 7 {
+            else if 3 == row && section == 7 {
                 movement = -3
             }
             else if section == 7 && row == 1 { movement = -6 }
@@ -180,9 +180,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
                 movement = 5
             }else if section == 1 && row == 18 {
                 movement = 5
-            }else if section == 4 && 3 <= row && row <= 11 {
+            }else if section == 4 && 3 == row {
                 movement = 3
-            }else if section == 4 && row == 12 {
+            }else if section == 4 && 4 <= row && row <= 12 {
                 movement = 2
             }
             else if section == 2 && 13 <= row && row <= 17 {
@@ -199,8 +199,8 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
                 movement = 17
             }else if 2 <= section && section <= 3 && row == 2 {
                 movement = 11
-            }else if section == 7 && row == 11 {
-                movement = -10
+            }else if section == 7 && row == 3 {
+                movement = -2
             }
             else if row == 18 { movement = -17 }
             else { movement = 1 }
