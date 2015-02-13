@@ -20,16 +20,10 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-//        let detailView:UIView = UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as UIView
-//        self.view.addSubview(detailView)
-        
-        
-        
-//symbol.frame = CGRectMake(10, 10, 100, 100)
-        
-        self.view.frame = CGRectMake(50, 550, 300, 300)
+        self.view.layer.borderWidth = 1
+        self.view.frame = CGRectMake(10, 550, 460, 215)
+        self.view.layer.cornerRadius = 15
+        self.view.backgroundColor = UIColor.clearColor()
     }
     
     

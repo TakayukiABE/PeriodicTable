@@ -27,12 +27,14 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         periodicTable.delegate = self
         periodicTable.dataSource = self
-        self.periodicTable.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         
+        self.periodicTable.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         self.periodicTable.registerNib(Nib, forCellWithReuseIdentifier: "cell")
        // self.periodicTable.registerClass(PeriodicCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         self.view.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(periodicTable)
+        
+        
     }
     override func viewWillLayoutSubviews() {
         let frame = self.view.frame
@@ -94,7 +96,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.elementName.textColor = UIColor.blueColor()
         }
         if indexPath.row == selectedCell[0] && indexPath.section == selectedCell[1] {
-            cell.backgroundColor = UIColor(red: 0.8,green: 0.2,blue: 0.4,alpha: 1)
+            cell.backgroundColor = UIColor(red: 1.0,green: 0.1,blue: 0.3,alpha: 1)
         }
         
         return cell

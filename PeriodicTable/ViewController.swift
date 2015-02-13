@@ -83,7 +83,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(50, 550, 500, 500)
+        detailView.view.frame = CGRectMake(10, 550, 460, 215)
     }
     
     func changeLeftHand() {
@@ -91,7 +91,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(550, 550, 500, 500)
+        detailView.view.frame = CGRectMake(self.view.frame.width - 470, 550, 460, 215)
     }
     
     
