@@ -55,10 +55,19 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         var element = periodicModel.elementArray[indexPath.row][indexPath.section]
         cell.alpha = 1.0
         cell.layer.cornerRadius = 0
+        cell.elementName.text = ""
         if element.category == "アルカリ金属元素" {
-        cell.backgroundColor = 
+            cell.backgroundColor = UIColor(red: 1.0,green: 1.0,blue: 0.1,alpha: 1)
+        }else if element.category == "アルカリ土類金属元素"{
+            cell.backgroundColor = UIColor(red: 1.0,green: 0.9,blue: 0.3,alpha: 1)
+        }else if element.category == "遷移元素" {
+            cell.backgroundColor = UIColor(red: 0.8,green: 0.9,blue: 0.5,alpha: 1)
+        }else if element.category == "希ガス元素" {
+            cell.backgroundColor = UIColor(red: 0.5, green:1.0, blue: 1.0, alpha: 1.0)
         }
-        cell.backgroundColor = UIColor.whiteColor()
+        else {
+            cell.backgroundColor = UIColor.whiteColor()
+        }
         
         
         
