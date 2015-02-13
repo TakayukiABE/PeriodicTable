@@ -98,7 +98,7 @@ class PeriodicModel: NSObject {
         var Ba = Element(symbol: "Ba", name: "バリウム", number: 56, massNumber: 137.327, state: "", meltingPoint: 729, boilingPoint: 1898, ionization: 502.9, affinity: 14, orbit: "K2L8M18N18O8P2", category: "アルカリ土類金属元素")
         var La = Element(symbol: "La", name: "ランタン", number: 57, massNumber: 138.905, state: "", meltingPoint: 920, boilingPoint: 3461, ionization: 538.1, affinity: 48, orbit: "K2L8M18N18O9P2", category: "遷移元素")
         var Hf = Element(symbol: "Hf", name: "ハフニウム", number: 72, massNumber: 178.49, state: "", meltingPoint: 2231, boilingPoint: 4602, ionization: 658.5, affinity: 0, orbit: "K2L8M18N31O10P2", category: "遷移元素")
-        var Ta = Element(symbol: "Ta", name: "タンタル", number: 73, massNumber: 180.948, state: "", meltingPoint: 2985, boilingPoint: 5510, ionization: 761, affinity: 31, orbit: "K2L8M18N31O11P2", category: "遷移金属元素")
+        var Ta = Element(symbol: "Ta", name: "タンタル", number: 73, massNumber: 180.948, state: "", meltingPoint: 2985, boilingPoint: 5510, ionization: 761, affinity: 31, orbit: "K2L8M18N31O11P2", category: "遷移元素")
         var W = Element(symbol: "W", name: "タングステン", number: 74, massNumber: 183.84, state: "", meltingPoint: 3407, boilingPoint: 5555, ionization: 770, affinity: 79, orbit: "K2L8M18N31O12P2", category: "遷移元素")
         var Re = Element(symbol: "Re", name: "レニウム", number: 75, massNumber: 186.207, state: "", meltingPoint: 3180, boilingPoint: 5596, ionization: 760, affinity: 14, orbit: "K2L8M18N31O13P2", category: "遷移元素")
         var Os = Element(symbol: "Os", name: "オスミウム", number: 76, massNumber: 190.23, state: "", meltingPoint: 3045, boilingPoint: 5012, ionization: 840, affinity: 104, orbit: "K2L8M18N31O14P2", category: "遷移元素")
