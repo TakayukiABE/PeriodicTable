@@ -24,10 +24,10 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        
         periodicTable.delegate = self
         periodicTable.dataSource = self
-        self.periodicTable.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1)
+        self.periodicTable.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         
         self.periodicTable.registerNib(Nib, forCellWithReuseIdentifier: "cell")
        // self.periodicTable.registerClass(PeriodicCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
@@ -52,13 +52,18 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PeriodicCollectionViewCell
+        var element = periodicModel.elementArray[indexPath.row][indexPath.section]
         cell.alpha = 1.0
         cell.layer.cornerRadius = 0
+        if element.category == "アルカリ金属元素" {
+        cell.backgroundColor = 
+        }
         cell.backgroundColor = UIColor.whiteColor()
-        var element = periodicModel.elementArray[indexPath.row][indexPath.section]
+        
+        
         
         if element.name == "empty" {
-            cell.backgroundColor = UIColor.blackColor()
+            cell.backgroundColor = UIColor.clearColor()
             return cell
         }
         

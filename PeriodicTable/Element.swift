@@ -19,4 +19,5 @@ struct Element {
     var ionization:Double
     var affinity:Int
     var orbit:String
+    var category:String
 }
