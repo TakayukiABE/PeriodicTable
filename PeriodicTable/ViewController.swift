@@ -39,7 +39,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         var gradient = CAGradientLayer()
         gradient.frame = temperatureSlider.bounds
         var colors:NSArray = [UIColor.redColor().CGColor, UIColor.blueColor().CGColor]
-        gradient.colors = colors
+        gradient.colors = colors as [AnyObject]
         var start = CGPoint(x: 1.0, y: 0.5)
         var end = CGPoint(x: 0.0, y: 0.5)
         gradient.startPoint = start
@@ -83,7 +83,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(10, 550, 460, 215)
+        detailView.view.frame = CGRectMake(3, 550, 460, 215)
     }
     
     func changeLeftHand() {
@@ -91,7 +91,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
         cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
         cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(self.view.frame.width - 470, 550, 460, 215)
+        detailView.view.frame = CGRectMake(self.view.frame.width - 463, 550, 460, 215)
     }
     
     
@@ -146,7 +146,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         if abs(value - newValue) > 100 || newValue == -273 || newValue == 6000 {
             value = newValue
             temperature.text = "\(value)℃"
-            periodicView.setTemperature(Int(temperatureSlider.value))
+            periodicView.setCurrentTemperature(Int(temperatureSlider.value))
             periodicView.periodicTable.reloadData()
             
         }

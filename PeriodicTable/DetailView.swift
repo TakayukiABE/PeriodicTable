@@ -29,7 +29,7 @@ class DetailView: UIView {
   
     
     class func instance() -> DetailView {
-        return UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as DetailView
+        return UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! DetailView
     }
 
     

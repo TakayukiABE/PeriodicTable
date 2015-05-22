@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.borderWidth = 1
-        self.view.frame = CGRectMake(10, 550, 460, 215)
+        self.view.frame = CGRectMake(3, 550, 460, 215)
         self.view.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.clearColor()
     }

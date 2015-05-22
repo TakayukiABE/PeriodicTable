@@ -53,7 +53,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PeriodicCollectionViewCell
+        var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
         var element = periodicModel.elementArray[indexPath.row][indexPath.section]
         cell.alpha = 1.0
         cell.layer.cornerRadius = 0
@@ -112,7 +112,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         return UIEdgeInsets(top: 1, left: 10, bottom: 1, right: 10)
     }
     
-    func setTemperature(newTemperature:Int) {
+    func setCurrentTemperature(newTemperature:Int) {
         temperature = newTemperature
     }
     
