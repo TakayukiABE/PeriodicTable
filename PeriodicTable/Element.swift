@@ -6,18 +6,19 @@
 //  Copyright (c) 2015年 University of Tsukuba. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RealmSwift
 
-struct Element {
-    var symbol:String
-    var name:String
-    var number:Int
-    var massNumber:Double
-    var state:String
-    var meltingPoint:Int
-    var boilingPoint:Int
-    var ionization:Double
-    var affinity:Int
-    var orbit:String
-    var category:String
+class Element: Object {
+    dynamic var symbol:String = ""
+    dynamic var name:String = ""
+    dynamic var number:Int = 0
+    dynamic var massNumber:Double = 0.0
+    dynamic var state:String = ""
+    dynamic var meltingPoint:Int = 0
+    dynamic var boilingPoint:Int = 0
+    dynamic var ionization:Double = 0.0
+    dynamic var affinity:Int = 0
+    dynamic var orbit:String = ""
+    dynamic var category:String = ""
 }
