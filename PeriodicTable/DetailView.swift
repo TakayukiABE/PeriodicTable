@@ -20,19 +20,8 @@ class DetailView: UIView {
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var ionization: UILabel!
     @IBOutlet weak var affinity: UILabel!
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-    }
-*/
-  
     
-    class func instance() -> DetailView {
+    class func createInstance() -> DetailView {
         return UINib(nibName: "DetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! DetailView
     }
-
-    
-    
-
 }

@@ -10,13 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-
-    var detail = DetailView()
-    var detailView = DetailView.instance()
-
-    override func awakeFromNib() {
-        
-    }
+    var detailView = DetailView.createInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +19,6 @@ class DetailViewController: UIViewController {
         self.view.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.clearColor()
     }
-    
-    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)

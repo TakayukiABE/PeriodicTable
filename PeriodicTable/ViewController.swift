@@ -10,26 +10,20 @@ import UIKit
 
 class ViewController: UIViewController, DetailViewDelegate {
     
-    
     var temperatureSlider = UISlider()
     var temperature = UILabel()
     var value = 25
     var newValue = Int()
     var cursors = [UIButton]()
     var handSwitch = UISwitch()
-    
-    
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.periodicView.reloadDelegate = self
-        
         self.view.addSubview(periodicView.view)
         self.view.addSubview(detailView.view)
-        
         temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
         temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: 530)
         temperatureSlider.minimumValue = -273
@@ -46,7 +40,6 @@ class ViewController: UIViewController, DetailViewDelegate {
         gradient.endPoint = end
         gradient.cornerRadius = 15
         temperatureSlider.layer.insertSublayer(gradient, atIndex: 0)
-        
         self.view.addSubview(temperatureSlider)
         temperature.frame = CGRectMake(0, 0, 200, 50)
         temperature.center = CGPoint(x: self.view.frame.width/2, y: 570)
@@ -54,20 +47,15 @@ class ViewController: UIViewController, DetailViewDelegate {
         temperature.text = "25℃"
         temperature.textAlignment = NSTextAlignment.Center
         self.view.addSubview(temperature)
-        
-        
         initCursors()
-        
         handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
         handSwitch.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 20)
-        handSwitch.tintColor = UIColor.blackColor()
+        handSwitch.onTintColor = UIColor.cyanColor()
         handSwitch.on = true
         handSwitch.addTarget(self, action: "changeHand:", forControlEvents: UIControlEvents.ValueChanged)
-        handSwitch.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
+        handSwitch.backgroundColor = handSwitch.onTintColor
         handSwitch.layer.cornerRadius = 15
         self.view.addSubview(handSwitch)
-        
-        
     }
     
     func changeHand(sender:UISwitch) {
@@ -79,21 +67,29 @@ class ViewController: UIViewController, DetailViewDelegate {
     }
     
     func changeRightHand() {
-        cursors[0].frame = CGRectMake(self.view.frame.size.width - 350, self.view.frame.height - 110, 100, 100)
-        cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
-        cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
-        cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(3, 550, 460, 215)
+        UIView.animateWithDuration(NSTimeInterval(CGFloat(0.3)),
+            animations: {() -> Void in
+                self.cursors[0].frame = CGRectMake(self.view.frame.size.width - 350, self.view.frame.height - 110, 100, 100)
+                self.cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
+                self.cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
+                self.cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
+                self.detailView.view.frame = CGRectMake(3, 550, 460, 215)
+                
+            }, completion: {(Bool) -> Void in
+        })
     }
     
     func changeLeftHand() {
-        cursors[0].frame = CGRectMake(50, self.view.frame.height - 110, 100, 100)
-        cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
-        cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
-        cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
-        detailView.view.frame = CGRectMake(self.view.frame.width - 463, 550, 460, 215)
+        UIView.animateWithDuration(NSTimeInterval(CGFloat(0.3)),
+            animations: {() -> Void in
+                self.cursors[0].frame = CGRectMake(50, self.view.frame.height - 110, 100, 100)
+                self.cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
+                self.cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
+                self.cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
+                self.detailView.view.frame = CGRectMake(self.view.frame.width - 463, 550, 460, 215)
+            }, completion: {(Bool) -> Void in
+        })
     }
-    
     
     func reloadDetailView(element:Element) {
         detailView.detailView.name.text = element.name
@@ -109,17 +105,20 @@ class ViewController: UIViewController, DetailViewDelegate {
         detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
         detailView.detailView.category.text = "\(element.category)"
         detailView.detailView.ionization.text = "第1イオン化エネルギー：\(element.ionization)kJ/mol"
-        detailView.detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
+        if element.affinity == 9999 {
+            detailView.detailView.affinity.text = "電子親和力："
+        }else {
+            detailView.detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
+        }
     }
-    
-    
+
     func initCursors() {
         for i in 0...3 {
             cursors.append(UIButton())
             cursors[i].tag = i
             cursors[i].titleLabel?.font = UIFont.systemFontOfSize(100)
             cursors[i].addTarget(self, action: "didTapOnCursor:", forControlEvents: .TouchUpInside)
-            cursors[i].backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)
+            cursors[i].backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.1)
             cursors[i].setTitleColor(UIColor.blueColor(), forState: .Normal)
             cursors[i].setTitleColor(UIColor.blackColor(), forState: .Highlighted)
             cursors[i].layer.borderWidth = 1
@@ -139,7 +138,6 @@ class ViewController: UIViewController, DetailViewDelegate {
     func didTapOnCursor(sender:UIButton) {
         periodicView.changeCell(sender.tag)
     }
-    
 
     func didChangeValue(slider:UISlider) {
         newValue = Int(slider.value)
@@ -148,7 +146,6 @@ class ViewController: UIViewController, DetailViewDelegate {
             temperature.text = "\(value)℃"
             periodicView.setCurrentTemperature(Int(temperatureSlider.value))
             periodicView.periodicTable.reloadData()
-            
         }
     }
 }

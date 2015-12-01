@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailView" customModule="PeriodicTable" customModuleProvider="target"/>
@@ -80,8 +80,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="水素" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-3h-DMc">
-                    <rect key="frame" x="207" y="11" width="217" height="50"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水素" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-3h-DMc">
+                    <rect key="frame" x="207" y="11" width="217" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="CEW-lk-CgV"/>
                         <constraint firstAttribute="width" constant="217" id="ga7-1B-Lqx"/>
@@ -101,6 +101,7 @@
                 <constraint firstItem="VcC-ap-qhI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="quv-mx-IIH"/>
                 <constraint firstItem="XqZ-rf-5ZH" firstAttribute="leading" secondItem="46w-AX-42J" secondAttribute="trailing" constant="8" id="tIN-gY-JHu"/>
                 <constraint firstItem="TLH-3h-DMc" firstAttribute="leading" secondItem="46w-AX-42J" secondAttribute="trailing" constant="8" id="tfa-Fy-chB"/>
+                <constraint firstItem="TLH-3h-DMc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="uQQ-Tg-oH7"/>
                 <constraint firstItem="oaQ-nZ-mTn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="x9q-Io-uGq"/>
                 <constraint firstItem="46w-AX-42J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zcq-JK-g4l"/>
             </constraints>

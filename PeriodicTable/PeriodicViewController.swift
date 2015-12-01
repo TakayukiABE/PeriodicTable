@@ -9,40 +9,29 @@
 import UIKit
 
 class PeriodicViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     let Nib = UINib(nibName: "PeriodicCollectionViewCell", bundle: nil)
-    
     var periodicTable = UICollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewFlowLayout())
     var temperature = 25
-    
     var selectedCell = [1,1]
-    
     var reloadDelegate:DetailViewDelegate!
-    
     var periodicModel = PeriodicModel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         periodicTable.delegate = self
         periodicTable.dataSource = self
-        
         self.periodicTable.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         self.periodicTable.registerNib(Nib, forCellWithReuseIdentifier: "cell")
-       // self.periodicTable.registerClass(PeriodicCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         self.view.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(periodicTable)
-        
-        
     }
+    
     override func viewWillLayoutSubviews() {
         let frame = self.view.frame
         self.periodicTable.frame = CGRectMake(frame.origin.x + 27, 50, frame.size.width - 50, frame.size.height - 300)
         self.periodicTable.bounds = CGRectInset(self.view.frame, 25.0, 156)
         self.periodicTable.layer.cornerRadius = 12
     }
-    
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 8
@@ -54,7 +43,8 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
-        var element = periodicModel.elementArray[indexPath.row][indexPath.section]
+        let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
+        
         cell.alpha = 1.0
         cell.layer.cornerRadius = 0
         cell.elementName.text = ""
@@ -78,15 +68,11 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         }else {
             cell.backgroundColor = UIColor.whiteColor()
         }
-        
-        
-        
         if element.name == "empty" {
             cell.backgroundColor = UIColor.clearColor()
             return cell
         }
-        
-        cell.elementName.text = periodicModel.elementArray[indexPath.row][indexPath.section].symbol
+        cell.elementName.text = element.symbol
         if temperature > element.boilingPoint {
             cell.alpha = 0.8
             cell.layer.cornerRadius = 24
@@ -98,7 +84,10 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         if indexPath.row == selectedCell[0] && indexPath.section == selectedCell[1] {
             cell.backgroundColor = UIColor(red: 1.0,green: 0.1,blue: 0.3,alpha: 1)
         }
-        
+        if element.boilingPoint == 7000 {
+            cell.layer.cornerRadius = 0
+            cell.elementName.textColor = UIColor.blackColor()
+        }
         return cell
     }
     
@@ -117,18 +106,14 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        var element:Element = periodicModel.elementArray[indexPath.row][indexPath.section]
+        let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
         if element.number != 0 {
             self.reloadDelegate.reloadDetailView(element)
             selectedCell[0] = indexPath.row
             selectedCell[1] = indexPath.section
         }
         periodicTable.reloadData()
-        
     }
-    
-    
-    
     
     func changeCell(arrowTag:Int) {
         let row = selectedCell[0]
@@ -214,28 +199,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         collectionView(periodicTable, didSelectItemAtIndexPath: path)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 protocol DetailViewDelegate {
     func reloadDetailView(element:Element) -> Void
-    
 }
 
