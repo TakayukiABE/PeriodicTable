@@ -12,11 +12,13 @@ import RealmSwift
 class PeriodicModel: NSObject {
 
     var elements:[Element] = []
+    var isLanthanide = false
+    var isActinide = false
 
     override init() {
         super.init()
         let realm = Realm()
-        if realm.objects(Element).count != 94 {
+        if realm.objects(Element).count != 122 {
             realm.write{
                 realm.deleteAll()
             }
@@ -205,29 +207,77 @@ class PeriodicModel: NSObject {
         var Rn = Element()
         setElementProperties(Rn, symbol: "Rn", name: "ラドン", number: 86, massNumber: 222, state: "", meltingPoint: -71, boilingPoint: -62, ionization: 1037, affinity: 0, orbit: "K2 L8 M18N31O18P8", category: "希ガス元素", group: 18, period: 6)
         var Fr = Element()
-        setElementProperties(Fr, symbol: "Fr", name: "フランシウム", number: 87, massNumber: 223, state: "", meltingPoint: 27, boilingPoint: 677, ionization: 380, affinity: 0, orbit: "K2 L8 M18N31O18P8 Q1", category: "アルカリ金属元素", group: 1, period: 7)
+        setElementProperties(Fr, symbol: "Fr", name: "フランシウム", number: 87, massNumber: 223, state: "", meltingPoint: 27, boilingPoint: 677, ionization: 380, affinity: 9999, orbit: "K2 L8 M18N31O18P8 Q1", category: "アルカリ金属元素", group: 1, period: 7)
         var Ra = Element()
-        setElementProperties(Ra,symbol: "Ra", name: "ラジウム", number: 88, massNumber: 226, state: "", meltingPoint: 700, boilingPoint: 1140, ionization: 509.3, affinity: 0, orbit: "K2 L8 M18N31O18P8 Q2", category: "アルカリ土類金属元素", group: 2, period: 7)
+        setElementProperties(Ra,symbol: "Ra", name: "ラジウム", number: 88, massNumber: 226, state: "", meltingPoint: 700, boilingPoint: 1140, ionization: 509.3, affinity: 9999, orbit: "K2 L8 M18N31O18P8 Q2", category: "アルカリ土類金属元素", group: 2, period: 7)
         var Ac = Element()
-        setElementProperties(Ac, symbol: "Ac", name: "アクチニウム", number: 89, massNumber: 227, state: "", meltingPoint: 1050, boilingPoint: 3197, ionization: 499, affinity: 0, orbit: "K2 L8 M18N31O18P9 Q2", category: "遷移元素", group: 3, period: 7)
+        setElementProperties(Ac, symbol: "Ac", name: "アクチニウム", number: 89, massNumber: 227, state: "", meltingPoint: 1050, boilingPoint: 3197, ionization: 499, affinity: 9999, orbit: "K2 L8 M18N31O18P9 Q2", category: "アクチノイド", group: 3, period: 7)
         var Ce = Element()
         setElementProperties(Ce, symbol: "Ce", name: "セリウム", number: 58, massNumber: 140.116, state: "個体", meltingPoint: 795, boilingPoint: 2527, ionization: 534.4, affinity: 92, orbit: "K2 L8 M18N19O9 P2", category: "ランタノイド", group: 4, period: 8)
             var Pr = Element()
             setElementProperties(Pr, symbol: "Pr", name: "プラセオジム", number: 59, massNumber: 140.908, state: "個体", meltingPoint: 931, boilingPoint: 3512, ionization: 527, affinity: 9999, orbit: "K2 L8 M18N21O8 P2", category: "ランタノイド", group: 5, period: 8)
             var Nd = Element()
-            setElementProperties(Nd, symbol: "Nd", name: "", number: 60, massNumber: 144.242, state: "個体", meltingPoint: 1021, boilingPoint: 3074, ionization: 533.1, affinity: 9999, orbit: "K2 L8 M18N22O8 P2", category: "ランタノイド", group: 6, period: 8)
-            
-            
-            
-            elements = [empty, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen ,seventeen, eighteen, H, Li, Na, K, Rb, Cs, Fr, Be, Mg, Ca, Sr, Ba, Ra, Sc, Y, La, Ac, Ti, Zr, Hf, V, Nb, Ta,Cr, Mo, W, Mn, Tc, Re, Fe, Ru, Os, Co, Rh, Ir, Ni, Pd, Pt, Cu, Ag, Au, Zn, Cd, Hg, B, Al, Ga, In, Tl, C, Si, Ge, Sn, Pb, N, P, As, Sb, Bi, O, S, Se, Te, Po, F, Cl, Br, I, At, He, Ne, Ar, Kr, Xe, Rn]
+            setElementProperties(Nd, symbol: "Nd", name: "ネオジム", number: 60, massNumber: 144.242, state: "個体", meltingPoint: 1021, boilingPoint: 3074, ionization: 533.1, affinity: 9999, orbit: "K2 L8 M18N22O8 P2", category: "ランタノイド", group: 6, period: 8)
+            var Pm = Element()
+            setElementProperties(Pm, symbol: "Pm", name: "プロメチウム", number: 61, massNumber: 145, state: "個体", meltingPoint: 1042, boilingPoint: 3000, ionization: 540, affinity: 9999, orbit: "K2 L8 M18N23O8 P2", category: "ランタノイド", group: 7, period: 8)
+            var Sm = Element()
+            setElementProperties(Sm, symbol: "Sm", name: "サマリウム", number: 62, massNumber: 150.36, state: "個体", meltingPoint: 1074, boilingPoint: 1794, ionization: 544.5, affinity: 9999, orbit: "K2 L8 M18N24O8 P2", category: "ランタノイド", group: 8, period: 8)
+            var Eu = Element()
+            setElementProperties(Eu, symbol: "Eu", name: "ユウロピウム", number: 63, massNumber: 151.964, state: "個体", meltingPoint: 826, boilingPoint: 1529, ionization: 547.1, affinity: 9999, orbit: "K2 L8 M18N25O8 P2", category: "ランタノイド", group: 9, period: 8)
+            var Gd = Element()
+            setElementProperties(Gd, symbol: "Gd", name: "ガドリニウム", number: 64, massNumber: 157.25, state: "個体", meltingPoint: 1312, boilingPoint: 3272, ionization: 593.4, affinity: 9999, orbit: "K2 L8 M18N25O9 P2", category: "ランタノイド", group: 10, period: 8)
+            var Tb = Element()
+            setElementProperties(Tb, symbol: "Tb", name: "テルビウム", number: 65, massNumber: 158.925, state: "個体", meltingPoint: 1356, boilingPoint: 3227, ionization: 565.8, affinity: 9999, orbit: "K2 L8 M18N27O8 P2", category: "ランタノイド", group: 11, period: 8)
+            var Dy = Element()
+            setElementProperties(Dy, symbol: "Dy", name: "ジスプロシウム", number: 66, massNumber: 162.500, state: "個体", meltingPoint: 1412, boilingPoint: 2567, ionization: 573.0, affinity: 9999, orbit: "K2 L8 M18N28O8 P2", category: "ランタノイド", group: 12, period: 8)
+            var Ho = Element()
+            setElementProperties(Ho, symbol: "Ho", name: "ホルミウム", number: 67, massNumber: 164.903, state: "個体", meltingPoint: 1474, boilingPoint: 2695, ionization: 581.0, affinity: 9999, orbit: "K2 L8 M18N29O8 P2", category: "ランタノイド", group: 13, period: 8)
+            var Er = Element()
+            setElementProperties(Er, symbol: "Er", name: "エルビウム", number: 68, massNumber: 167.259, state: "個体", meltingPoint: 1529, boilingPoint: 2867, ionization: 589.3, affinity: 9999, orbit: "K2 L8 M18N30O8 P2", category: "ランタノイド", group: 14, period: 8)
+            var Tm = Element()
+            setElementProperties(Tm, symbol: "Tm", name: "ツリウム", number: 69, massNumber: 168.934, state: "個体", meltingPoint: 1545, boilingPoint: 1730, ionization: 596.7, affinity: 99, orbit: "K2 L8 M18N31O8 P2", category: "ランタノイド", group: 15, period: 8)
+            var Yb = Element()
+            setElementProperties(Yb, symbol: "Yb", name: "イッテルビウム", number: 70, massNumber: 173.054, state: "個体", meltingPoint: 824, boilingPoint: 1196, ionization: 603.4, affinity: 9999, orbit: "K2 L8 M18N32O8 P2", category: "ランタノイド", group: 16, period: 8)
+            var Lu = Element()
+            setElementProperties(Lu, symbol: "Lu", name: "ルテチウム", number: 71, massNumber: 174.967, state: "個体", meltingPoint: 1652, boilingPoint: 3402, ionization: 523.5, affinity: 33, orbit: "K2 L8 M18N32O9 P2", category: "ランタノイド", group: 17, period: 8)
+            var Th = Element()
+            setElementProperties(Th, symbol: "Th", name: "トリウム", number: 90, massNumber: 232.038, state: "個体", meltingPoint: 1842, boilingPoint: 4788, ionization: 587, affinity: 9999, orbit: "K2 L8 M18N31O18P10Q2", category: "アクチノイド", group: 4, period: 9)
+            var Pa = Element()
+            setElementProperties(Pa, symbol: "Pa", name: "プロトアクチニウム", number: 91, massNumber: 231.036, state: "個体", meltingPoint: 1568, boilingPoint: 4027, ionization: 568, affinity: 9999, orbit: "K2 L8 M18N31O20P9 Q2", category: "アクチノイド", group: 5, period: 9)
+            var U = Element()
+            setElementProperties(U, symbol: "U", name: "ウラン", number: 92, massNumber: 238.029, state: "個体", meltingPoint: 1132, boilingPoint: 4131, ionization: 597.6, affinity: 9999, orbit: "K2 L8 M18N31O21P9 Q2", category: "アクチノイド", group: 6, period: 9)
+            var Np = Element()
+            setElementProperties(Np, symbol: "Np", name: "ネプツニウム", number: 93, massNumber: 237, state: "個体", meltingPoint: 637, boilingPoint: 4000, ionization: 604.5, affinity: 9999, orbit: "K2 L8 M18N31O22P9 Q2", category: "アクチノイド", group: 7, period: 9)
+            var Pu = Element()
+            setElementProperties(Pu, symbol: "Pu", name: "プルトニウム", number: 94, massNumber: 244, state: "個体", meltingPoint: 639, boilingPoint: 3228, ionization: 584.7, affinity: 9999, orbit: "K2 L8 M18N31O24P8 Q2", category: "アクチノイド", group: 8, period: 9)
+            var Am = Element()
+            setElementProperties(Am, symbol: "Am", name: "アメリシウム", number: 95, massNumber: 243, state: "個体", meltingPoint: 1176, boilingPoint: 2607, ionization: 578, affinity: 9999, orbit: "K2 L8 M18N31O25P8 Q2", category: "アクチノイド", group: 9, period: 9)
+            var Cm = Element()
+            setElementProperties(Cm, symbol: "Cm", name: "キュリウム", number: 96, massNumber: 247, state: "個体", meltingPoint: 1340, boilingPoint: 3110, ionization: 581, affinity: 9999, orbit: "K2 L8 M18N31O25P9 Q2", category: "アクチノイド", group: 10, period: 9)
+            var Bk = Element()
+            setElementProperties(Bk, symbol: "Bk", name: "バークリウム", number: 97, massNumber: 247, state: "個体", meltingPoint: 985, boilingPoint: 710, ionization: 601, affinity: 9999, orbit: "K2 L8 M18N31O27P8 Q2", category: "アクチノイド", group: 11, period: 9)
+            var Cf = Element()
+            setElementProperties(Cf, symbol: "Cf", name: "カリホルニウム", number: 98, massNumber: 251, state: "個体", meltingPoint: 899, boilingPoint: 1472, ionization: 608, affinity: 9999, orbit: "K2 L8 M18N31O28P8 Q2", category: "アクチノイド", group: 12, period: 9)
+            var Es = Element()
+            setElementProperties(Es, symbol: "Es", name: "アインスタイニウム", number: 99, massNumber: 252, state: "個体", meltingPoint: 860, boilingPoint: 9999, ionization: 619, affinity: 9999, orbit: "K2 L8 M18N31O29P8 Q2", category: "アクチノイド", group: 13, period: 9)
+            var Fm = Element()
+            setElementProperties(Fm, symbol: "Fm", name: "フェルミウム", number: 100, massNumber: 257, state: "個体", meltingPoint: 1527, boilingPoint: 9999, ionization: 627, affinity: 9999, orbit: "K2 L8 M18N31O30P8 Q2", category: "アクチノイド", group: 14, period: 9)
+            var Md = Element()
+            setElementProperties(Md, symbol: "Md", name: "メンデレビウム", number: 101, massNumber: 258, state: "個体", meltingPoint: 827, boilingPoint: 9999, ionization: 635, affinity: 9999, orbit: "K2 L8 M18N31O31P8 Q2", category: "アクチノイド", group: 15, period: 9)
+            var No = Element()
+            setElementProperties(No, symbol: "No", name: "ノーベリウム", number: 102, massNumber: 259, state: "個体", meltingPoint: 827, boilingPoint: 9999, ionization: 642, affinity: 9999, orbit: "K2 L8 M18N31O32P8 Q2", category: "アクチノイド", group: 16, period: 9)
+            var Lr = Element()
+            setElementProperties(Lr, symbol: "Lr", name: "ローレンシウム", number: 103, massNumber: 262, state: "個体", meltingPoint: 1627, boilingPoint: 9999, ionization: 470, affinity: 9999, orbit: "K2 L8 M18N31O32P8 Q3", category: "アクチノイド", group: 17, period: 9)
+                
+            elements = [empty, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen ,seventeen, eighteen, H, Li, Na, K, Rb, Cs, Fr, Be, Mg, Ca, Sr, Ba, Ra, Sc, Y, La, Ac, Ti, Zr, Hf, V, Nb, Ta,Cr, Mo, W, Mn, Tc, Re, Fe, Ru, Os, Co, Rh, Ir, Ni, Pd, Pt, Cu, Ag, Au, Zn, Cd, Hg, B, Al, Ga, In, Tl, C, Si, Ge, Sn, Pb, N, P, As, Sb, Bi, O, S, Se, Te, Po, F, Cl, Br, I, At, He, Ne, Ar, Kr, Xe, Rn, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu, Th, Pa, U, Np, Pu, Am, Cm, Bk, Cf, Es, Fm, Md, No, Lr]
             println(elements.count)
             realm.write {
                 for i in 0...elements.count-1 {
                     realm.add(elements[i])
                 }
             }
-            println(realm.objects(Element))
         }
+                    println(realm.objects(Element))
     }
     func setElementProperties(element: Element, symbol: String, name: String, number: Int, massNumber: Double,state: String, meltingPoint: Int, boilingPoint: Int, ionization: Double, affinity: Int, orbit: String, category: String, group: Int, period: Int) {
         element.symbol = symbol
@@ -249,9 +299,22 @@ class PeriodicModel: NSObject {
         let elements = realm.objects(Element)
         if cell[0] == 3 {
             if cell[1] == 6 {
-                if period == 6 && 3 <= group && group <= 17 {
-                    return Element()
+                if period == 6 && 4 <= group && group <= 17 {
+                    return elements.filter(NSPredicate(format:"group == %d AND period == %d", group, period+2)).first!
                 }
+            }else if cell[1] == 7 {
+                if period == 7 && 4 <= group && group <= 17 {
+                    return elements.filter(NSPredicate(format:"group == %d AND period == %d", group, period+2)).first!
+                }
+            }
+        }
+        if self.isLanthanide {
+            if group > 3 && group < 18 && period == 6 {
+                return elements.filter(NSPredicate(format:"group == %d AND period == %d", group, period+2)).first!
+            }
+        }else if self.isActinide {
+            if group > 3 && group < 18 && period == 7 {
+                return elements.filter(NSPredicate(format:"group == %d AND period == %d", group, period+2)).first!
             }
         }
         

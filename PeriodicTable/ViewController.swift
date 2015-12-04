@@ -92,6 +92,10 @@ class ViewController: UIViewController, DetailViewDelegate {
     }
     
     func reloadDetailView(element:Element) {
+        detailView.view.alpha = 0.5
+        UIView.animateWithDuration(0.3, animations: { () -> Void in
+            self.detailView.view.alpha = 1
+        })
         detailView.detailView.name.text = element.name
         detailView.detailView.symbol.text = element.symbol
         detailView.detailView.number.text = "\(element.number)"
@@ -102,11 +106,15 @@ class ViewController: UIViewController, DetailViewDelegate {
         }else {
             detailView.detailView.meltingPoint.text = "融点：\(element.meltingPoint)℃"
         }
-        detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
+        if element.boilingPoint == 9999 {
+            detailView.detailView.boilingPoint.text = "沸点：-"
+        }else {
+            detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
+        }
         detailView.detailView.category.text = "\(element.category)"
         detailView.detailView.ionization.text = "第1イオン化エネルギー：\(element.ionization)kJ/mol"
         if element.affinity == 9999 {
-            detailView.detailView.affinity.text = "電子親和力："
+            detailView.detailView.affinity.text = "電子親和力：-"
         }else {
             detailView.detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
         }

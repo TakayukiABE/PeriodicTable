@@ -15,9 +15,16 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.borderWidth = 1
+        detailView.frame = CGRectMake(0, 0, 460, 215)
         self.view.frame = CGRectMake(3, 550, 460, 215)
         self.view.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.clearColor()
+        detailView.symbol.adjustsFontSizeToFitWidth = true
+        detailView.name.adjustsFontSizeToFitWidth = true
+        detailView.orbit.adjustsFontSizeToFitWidth = true
+        detailView.meltingPoint.adjustsFontSizeToFitWidth = true
+        detailView.boilingPoint.adjustsFontSizeToFitWidth = true
+        detailView.ionization.adjustsFontSizeToFitWidth = true
     }
     
     override func viewDidAppear(animated: Bool) {

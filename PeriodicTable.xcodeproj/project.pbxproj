@@ -27,7 +27,6 @@
 		6F65A1CC1A8779AB00FD97CB /* SeparateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1CA1A8779AB00FD97CB /* SeparateCollectionViewCell.swift */; };
 		6F65A1CD1A8779AB00FD97CB /* SeparateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F65A1CB1A8779AB00FD97CB /* SeparateCollectionViewCell.xib */; };
 		6F65A1CF1A877E5400FD97CB /* TemperatureSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65A1CE1A877E5400FD97CB /* TemperatureSliderViewController.swift */; };
-		6FA021471A8E2237000A9D81 /* per.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA021461A8E2237000A9D81 /* per.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		6F65A1CA1A8779AB00FD97CB /* SeparateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparateCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F65A1CB1A8779AB00FD97CB /* SeparateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeparateCollectionViewCell.xib; sourceTree = "<group>"; };
 		6F65A1CE1A877E5400FD97CB /* TemperatureSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureSliderViewController.swift; sourceTree = "<group>"; };
-		6FA021461A8E2237000A9D81 /* per.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = per.png; sourceTree = "<group>"; };
 		888A6DF01611BA209F930941 /* Pods_PeriodicTableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeriodicTableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5440272F1D2B7243A7C7EF /* Pods-PeriodicTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable.debug.xcconfig"; sourceTree = "<group>"; };
 		E61593185371FE5E32CD3164 /* Pods-PeriodicTableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTableTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTableTests/Pods-PeriodicTableTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				6F65A1CB1A8779AB00FD97CB /* SeparateCollectionViewCell.xib */,
 				6F1BF7031A85C6FD00E11C7E /* Main.storyboard */,
 				6F1BF7061A85C6FD00E11C7E /* Images.xcassets */,
-				6FA021461A8E2237000A9D81 /* per.png */,
 				6F1BF7081A85C6FD00E11C7E /* LaunchScreen.xib */,
 				6F1BF6FD1A85C6FD00E11C7E /* Supporting Files */,
 			);
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1BF7051A85C6FD00E11C7E /* Main.storyboard in Resources */,
-				6FA021471A8E2237000A9D81 /* per.png in Resources */,
 				6F65A1B91A85D21000FD97CB /* PeriodicCollectionViewCell.xib in Resources */,
 				6F65A1CD1A8779AB00FD97CB /* SeparateCollectionViewCell.xib in Resources */,
 				6F65A1C31A86425700FD97CB /* DetailViewController.xib in Resources */,

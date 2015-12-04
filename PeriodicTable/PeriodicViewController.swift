@@ -15,7 +15,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     var selectedCell = [1,1]
     var reloadDelegate:DetailViewDelegate!
     var periodicModel = PeriodicModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         periodicTable.delegate = self
@@ -65,6 +65,10 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.backgroundColor = UIColor(red: 0.4,green: 1.0,blue: 0.6,alpha: 1)
         }else if element.category == "ハロゲン" {
             cell.backgroundColor = UIColor(red: 0.2,green: 0.9,blue: 0.9,alpha: 1)
+        }else if element.category == "ランタノイド" {
+            cell.backgroundColor = UIColor(red: 0.7, green: 0.8, blue: 0.7, alpha: 1)
+        }else if element.category == "アクチノイド" {
+            cell.backgroundColor = UIColor(red: 0.6, green: 0.7, blue: 0.8, alpha: 1)
         }else {
             cell.backgroundColor = UIColor.whiteColor()
         }
@@ -106,6 +110,20 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 3 && indexPath.section == 6 {
+            periodicModel.isLanthanide = true
+            periodicModel.isActinide = false
+        } else if indexPath.row == 3 && indexPath.section == 7 {
+            periodicModel.isLanthanide = false
+            periodicModel.isActinide = true
+        } else if indexPath.row >= 3 && indexPath.row <= 17 && indexPath.section == 6 {
+            periodicModel.isActinide = false
+        } else if indexPath.row >= 3 && indexPath.row <= 17 && indexPath.section == 7 {
+            periodicModel.isLanthanide = false
+        }else {
+            periodicModel.isLanthanide = false
+            periodicModel.isActinide = false
+        }
         let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
         if element.number != 0 {
             self.reloadDelegate.reloadDetailView(element)
@@ -120,6 +138,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
         let section = selectedCell[1]
         var movement:Int!
         var path:NSIndexPath!
+
         switch (arrowTag) {
         case 0:
             if row == 13 && section == 2 {
@@ -134,29 +153,28 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
                 path = NSIndexPath(forRow: 3, inSection: 7)
             }else if section == 1 && row == 18{
                 path = NSIndexPath(forRow: 1, inSection: 1)
-            }
-            else if row == 1 { movement = 17
+            }else if row == 1 { movement = 17
                 path = NSIndexPath(forRow:row + 17, inSection: selectedCell[1])
                 selectedCell[0] = 17
-            }
-            else { movement = -1
+            }else { movement = -1
                 path = NSIndexPath(forRow: row - 1, inSection: selectedCell[1])
                 selectedCell[0] = row - 1
             }
             break
         case 1:
-            if 4 <= row && row <= 12 && section == 6 {
+            if 4 <= row && row <= 12 && section == 7  {
+                movement = -3
+            }else if 13 <= row && row <= 17 && section == 7 {
+                movement = -5
+            }else if 4 <= row && row <= 12 && section == 6 {
                 movement = -2
-            }
-            else if section == 6 && 12 <= row && row < 18 {
+            }else if section == 6 && 12 <= row && row < 18 {
                 movement = -4
             }else if section == 6 && row == 18 {
                 movement = -5
-            }
-            else if 3 == row && section == 7 {
+            }else if 3 == row && section == 7 {
                 movement = -3
-            }
-            else if section == 7 && row == 1 { movement = -6 }
+            }else if section == 7 && row == 1 { movement = -6 }
             else if section == 7 && row == 2 { movement = -5}
             else { movement = 1 }
             path = NSIndexPath(forRow: row, inSection: section + movement)
@@ -182,12 +200,21 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
             selectedCell[1] = section + movement
             break
         case 3:
-            if section == 1 && row == 1 {
+            if row == 17 && section == 7 {
+                movement = -16
+            }else if section == 6 && row == 17 && periodicModel.isLanthanide {
+                movement = -13
+                periodicModel.isLanthanide = false
+            }else if section == 1 && row == 1 {
                 movement = 17
             }else if 2 <= section && section <= 3 && row == 2 {
                 movement = 11
             }else if section == 7 && row == 3 {
-                movement = -2
+                if periodicModel.isActinide {
+                    movement = 1
+                }else {
+                    movement = -2
+                }
             }
             else if row == 18 { movement = -17 }
             else { movement = 1 }
