@@ -56,6 +56,9 @@ class ViewController: UIViewController, DetailViewDelegate {
         handSwitch.backgroundColor = handSwitch.onTintColor
         handSwitch.layer.cornerRadius = 15
         self.view.addSubview(handSwitch)
+        
+        detailView.view.frame = CGRectMake(detailView.view.frame.origin.x, detailView.view.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.view.frame.origin.y - 8)
+        detailView.detailView.frame = CGRectMake(detailView.detailView.frame.origin.x, detailView.detailView.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.detailView.frame.origin.y - 8)
     }
     
     func changeHand(sender:UISwitch) {
@@ -73,7 +76,7 @@ class ViewController: UIViewController, DetailViewDelegate {
                 self.cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
                 self.cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
                 self.cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-                self.detailView.view.frame = CGRectMake(3, 550, 460, 215)
+                self.detailView.view.frame = CGRectMake(8, 550, self.detailView.view.frame.width, self.detailView.view.frame.height)
                 
             }, completion: {(Bool) -> Void in
         })
@@ -86,7 +89,8 @@ class ViewController: UIViewController, DetailViewDelegate {
                 self.cursors[1].frame = CGRectMake(150, self.view.frame.height - 110, 100, 100)
                 self.cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
                 self.cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
-                self.detailView.view.frame = CGRectMake(self.view.frame.width - 463, 550, 460, 215)
+
+                                self.detailView.view.frame = CGRectMake(self.view.frame.midX + 80 - 8, 550, self.detailView.view.frame.width, self.detailView.view.frame.height)
             }, completion: {(Bool) -> Void in
         })
     }

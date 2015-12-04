@@ -28,7 +28,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewWillLayoutSubviews() {
         let frame = self.view.frame
-        self.periodicTable.frame = CGRectMake(frame.origin.x + 27, 50, frame.size.width - 50, frame.size.height - 300)
+        self.periodicTable.frame = CGRectMake(frame.origin.x + 25, 50, frame.size.width - 50, frame.size.height - 300)
         self.periodicTable.bounds = CGRectInset(self.view.frame, 25.0, 156)
         self.periodicTable.layer.cornerRadius = 12
     }
@@ -96,7 +96,8 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 47.5, height: 55)
+        return CGSize(width: (Double(self.view.frame.width) - Double(50.0)) / Double(20.0), height: (Double(self.view.frame.height) - Double(350)) / Double(7.6))
+//        return CGSize(width: 47.5, height: 55)
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         return 1.0
