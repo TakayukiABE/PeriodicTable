@@ -1,0 +1,265 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTable.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-PeriodicTable-umbrella.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_PeriodicTable-Swift.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTable.framework/Headers/Pods_PeriodicTable-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTable.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-PeriodicTable.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTableTests.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-PeriodicTableTests-umbrella.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Target Support Files/Pods-PeriodicTableTests/Pods-PeriodicTableTests-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_PeriodicTableTests-Swift.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTableTests.framework/Headers/Pods_PeriodicTableTests-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Pods_PeriodicTableTests.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-PeriodicTableTests.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RLMArray.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMArray.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMCollection.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMCollection.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMConstants.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMDefines.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMMigration.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMMigration.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObject.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObjectBase.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObjectBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObjectBase_Dynamic.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObjectBase_Dynamic.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObjectSchema.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObjectSchema.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMOptionalBase.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMOptionalBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMPlatform.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMPlatform.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMProperty.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMRealm.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMRealm.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMRealmConfiguration.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMRealmConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMRealm_Dynamic.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMRealm_Dynamic.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMResults.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMResults.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMSchema.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMSchema.h"
+        },
+        {
+          'type': 'file',
+          'name': "Realm-Swift.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Realm.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/Realm.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Intermediates/Pods.build/Debug-iphonesimulator/Realm.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RLMAccessor.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMAccessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMArray_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMArray_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMListBase.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMListBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMMigration_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMMigration_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObjectSchema_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObjectSchema_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObjectStore.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObjectStore.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMObject_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMObject_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMProperty_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMProperty_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMRealmConfiguration_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMRealmConfiguration_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMRealm_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMRealm_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMResults_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMResults_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "RLMSchema_Private.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Realm/include/realm/RLMSchema_Private.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RealmSwift-Swift.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RealmSwift-umbrella.h",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/hypersonicstab/Development/PeriodicTable/Build/Intermediates/Pods.build/Debug-iphonesimulator/RealmSwift.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.49.6 clang-602.0.49)"
+options: "81645282e09671aef5830e80c8c4d454"
+inputs: 
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/ViewController.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicViewController.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/AppDelegate.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewCell.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailView.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicModel.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/TemperatureSliderViewController.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/SeparateCollectionViewCell.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/Element.swift"
+- "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailViewController.swift"

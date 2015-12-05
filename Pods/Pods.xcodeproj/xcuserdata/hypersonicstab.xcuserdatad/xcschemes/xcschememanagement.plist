@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-PeriodicTable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Pods-PeriodicTableTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8D9210EE29DDDA15B0CA4862FCB8026C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4C3548D7B26B2D4636CB1F44180C522</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAC46974A73B136B9A3DE2880B5ECF45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6840667C8F2A7A6685CD3146B0090B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
