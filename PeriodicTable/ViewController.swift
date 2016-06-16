@@ -25,7 +25,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         self.view.addSubview(periodicView.view)
         self.view.addSubview(detailView.view)
         temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
-        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: 530)
+        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/1.5)
         temperatureSlider.minimumValue = -273
         temperatureSlider.maximumValue = 6000
         temperatureSlider.value = 25

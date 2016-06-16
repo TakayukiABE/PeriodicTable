@@ -28,8 +28,9 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewWillLayoutSubviews() {
         let frame = self.view.frame
-        self.periodicTable.frame = CGRectMake(frame.origin.x + 25, 50, frame.size.width - 50, frame.size.height - 300)
-        self.periodicTable.bounds = CGRectInset(self.view.frame, 25.0, 156)
+//        self.periodicTable.frame = CGRectMake(frame.origin.x + 25, 50, frame.size.width - 50, frame.size.height - 300)
+        self.periodicTable.frame = CGRectMake(frame.origin.x + 25, 50, frame.size.width - 50, frame.size.height / 2.5)
+        self.periodicTable.bounds = CGRectInset(self.view.frame, 25.0, 300)
         self.periodicTable.layer.cornerRadius = 12
     }
     
