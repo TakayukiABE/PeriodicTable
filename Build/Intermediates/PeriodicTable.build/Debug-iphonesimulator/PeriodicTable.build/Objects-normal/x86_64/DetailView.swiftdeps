@@ -1,45 +1,419 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "DetailView"
-nominals:
+provides-nominal:
 - "C13PeriodicTable10DetailView"
-class-members:
-- "affinity"
-- "number"
+provides-member:
+- ["C13PeriodicTable10DetailView", ""]
+provides-dynamic-lookup:
 - "symbol"
-- "createInstance"
-- "meltingPoint"
-- "massNumber"
 - "category"
-- "name"
+- "meltingPoint"
 - "ionization"
+- "massNumber"
+- "name"
 - "boilingPoint"
+- "number"
+- "affinity"
 - "orbit"
-top-level:
-- "UILabel"
-- "UIView"
-- !private "UINib"
+- "createInstance"
+depends-top-level:
 - "DetailView"
+- "UILabel"
 - !private "StringLiteralType"
-member-access:
-- "PSs9AnyObject"
-- "CSo11UIResponder"
-- "CSo6UIView"
-- !private "CSo5UINib"
-- "C13PeriodicTable10DetailView"
-- "CSo8NSObject"
+- !private "UINib"
+- "UIView"
+depends-member:
+- !private ["Ps9AnyObject", "UINib"]
+- ["Ps9AnyObject", "affinity"]
+- ["Ps9AnyObject", "boilingPoint"]
+- ["Ps9AnyObject", "category"]
+- ["Ps9AnyObject", "createInstance"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateWithOwner"]
+- ["Ps9AnyObject", "ionization"]
+- ["Ps9AnyObject", "massNumber"]
+- ["Ps9AnyObject", "meltingPoint"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "number"]
+- ["Ps9AnyObject", "orbit"]
+- ["Ps9AnyObject", "symbol"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Index"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Ps11CVarArgType", "UINib"]
+- ["Ps11CVarArgType", "affinity"]
+- ["Ps11CVarArgType", "boilingPoint"]
+- ["Ps11CVarArgType", "category"]
+- ["Ps11CVarArgType", "createInstance"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateWithOwner"]
+- ["Ps11CVarArgType", "ionization"]
+- ["Ps11CVarArgType", "massNumber"]
+- ["Ps11CVarArgType", "meltingPoint"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "number"]
+- ["Ps11CVarArgType", "orbit"]
+- ["Ps11CVarArgType", "symbol"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "UINib"]
+- ["Ps28CustomDebugStringConvertible", "affinity"]
+- ["Ps28CustomDebugStringConvertible", "boilingPoint"]
+- ["Ps28CustomDebugStringConvertible", "category"]
+- ["Ps28CustomDebugStringConvertible", "createInstance"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateWithOwner"]
+- ["Ps28CustomDebugStringConvertible", "ionization"]
+- ["Ps28CustomDebugStringConvertible", "massNumber"]
+- ["Ps28CustomDebugStringConvertible", "meltingPoint"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "number"]
+- ["Ps28CustomDebugStringConvertible", "orbit"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "symbol"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "UINib"]
+- ["Ps23CustomStringConvertible", "affinity"]
+- ["Ps23CustomStringConvertible", "boilingPoint"]
+- ["Ps23CustomStringConvertible", "category"]
+- ["Ps23CustomStringConvertible", "createInstance"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateWithOwner"]
+- ["Ps23CustomStringConvertible", "ionization"]
+- ["Ps23CustomStringConvertible", "massNumber"]
+- ["Ps23CustomStringConvertible", "meltingPoint"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "number"]
+- ["Ps23CustomStringConvertible", "orbit"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "symbol"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C13PeriodicTable10DetailView", "DetailView"]
+- ["C13PeriodicTable10DetailView", "UILabel"]
+- !private ["C13PeriodicTable10DetailView", "UINib"]
+- ["C13PeriodicTable10DetailView", "affinity"]
+- ["C13PeriodicTable10DetailView", "boilingPoint"]
+- ["C13PeriodicTable10DetailView", "category"]
+- ["C13PeriodicTable10DetailView", "createInstance"]
+- ["C13PeriodicTable10DetailView", "deinit"]
+- ["C13PeriodicTable10DetailView", "init"]
+- ["C13PeriodicTable10DetailView", "ionization"]
+- ["C13PeriodicTable10DetailView", "massNumber"]
+- ["C13PeriodicTable10DetailView", "meltingPoint"]
+- ["C13PeriodicTable10DetailView", "name"]
+- ["C13PeriodicTable10DetailView", "number"]
+- ["C13PeriodicTable10DetailView", "orbit"]
+- ["C13PeriodicTable10DetailView", "symbol"]
+- !private ["Ps9Equatable", "UINib"]
+- ["Ps9Equatable", "affinity"]
+- ["Ps9Equatable", "boilingPoint"]
+- ["Ps9Equatable", "category"]
+- ["Ps9Equatable", "createInstance"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateWithOwner"]
+- ["Ps9Equatable", "ionization"]
+- ["Ps9Equatable", "massNumber"]
+- ["Ps9Equatable", "meltingPoint"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "number"]
+- ["Ps9Equatable", "orbit"]
+- ["Ps9Equatable", "symbol"]
+- ["Ps9Equatable", ""]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "UINib"]
+- ["Ps8Hashable", "affinity"]
+- ["Ps8Hashable", "boilingPoint"]
+- ["Ps8Hashable", "category"]
+- ["Ps8Hashable", "createInstance"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateWithOwner"]
+- ["Ps8Hashable", "ionization"]
+- ["Ps8Hashable", "massNumber"]
+- ["Ps8Hashable", "meltingPoint"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "number"]
+- ["Ps8Hashable", "orbit"]
+- ["Ps8Hashable", "symbol"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "UINib"]
+- ["PSo8NSCoding", "affinity"]
+- ["PSo8NSCoding", "boilingPoint"]
+- ["PSo8NSCoding", "category"]
+- ["PSo8NSCoding", "createInstance"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "ionization"]
+- ["PSo8NSCoding", "massNumber"]
+- ["PSo8NSCoding", "meltingPoint"]
+- ["PSo8NSCoding", "name"]
+- ["PSo8NSCoding", "number"]
+- ["PSo8NSCoding", "orbit"]
+- ["PSo8NSCoding", "symbol"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "DetailView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "affinity"]
+- ["CSo8NSObject", "boilingPoint"]
+- ["CSo8NSObject", "category"]
+- ["CSo8NSObject", "createInstance"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateWithOwner"]
+- ["CSo8NSObject", "ionization"]
+- ["CSo8NSObject", "massNumber"]
+- ["CSo8NSObject", "meltingPoint"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "number"]
+- ["CSo8NSObject", "orbit"]
+- ["CSo8NSObject", "symbol"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
+- ["PSo16NSObjectProtocol", "affinity"]
+- ["PSo16NSObjectProtocol", "boilingPoint"]
+- ["PSo16NSObjectProtocol", "category"]
+- ["PSo16NSObjectProtocol", "createInstance"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateWithOwner"]
+- ["PSo16NSObjectProtocol", "ionization"]
+- ["PSo16NSObjectProtocol", "massNumber"]
+- ["PSo16NSObjectProtocol", "meltingPoint"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "number"]
+- ["PSo16NSObjectProtocol", "orbit"]
+- ["PSo16NSObjectProtocol", "symbol"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["PSo29UIAccessibilityIdentification", "UINib"]
+- ["PSo29UIAccessibilityIdentification", "affinity"]
+- ["PSo29UIAccessibilityIdentification", "boilingPoint"]
+- ["PSo29UIAccessibilityIdentification", "category"]
+- ["PSo29UIAccessibilityIdentification", "createInstance"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "ionization"]
+- ["PSo29UIAccessibilityIdentification", "massNumber"]
+- ["PSo29UIAccessibilityIdentification", "meltingPoint"]
+- ["PSo29UIAccessibilityIdentification", "name"]
+- ["PSo29UIAccessibilityIdentification", "number"]
+- ["PSo29UIAccessibilityIdentification", "orbit"]
+- ["PSo29UIAccessibilityIdentification", "symbol"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UINib"]
+- ["PSo12UIAppearance", "affinity"]
+- ["PSo12UIAppearance", "boilingPoint"]
+- ["PSo12UIAppearance", "category"]
+- ["PSo12UIAppearance", "createInstance"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "ionization"]
+- ["PSo12UIAppearance", "massNumber"]
+- ["PSo12UIAppearance", "meltingPoint"]
+- ["PSo12UIAppearance", "name"]
+- ["PSo12UIAppearance", "number"]
+- ["PSo12UIAppearance", "orbit"]
+- ["PSo12UIAppearance", "symbol"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
+- ["PSo21UIAppearanceContainer", "affinity"]
+- ["PSo21UIAppearanceContainer", "boilingPoint"]
+- ["PSo21UIAppearanceContainer", "category"]
+- ["PSo21UIAppearanceContainer", "createInstance"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "ionization"]
+- ["PSo21UIAppearanceContainer", "massNumber"]
+- ["PSo21UIAppearanceContainer", "meltingPoint"]
+- ["PSo21UIAppearanceContainer", "name"]
+- ["PSo21UIAppearanceContainer", "number"]
+- ["PSo21UIAppearanceContainer", "orbit"]
+- ["PSo21UIAppearanceContainer", "symbol"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "UINib"]
+- ["PSo17UICoordinateSpace", "affinity"]
+- ["PSo17UICoordinateSpace", "boilingPoint"]
+- ["PSo17UICoordinateSpace", "category"]
+- ["PSo17UICoordinateSpace", "createInstance"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "ionization"]
+- ["PSo17UICoordinateSpace", "massNumber"]
+- ["PSo17UICoordinateSpace", "meltingPoint"]
+- ["PSo17UICoordinateSpace", "name"]
+- ["PSo17UICoordinateSpace", "number"]
+- ["PSo17UICoordinateSpace", "orbit"]
+- ["PSo17UICoordinateSpace", "symbol"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UINib"]
+- ["PSo13UIDynamicItem", "affinity"]
+- ["PSo13UIDynamicItem", "boilingPoint"]
+- ["PSo13UIDynamicItem", "category"]
+- ["PSo13UIDynamicItem", "createInstance"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "ionization"]
+- ["PSo13UIDynamicItem", "massNumber"]
+- ["PSo13UIDynamicItem", "meltingPoint"]
+- ["PSo13UIDynamicItem", "name"]
+- ["PSo13UIDynamicItem", "number"]
+- ["PSo13UIDynamicItem", "orbit"]
+- ["PSo13UIDynamicItem", "symbol"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
+- ["PSo18UIFocusEnvironment", "affinity"]
+- ["PSo18UIFocusEnvironment", "boilingPoint"]
+- ["PSo18UIFocusEnvironment", "category"]
+- ["PSo18UIFocusEnvironment", "createInstance"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "ionization"]
+- ["PSo18UIFocusEnvironment", "massNumber"]
+- ["PSo18UIFocusEnvironment", "meltingPoint"]
+- ["PSo18UIFocusEnvironment", "name"]
+- ["PSo18UIFocusEnvironment", "number"]
+- ["PSo18UIFocusEnvironment", "orbit"]
+- ["PSo18UIFocusEnvironment", "symbol"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo5UINib", "init"]
+- !private ["CSo5UINib", "instantiateWithOwner"]
+- ["CSo11UIResponder", "DetailView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "affinity"]
+- ["CSo11UIResponder", "boilingPoint"]
+- ["CSo11UIResponder", "category"]
+- ["CSo11UIResponder", "createInstance"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "ionization"]
+- ["CSo11UIResponder", "massNumber"]
+- ["CSo11UIResponder", "meltingPoint"]
+- ["CSo11UIResponder", "name"]
+- ["CSo11UIResponder", "number"]
+- ["CSo11UIResponder", "orbit"]
+- ["CSo11UIResponder", "symbol"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
+- ["PSo18UITraitEnvironment", "affinity"]
+- ["PSo18UITraitEnvironment", "boilingPoint"]
+- ["PSo18UITraitEnvironment", "category"]
+- ["PSo18UITraitEnvironment", "createInstance"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "ionization"]
+- ["PSo18UITraitEnvironment", "massNumber"]
+- ["PSo18UITraitEnvironment", "meltingPoint"]
+- ["PSo18UITraitEnvironment", "name"]
+- ["PSo18UITraitEnvironment", "number"]
+- ["PSo18UITraitEnvironment", "orbit"]
+- ["PSo18UITraitEnvironment", "symbol"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "DetailView"]
+- ["CSo6UIView", "UILabel"]
+- !private ["CSo6UIView", "UINib"]
+- ["CSo6UIView", "affinity"]
+- ["CSo6UIView", "boilingPoint"]
+- ["CSo6UIView", "category"]
+- ["CSo6UIView", "createInstance"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "ionization"]
+- ["CSo6UIView", "massNumber"]
+- ["CSo6UIView", "meltingPoint"]
+- ["CSo6UIView", "name"]
+- ["CSo6UIView", "number"]
+- ["CSo6UIView", "orbit"]
+- ["CSo6UIView", "symbol"]
+- ["CSo6UIView", ""]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "UINib"]
+- ["Ps12_Reflectable", "affinity"]
+- ["Ps12_Reflectable", "boilingPoint"]
+- ["Ps12_Reflectable", "category"]
+- ["Ps12_Reflectable", "createInstance"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "ionization"]
+- ["Ps12_Reflectable", "massNumber"]
+- ["Ps12_Reflectable", "meltingPoint"]
+- ["Ps12_Reflectable", "name"]
+- ["Ps12_Reflectable", "number"]
+- ["Ps12_Reflectable", "orbit"]
+- !private ["Ps12_Reflectable", "subscript"]
+- ["Ps12_Reflectable", "symbol"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
 - !private "Sa"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
+- !private "Ps23ArrayLiteralConvertible"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C13PeriodicTable10DetailView"
+- "Ps9Equatable"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo5UINib"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"
@@ -53,7 +427,7 @@ cross-module:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectStore.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
-- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMListBase.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMArray_Private.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMAccessor.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMSchema.h"
@@ -67,7 +441,6 @@ cross-module:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObject.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMMigration.h"
-- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMDefines.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMCollection.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMArray.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm.h"
@@ -75,3 +448,4 @@ cross-module:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "70bff928cd88e75ab8f6902c4b77996d"

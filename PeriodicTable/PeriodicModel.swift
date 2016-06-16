@@ -17,9 +17,9 @@ class PeriodicModel: NSObject {
 
     override init() {
         super.init()
-        let realm = Realm()
+        let realm = try! Realm()
         if realm.objects(Element).count != 122 {
-            realm.write{
+            try! realm.write{
                 realm.deleteAll()
             }
 
@@ -270,14 +270,14 @@ class PeriodicModel: NSObject {
             setElementProperties(Lr, symbol: "Lr", name: "ローレンシウム", number: 103, massNumber: 262, state: "個体", meltingPoint: 1627, boilingPoint: 9999, ionization: 470, affinity: 9999, orbit: "K2 L8 M18N31O32P8 Q3", category: "アクチノイド", group: 17, period: 9)
                 
             elements = [empty, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen ,seventeen, eighteen, H, Li, Na, K, Rb, Cs, Fr, Be, Mg, Ca, Sr, Ba, Ra, Sc, Y, La, Ac, Ti, Zr, Hf, V, Nb, Ta,Cr, Mo, W, Mn, Tc, Re, Fe, Ru, Os, Co, Rh, Ir, Ni, Pd, Pt, Cu, Ag, Au, Zn, Cd, Hg, B, Al, Ga, In, Tl, C, Si, Ge, Sn, Pb, N, P, As, Sb, Bi, O, S, Se, Te, Po, F, Cl, Br, I, At, He, Ne, Ar, Kr, Xe, Rn, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu, Th, Pa, U, Np, Pu, Am, Cm, Bk, Cf, Es, Fm, Md, No, Lr]
-            println(elements.count)
-            realm.write {
+            print(elements.count)
+            try! realm.write {
                 for i in 0...elements.count-1 {
                     realm.add(elements[i])
                 }
             }
         }
-                    println(realm.objects(Element))
+                    print(realm.objects(Element))
     }
     func setElementProperties(element: Element, symbol: String, name: String, number: Int, massNumber: Double,state: String, meltingPoint: Int, boilingPoint: Int, ionization: Double, affinity: Int, orbit: String, category: String, group: Int, period: Int) {
         element.symbol = symbol
@@ -295,7 +295,7 @@ class PeriodicModel: NSObject {
         element.period = period
     }
     func readElement(group: Int, period: Int, cell: [Int]) -> Element {
-        let realm = Realm()
+        let realm = try! Realm()
         let elements = realm.objects(Element)
         if cell[0] == 3 {
             if cell[1] == 6 {

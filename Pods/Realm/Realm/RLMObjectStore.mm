@@ -76,33 +76,39 @@ void RLMClearAccessorCache() {
     [s_accessorSchema removeAllObjects];
 }
 
-static inline void RLMVerifyInWriteTransaction(__unsafe_unretained RLMRealm *const realm) {
-    // if realm is not writable throw
-    if (!realm.inWriteTransaction) {
-        @throw RLMException(@"Can only add, remove, or create objects in a Realm in a write transaction - call beginWriteTransaction on an RLMRealm instance first.");
+static inline void RLMVerifyRealmRead(__unsafe_unretained RLMRealm *const realm) {
+    if (!realm) {
+        @throw RLMException(@"Realm must not be nil");
     }
     [realm verifyThread];
 }
 
+static inline void RLMVerifyInWriteTransaction(__unsafe_unretained RLMRealm *const realm) {
+    RLMVerifyRealmRead(realm);
+    // if realm is not writable throw
+    if (!realm.inWriteTransaction) {
+        @throw RLMException(@"Can only add, remove, or create objects in a Realm in a write transaction - call beginWriteTransaction on an RLMRealm instance first.");
+    }
+}
+
 void RLMInitializeSwiftAccessorGenerics(__unsafe_unretained RLMObjectBase *const object) {
-    if (!object || !object->_row || !object->_objectSchema.isSwiftClass) {
+    if (!object || !object->_row || !object->_objectSchema->_isSwiftClass) {
         return;
     }
 
-    static Class s_swiftObjectClass = NSClassFromString(@"RealmSwift.Object");
-    if (![object isKindOfClass:s_swiftObjectClass]) {
-        return; // Is a Swift class using the obj-c API
-    }
-
-    for (RLMProperty *prop in object->_objectSchema.properties) {
-        if (prop.type == RLMPropertyTypeArray) {
+    for (RLMProperty *prop in object->_objectSchema.swiftGenericProperties) {
+        if (prop->_type == RLMPropertyTypeArray) {
             RLMArray *array = [RLMArrayLinkView arrayWithObjectClassName:prop.objectClassName
                                                                     view:object->_row.get_linklist(prop.column)
                                                                    realm:object->_realm
                                                                      key:prop.name
                                                             parentSchema:object->_objectSchema];
             [RLMObjectUtilClass(YES) initializeListProperty:object property:prop array:array];
-        } else if (prop.swiftIvar) {
+        }
+        else if (prop.type == RLMPropertyTypeLinkingObjects) {
+            [RLMObjectUtilClass(YES) initializeLinkingObjectsProperty:object property:prop];
+        }
+        else {
             [RLMObjectUtilClass(YES) initializeOptionalProperty:object property:prop];
         }
     }
@@ -146,7 +152,7 @@ void RLMAddObjectToRealm(__unsafe_unretained RLMObjectBase *const object,
                          bool createOrUpdate) {
     RLMVerifyInWriteTransaction(realm);
 
-    // verify that object is standalone
+    // verify that object is unmanaged
     if (object.invalidated) {
         @throw RLMException(@"Adding a deleted or invalidated object to a Realm is not permitted");
     }
@@ -176,7 +182,7 @@ void RLMAddObjectToRealm(__unsafe_unretained RLMObjectBase *const object,
 
     // get or create row
     bool created;
-    auto primaryGetter = [=](__unsafe_unretained RLMProperty *const p) { return [object valueForKey:p.getterName]; };
+    auto primaryGetter = [=](__unsafe_unretained RLMProperty *const p) { return [object valueForKey:p.name]; };
     object->_row = (*schema.table)[RLMCreateOrGetRowForObject(schema, primaryGetter, createOrUpdate, created)];
 
     RLMCreationOptions creationOptions = RLMCreationOptionsPromoteStandalone;
@@ -200,7 +206,6 @@ void RLMAddObjectToRealm(__unsafe_unretained RLMObjectBase *const object,
             value = [object valueForKey:prop.getterName];
         }
 
-        // FIXME: Add condition to check for Mixed once it can support a nil value.
         if (!value && !prop.optional) {
             @throw RLMException(@"No value or default value specified for property '%@' in '%@'",
                                 prop.name, schema.className);
@@ -277,7 +282,6 @@ static void RLMValidateValueForProperty(__unsafe_unretained id const obj,
         case RLMPropertyTypeFloat:
         case RLMPropertyTypeDouble:
         case RLMPropertyTypeData:
-        case RLMPropertyTypeAny:
             if (!RLMIsObjectValidForProperty(obj, prop)) {
                 @throw RLMException(@"Invalid value '%@' for property '%@'", obj, prop.name);
             }
@@ -290,7 +294,7 @@ static void RLMValidateValueForProperty(__unsafe_unretained id const obj,
         case RLMPropertyTypeArray: {
             if (obj != nil && obj != NSNull.null) {
                 if (![obj conformsToProtocol:@protocol(NSFastEnumeration)]) {
-                    @throw  RLMException(@"Array property value (%@) is not enumerable.", obj);
+                    @throw RLMException(@"Array property value (%@) is not enumerable.", obj);
                 }
                 if (validateNested) {
                     id<NSFastEnumeration> array = obj;
@@ -301,6 +305,9 @@ static void RLMValidateValueForProperty(__unsafe_unretained id const obj,
             }
             break;
         }
+        case RLMPropertyTypeAny:
+        case RLMPropertyTypeLinkingObjects:
+            @throw RLMException(@"Invalid value '%@' for property '%@'", obj, prop.name);
     }
 }
 
@@ -355,7 +362,7 @@ RLMObjectBase *RLMCreateObjectInRealmWithValue(RLMRealm *realm, NSString *classN
     RLMObjectSchema *objectSchema = [realm.schema schemaForClassName:className];
     if (!objectSchema) {
         @throw RLMException(@"Object type '%@' is not persisted in the Realm. "
-                             @"If using a custom `objectClasses` / `obejctTypes` array in your configuration, "
+                             @"If using a custom `objectClasses` / `objectTypes` array in your configuration, "
                              @"add `%@` to the list of `objectClasses` / `objectTypes`.",
                              className, className);
     }
@@ -371,7 +378,7 @@ RLMObjectBase *RLMCreateObjectInRealmWithValue(RLMRealm *realm, NSString *classN
         object->_row = (*objectSchema.table)[RLMCreateOrGetRowForObject(objectSchema, primaryGetter, createOrUpdate, created)];
 
         // populate
-        NSArray *props = objectSchema.properties;
+        NSArray *props = objectSchema.propertiesInDeclaredOrder;
         for (NSUInteger i = 0; i < array.count; i++) {
             RLMProperty *prop = props[i];
             // skip primary key when updating since it doesn't change
@@ -449,7 +456,7 @@ void RLMDeleteAllObjectsFromRealm(RLMRealm *realm) {
 }
 
 RLMResults *RLMGetObjects(RLMRealm *realm, NSString *objectClassName, NSPredicate *predicate) {
-    [realm verifyThread];
+    RLMVerifyRealmRead(realm);
 
     // create view from table and predicate
     RLMObjectSchema *objectSchema = realm.schema[objectClassName];
@@ -473,7 +480,7 @@ RLMResults *RLMGetObjects(RLMRealm *realm, NSString *objectClassName, NSPredicat
 }
 
 id RLMGetObject(RLMRealm *realm, NSString *objectClassName, id key) {
-    [realm verifyThread];
+    RLMVerifyRealmRead(realm);
 
     RLMObjectSchema *objectSchema = realm.schema[objectClassName];
 

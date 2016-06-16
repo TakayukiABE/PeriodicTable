@@ -7,7 +7,7 @@
 		<key>Pods-PeriodicTable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Pods-PeriodicTableTests.xcscheme</key>
 		<dict>
@@ -27,22 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D9210EE29DDDA15B0CA4862FCB8026C</key>
+		<key>08AC4B14EDA7069906C8C6EC172377D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4C3548D7B26B2D4636CB1F44180C522</key>
+		<key>0D29695CE823D1A4CBD5AC9551558EE6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAC46974A73B136B9A3DE2880B5ECF45</key>
+		<key>55F72ACEA25B749197062EEB92DA0068</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F6840667C8F2A7A6685CD3146B0090B3</key>
+		<key>8534952CA1F2B39FACD75586AD61D15A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
