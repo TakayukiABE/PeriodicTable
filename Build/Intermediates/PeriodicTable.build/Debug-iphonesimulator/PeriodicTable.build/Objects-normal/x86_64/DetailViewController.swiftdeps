@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable20DetailViewController", ""]
 provides-dynamic-lookup:
+- "detailView"
 - "viewDidLoad"
 - "viewDidAppear"
-- "detailView"
 depends-top-level:
-- "DetailView"
-- "UIViewController"
-- !private "CGRectMake"
 - "Bool"
 - "DetailViewController"
+- "UIViewController"
+- !private "CGRectMake"
+- "DetailView"
 - !private "UIColor"
 - !private "BooleanLiteralType"
 depends-member:

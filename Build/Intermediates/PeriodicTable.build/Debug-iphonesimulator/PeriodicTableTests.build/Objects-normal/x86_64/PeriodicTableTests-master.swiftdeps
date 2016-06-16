@@ -1,5 +1,5 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "806a6b279ed5aef34ed6d65910594fcc"
-build_time: [519363202, 705679000]
+build_time: [519364761, 703638000]
 inputs:
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTableTests/PeriodicTableTests.swift": [476597246, 0]
