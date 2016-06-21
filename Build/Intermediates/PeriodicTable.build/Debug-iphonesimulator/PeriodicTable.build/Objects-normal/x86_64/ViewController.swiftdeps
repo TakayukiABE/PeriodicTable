@@ -6,59 +6,63 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
-- "temperatureSlider"
-- "viewDidLoad"
-- "newValue"
+- "cursors"
 - "reloadDetailView"
 - "periodicView"
-- "changeHand"
-- "didTapOnCursor"
 - "temperature"
-- "changeLeftHand"
-- "cursors"
+- "didTapOnCursor"
 - "didChangeValue"
-- "changeRightHand"
+- "viewDidLoad"
+- "newValue"
+- "changeHand"
 - "value"
-- "detailView"
+- "periodicCollectionView"
 - "handSwitch"
+- "changeRightHand"
+- "temperatureSlider"
+- "changeLeftHand"
 - "initCursors"
+- "detailView"
 depends-top-level:
 - "Element"
-- "DetailViewDelegate"
-- !private "UIControlEvents"
-- "UISwitch"
-- "UIViewController"
+- "UIButton"
+- !private "+"
+- !private "abs"
+- "UISlider"
+- "ViewController"
+- "PeriodicViewController"
 - !private "CGRectMake"
 - !private "CGPoint"
-- "UISlider"
-- "Int"
-- !private "/"
-- !private "-"
-- !private "UIFont"
-- !private "AnyObject"
-- !private "abs"
-- "ViewController"
-- !private "CGFloat"
-- !private "..."
-- "PeriodicViewController"
-- !private "BooleanLiteralType"
-- !private "UnicodeScalarType"
 - !private "Array"
-- !private "CAGradientLayer"
-- !private "NSTextAlignment"
+- !private "AnyObject"
 - "UILabel"
-- "UIButton"
-- !private "UIView"
-- !private "NSTimeInterval"
-- !private "=="
-- !private "+"
-- !private "StringLiteralType"
-- "DetailViewController"
-- !private "NSArray"
-- !private "||"
-- !private "UIColor"
+- !private "PeriodicCollectionViewDelegate"
+- !private "UIFont"
+- "DetailViewDelegate"
+- !private "UIControlEvents"
 - !private "Void"
+- !private "/"
+- "UIViewController"
+- "Int"
+- !private "NSTextAlignment"
+- !private "BooleanLiteralType"
+- !private "-"
+- "UICollectionView"
+- "UISwitch"
+- !private "UIColor"
+- !private "||"
+- !private "..."
+- !private "UnicodeScalarType"
+- !private "=="
+- !private "NSArray"
+- !private "NSTimeInterval"
+- !private "CGFloat"
+- "DetailViewController"
+- !private "PeriodicCollectionViewDataSource"
+- !private "StringLiteralType"
+- !private "CAGradientLayer"
 - !private ">"
+- !private "UIView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -77,6 +81,8 @@ depends-member:
 - ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSTextAlignment"]
 - !private ["Ps9AnyObject", "NSTimeInterval"]
+- !private ["Ps9AnyObject", "PeriodicCollectionViewDataSource"]
+- !private ["Ps9AnyObject", "PeriodicCollectionViewDelegate"]
 - ["Ps9AnyObject", "PeriodicViewController"]
 - ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -108,6 +114,8 @@ depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "cursors"]
 - !private ["Ps9AnyObject", "cyanColor"]
+- !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "detailView"]
 - ["Ps9AnyObject", "didChangeValue"]
 - ["Ps9AnyObject", "didTapOnCursor"]
@@ -130,6 +138,7 @@ depends-member:
 - !private ["Ps9AnyObject", "on"]
 - !private ["Ps9AnyObject", "onTintColor"]
 - !private ["Ps9AnyObject", "orbit"]
+- ["Ps9AnyObject", "periodicCollectionView"]
 - !private ["Ps9AnyObject", "periodicTable"]
 - ["Ps9AnyObject", "periodicView"]
 - !private ["Ps9AnyObject", "position"]
@@ -236,6 +245,8 @@ depends-member:
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSTextAlignment"]
 - !private ["Ps11CVarArgType", "NSTimeInterval"]
+- !private ["Ps11CVarArgType", "PeriodicCollectionViewDataSource"]
+- !private ["Ps11CVarArgType", "PeriodicCollectionViewDelegate"]
 - ["Ps11CVarArgType", "PeriodicViewController"]
 - !private ["Ps11CVarArgType", "Stride"]
 - ["Ps11CVarArgType", "UIButton"]
@@ -269,6 +280,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "cornerRadius"]
 - ["Ps11CVarArgType", "cursors"]
 - !private ["Ps11CVarArgType", "cyanColor"]
+- !private ["Ps11CVarArgType", "dataSource"]
+- !private ["Ps11CVarArgType", "delegate"]
 - ["Ps11CVarArgType", "detailView"]
 - ["Ps11CVarArgType", "didChangeValue"]
 - ["Ps11CVarArgType", "didTapOnCursor"]
@@ -291,6 +304,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "on"]
 - !private ["Ps11CVarArgType", "onTintColor"]
 - !private ["Ps11CVarArgType", "orbit"]
+- ["Ps11CVarArgType", "periodicCollectionView"]
 - !private ["Ps11CVarArgType", "periodicTable"]
 - ["Ps11CVarArgType", "periodicView"]
 - !private ["Ps11CVarArgType", "position"]
@@ -341,6 +355,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "IntegerLiteralType"]
 - !private ["Ps28CustomDebugStringConvertible", "NSTextAlignment"]
 - !private ["Ps28CustomDebugStringConvertible", "NSTimeInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "PeriodicCollectionViewDataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "PeriodicCollectionViewDelegate"]
 - ["Ps28CustomDebugStringConvertible", "PeriodicViewController"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - ["Ps28CustomDebugStringConvertible", "UIButton"]
@@ -375,6 +391,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "cursors"]
 - !private ["Ps28CustomDebugStringConvertible", "cyanColor"]
+- !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "detailView"]
 - ["Ps28CustomDebugStringConvertible", "didChangeValue"]
 - ["Ps28CustomDebugStringConvertible", "didTapOnCursor"]
@@ -397,6 +415,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "on"]
 - !private ["Ps28CustomDebugStringConvertible", "onTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "orbit"]
+- ["Ps28CustomDebugStringConvertible", "periodicCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "periodicTable"]
 - ["Ps28CustomDebugStringConvertible", "periodicView"]
 - !private ["Ps28CustomDebugStringConvertible", "position"]
@@ -435,6 +454,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSTextAlignment"]
 - !private ["Ps23CustomStringConvertible", "NSTimeInterval"]
+- !private ["Ps23CustomStringConvertible", "PeriodicCollectionViewDataSource"]
+- !private ["Ps23CustomStringConvertible", "PeriodicCollectionViewDelegate"]
 - ["Ps23CustomStringConvertible", "PeriodicViewController"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
@@ -472,6 +493,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "cursors"]
 - !private ["Ps23CustomStringConvertible", "cyanColor"]
+- !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "detailView"]
 - ["Ps23CustomStringConvertible", "didChangeValue"]
 - ["Ps23CustomStringConvertible", "didTapOnCursor"]
@@ -494,6 +517,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "on"]
 - !private ["Ps23CustomStringConvertible", "onTintColor"]
 - !private ["Ps23CustomStringConvertible", "orbit"]
+- ["Ps23CustomStringConvertible", "periodicCollectionView"]
 - !private ["Ps23CustomStringConvertible", "periodicTable"]
 - ["Ps23CustomStringConvertible", "periodicView"]
 - !private ["Ps23CustomStringConvertible", "position"]
@@ -540,6 +564,8 @@ depends-member:
 - ["P13PeriodicTable18DetailViewDelegate", "Int"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "NSTextAlignment"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "NSTimeInterval"]
+- !private ["P13PeriodicTable18DetailViewDelegate", "PeriodicCollectionViewDataSource"]
+- !private ["P13PeriodicTable18DetailViewDelegate", "PeriodicCollectionViewDelegate"]
 - ["P13PeriodicTable18DetailViewDelegate", "PeriodicViewController"]
 - ["P13PeriodicTable18DetailViewDelegate", "UIButton"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIColor"]
@@ -560,6 +586,7 @@ depends-member:
 - !private ["P13PeriodicTable18DetailViewDelegate", "handSwitch"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "initCursors"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "newValue"]
+- !private ["P13PeriodicTable18DetailViewDelegate", "periodicCollectionView"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "periodicView"]
 - ["P13PeriodicTable18DetailViewDelegate", "reloadDetailView"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "temperature"]
@@ -595,6 +622,8 @@ depends-member:
 - !private ["Ps9Equatable", "NSTextAlignment"]
 - !private ["Ps9Equatable", "NSTimeInterval"]
 - !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "PeriodicCollectionViewDataSource"]
+- !private ["Ps9Equatable", "PeriodicCollectionViewDelegate"]
 - ["Ps9Equatable", "PeriodicViewController"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "TouchUpInside"]
@@ -631,6 +660,8 @@ depends-member:
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "cursors"]
 - !private ["Ps9Equatable", "cyanColor"]
+- !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "detailView"]
 - ["Ps9Equatable", "didChangeValue"]
 - ["Ps9Equatable", "didTapOnCursor"]
@@ -656,6 +687,7 @@ depends-member:
 - !private ["Ps9Equatable", "onTintColor"]
 - !private ["Ps9Equatable", "orbit"]
 - !private ["Ps9Equatable", "origin"]
+- ["Ps9Equatable", "periodicCollectionView"]
 - !private ["Ps9Equatable", "periodicTable"]
 - ["Ps9Equatable", "periodicView"]
 - !private ["Ps9Equatable", "position"]
@@ -709,6 +741,8 @@ depends-member:
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSTextAlignment"]
 - !private ["Ps8Hashable", "NSTimeInterval"]
+- !private ["Ps8Hashable", "PeriodicCollectionViewDataSource"]
+- !private ["Ps8Hashable", "PeriodicCollectionViewDelegate"]
 - ["Ps8Hashable", "PeriodicViewController"]
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "UIButton"]
@@ -743,6 +777,8 @@ depends-member:
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "cursors"]
 - !private ["Ps8Hashable", "cyanColor"]
+- !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "detailView"]
 - ["Ps8Hashable", "didChangeValue"]
 - ["Ps8Hashable", "didTapOnCursor"]
@@ -765,6 +801,7 @@ depends-member:
 - !private ["Ps8Hashable", "on"]
 - !private ["Ps8Hashable", "onTintColor"]
 - !private ["Ps8Hashable", "orbit"]
+- ["Ps8Hashable", "periodicCollectionView"]
 - !private ["Ps8Hashable", "periodicTable"]
 - ["Ps8Hashable", "periodicView"]
 - !private ["Ps8Hashable", "position"]
@@ -865,6 +902,8 @@ depends-member:
 - ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - !private ["PSo8NSCoding", "NSTimeInterval"]
+- !private ["PSo8NSCoding", "PeriodicCollectionViewDataSource"]
+- !private ["PSo8NSCoding", "PeriodicCollectionViewDelegate"]
 - ["PSo8NSCoding", "PeriodicViewController"]
 - ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -896,6 +935,8 @@ depends-member:
 - !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "cursors"]
 - !private ["PSo8NSCoding", "cyanColor"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "detailView"]
 - ["PSo8NSCoding", "didChangeValue"]
 - ["PSo8NSCoding", "didTapOnCursor"]
@@ -918,6 +959,7 @@ depends-member:
 - !private ["PSo8NSCoding", "on"]
 - !private ["PSo8NSCoding", "onTintColor"]
 - !private ["PSo8NSCoding", "orbit"]
+- ["PSo8NSCoding", "periodicCollectionView"]
 - !private ["PSo8NSCoding", "periodicTable"]
 - ["PSo8NSCoding", "periodicView"]
 - !private ["PSo8NSCoding", "position"]
@@ -956,6 +998,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTimeInterval"]
+- !private ["PSo26NSExtensionRequestHandling", "PeriodicCollectionViewDataSource"]
+- !private ["PSo26NSExtensionRequestHandling", "PeriodicCollectionViewDelegate"]
 - ["PSo26NSExtensionRequestHandling", "PeriodicViewController"]
 - ["PSo26NSExtensionRequestHandling", "UIButton"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -978,6 +1022,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "initCursors"]
 - ["PSo26NSExtensionRequestHandling", "newValue"]
+- ["PSo26NSExtensionRequestHandling", "periodicCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "periodicTable"]
 - ["PSo26NSExtensionRequestHandling", "periodicView"]
 - !private ["PSo26NSExtensionRequestHandling", "reloadDelegate"]
@@ -1004,8 +1049,11 @@ depends-member:
 - !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSTextAlignment"]
 - !private ["CSo8NSObject", "NSTimeInterval"]
+- !private ["CSo8NSObject", "PeriodicCollectionViewDataSource"]
+- !private ["CSo8NSObject", "PeriodicCollectionViewDelegate"]
 - ["CSo8NSObject", "PeriodicViewController"]
 - ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UICollectionView"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIFont"]
@@ -1036,6 +1084,8 @@ depends-member:
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "cursors"]
 - !private ["CSo8NSObject", "cyanColor"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "detailView"]
 - ["CSo8NSObject", "didChangeValue"]
 - ["CSo8NSObject", "didTapOnCursor"]
@@ -1058,6 +1108,7 @@ depends-member:
 - !private ["CSo8NSObject", "on"]
 - !private ["CSo8NSObject", "onTintColor"]
 - !private ["CSo8NSObject", "orbit"]
+- ["CSo8NSObject", "periodicCollectionView"]
 - !private ["CSo8NSObject", "periodicTable"]
 - ["CSo8NSObject", "periodicView"]
 - !private ["CSo8NSObject", "position"]
@@ -1090,6 +1141,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - !private ["PSo16NSObjectProtocol", "NSTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "PeriodicCollectionViewDataSource"]
+- !private ["PSo16NSObjectProtocol", "PeriodicCollectionViewDelegate"]
 - ["PSo16NSObjectProtocol", "PeriodicViewController"]
 - ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -1121,6 +1174,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "cursors"]
 - !private ["PSo16NSObjectProtocol", "cyanColor"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "detailView"]
 - ["PSo16NSObjectProtocol", "didChangeValue"]
 - ["PSo16NSObjectProtocol", "didTapOnCursor"]
@@ -1143,6 +1198,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "on"]
 - !private ["PSo16NSObjectProtocol", "onTintColor"]
 - !private ["PSo16NSObjectProtocol", "orbit"]
+- ["PSo16NSObjectProtocol", "periodicCollectionView"]
 - !private ["PSo16NSObjectProtocol", "periodicTable"]
 - ["PSo16NSObjectProtocol", "periodicView"]
 - !private ["PSo16NSObjectProtocol", "position"]
@@ -1191,12 +1247,15 @@ depends-member:
 - !private ["Ps13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "deinit"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "init"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "deinit"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "init"]
 - !private ["C13PeriodicTable22PeriodicViewController", "changeCell"]
 - ["C13PeriodicTable22PeriodicViewController", "init"]
 - !private ["C13PeriodicTable22PeriodicViewController", "periodicTable"]
 - !private ["C13PeriodicTable22PeriodicViewController", "reloadDelegate"]
 - !private ["C13PeriodicTable22PeriodicViewController", "setCurrentTemperature"]
-- !private ["C13PeriodicTable22PeriodicViewController", "view"]
 - !private ["CSo13RLMObjectBase", "affinity"]
 - !private ["CSo13RLMObjectBase", "boilingPoint"]
 - !private ["CSo13RLMObjectBase", "category"]
@@ -1278,6 +1337,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "category"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo29UIAccessibilityIdentification", "init"]
@@ -1311,6 +1372,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "category"]
 - !private ["PSo12UIAppearance", "center"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - ["PSo12UIAppearance", "init"]
@@ -1342,6 +1405,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - !private ["PSo21UIAppearanceContainer", "NSTimeInterval"]
+- !private ["PSo21UIAppearanceContainer", "PeriodicCollectionViewDataSource"]
+- !private ["PSo21UIAppearanceContainer", "PeriodicCollectionViewDelegate"]
 - ["PSo21UIAppearanceContainer", "PeriodicViewController"]
 - ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -1367,6 +1432,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "changeLeftHand"]
 - ["PSo21UIAppearanceContainer", "changeRightHand"]
 - ["PSo21UIAppearanceContainer", "cursors"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "detailView"]
 - ["PSo21UIAppearanceContainer", "didChangeValue"]
 - ["PSo21UIAppearanceContainer", "didTapOnCursor"]
@@ -1387,6 +1454,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "on"]
 - !private ["PSo21UIAppearanceContainer", "onTintColor"]
 - !private ["PSo21UIAppearanceContainer", "orbit"]
+- ["PSo21UIAppearanceContainer", "periodicCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "periodicTable"]
 - ["PSo21UIAppearanceContainer", "periodicView"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1415,25 +1483,24 @@ depends-member:
 - !private ["CSo8UIButton", "setTitleColor"]
 - !private ["CSo8UIButton", "tag"]
 - !private ["CSo8UIButton", "titleLabel"]
+- !private ["CSo16UICollectionView", "dataSource"]
+- !private ["CSo16UICollectionView", "delegate"]
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["PSo26UICollectionViewDataSource", "changeCell"]
 - ["PSo26UICollectionViewDataSource", "init"]
 - !private ["PSo26UICollectionViewDataSource", "periodicTable"]
 - !private ["PSo26UICollectionViewDataSource", "reloadDelegate"]
 - !private ["PSo26UICollectionViewDataSource", "setCurrentTemperature"]
-- !private ["PSo26UICollectionViewDataSource", "view"]
 - !private ["PSo24UICollectionViewDelegate", "changeCell"]
 - ["PSo24UICollectionViewDelegate", "init"]
 - !private ["PSo24UICollectionViewDelegate", "periodicTable"]
 - !private ["PSo24UICollectionViewDelegate", "reloadDelegate"]
 - !private ["PSo24UICollectionViewDelegate", "setCurrentTemperature"]
-- !private ["PSo24UICollectionViewDelegate", "view"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "changeCell"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "init"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "periodicTable"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "reloadDelegate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "setCurrentTemperature"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "blueColor"]
@@ -1448,6 +1515,8 @@ depends-member:
 - ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - !private ["PSo18UIContentContainer", "NSTimeInterval"]
+- !private ["PSo18UIContentContainer", "PeriodicCollectionViewDataSource"]
+- !private ["PSo18UIContentContainer", "PeriodicCollectionViewDelegate"]
 - ["PSo18UIContentContainer", "PeriodicViewController"]
 - ["PSo18UIContentContainer", "UIButton"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -1470,6 +1539,7 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "initCursors"]
 - ["PSo18UIContentContainer", "newValue"]
+- ["PSo18UIContentContainer", "periodicCollectionView"]
 - !private ["PSo18UIContentContainer", "periodicTable"]
 - ["PSo18UIContentContainer", "periodicView"]
 - !private ["PSo18UIContentContainer", "reloadDelegate"]
@@ -1511,6 +1581,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "category"]
 - !private ["PSo17UICoordinateSpace", "center"]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo17UICoordinateSpace", "init"]
@@ -1544,6 +1616,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "category"]
 - !private ["PSo13UIDynamicItem", "center"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - ["PSo13UIDynamicItem", "init"]
@@ -1575,6 +1649,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
 - !private ["PSo18UIFocusEnvironment", "NSTimeInterval"]
+- !private ["PSo18UIFocusEnvironment", "PeriodicCollectionViewDataSource"]
+- !private ["PSo18UIFocusEnvironment", "PeriodicCollectionViewDelegate"]
 - ["PSo18UIFocusEnvironment", "PeriodicViewController"]
 - ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -1600,6 +1676,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "changeLeftHand"]
 - ["PSo18UIFocusEnvironment", "changeRightHand"]
 - ["PSo18UIFocusEnvironment", "cursors"]
+- !private ["PSo18UIFocusEnvironment", "dataSource"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "detailView"]
 - ["PSo18UIFocusEnvironment", "didChangeValue"]
 - ["PSo18UIFocusEnvironment", "didTapOnCursor"]
@@ -1620,6 +1698,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "on"]
 - !private ["PSo18UIFocusEnvironment", "onTintColor"]
 - !private ["PSo18UIFocusEnvironment", "orbit"]
+- ["PSo18UIFocusEnvironment", "periodicCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "periodicTable"]
 - ["PSo18UIFocusEnvironment", "periodicView"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -1657,8 +1736,11 @@ depends-member:
 - !private ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSTextAlignment"]
 - !private ["CSo11UIResponder", "NSTimeInterval"]
+- !private ["CSo11UIResponder", "PeriodicCollectionViewDataSource"]
+- !private ["CSo11UIResponder", "PeriodicCollectionViewDelegate"]
 - ["CSo11UIResponder", "PeriodicViewController"]
 - ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UICollectionView"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIFont"]
@@ -1683,6 +1765,8 @@ depends-member:
 - ["CSo11UIResponder", "changeLeftHand"]
 - ["CSo11UIResponder", "changeRightHand"]
 - ["CSo11UIResponder", "cursors"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "detailView"]
 - ["CSo11UIResponder", "didChangeValue"]
 - ["CSo11UIResponder", "didTapOnCursor"]
@@ -1703,6 +1787,7 @@ depends-member:
 - !private ["CSo11UIResponder", "on"]
 - !private ["CSo11UIResponder", "onTintColor"]
 - !private ["CSo11UIResponder", "orbit"]
+- ["CSo11UIResponder", "periodicCollectionView"]
 - !private ["CSo11UIResponder", "periodicTable"]
 - ["CSo11UIResponder", "periodicView"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -1721,13 +1806,14 @@ depends-member:
 - ["CSo11UIResponder", "value"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "changeCell"]
 - ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "periodicTable"]
 - !private ["PSo20UIScrollViewDelegate", "reloadDelegate"]
 - !private ["PSo20UIScrollViewDelegate", "setCurrentTemperature"]
-- !private ["PSo20UIScrollViewDelegate", "view"]
 - !private ["CSo8UISlider", "addTarget"]
 - !private ["CSo8UISlider", "bounds"]
 - !private ["CSo8UISlider", "center"]
@@ -1745,6 +1831,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - !private ["PSo16UIStateRestoring", "NSTimeInterval"]
+- !private ["PSo16UIStateRestoring", "PeriodicCollectionViewDataSource"]
+- !private ["PSo16UIStateRestoring", "PeriodicCollectionViewDelegate"]
 - ["PSo16UIStateRestoring", "PeriodicViewController"]
 - ["PSo16UIStateRestoring", "UIButton"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -1767,6 +1855,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "initCursors"]
 - ["PSo16UIStateRestoring", "newValue"]
+- ["PSo16UIStateRestoring", "periodicCollectionView"]
 - !private ["PSo16UIStateRestoring", "periodicTable"]
 - ["PSo16UIStateRestoring", "periodicView"]
 - !private ["PSo16UIStateRestoring", "reloadDelegate"]
@@ -1793,6 +1882,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - !private ["PSo18UITraitEnvironment", "NSTimeInterval"]
+- !private ["PSo18UITraitEnvironment", "PeriodicCollectionViewDataSource"]
+- !private ["PSo18UITraitEnvironment", "PeriodicCollectionViewDelegate"]
 - ["PSo18UITraitEnvironment", "PeriodicViewController"]
 - ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -1818,6 +1909,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "changeLeftHand"]
 - ["PSo18UITraitEnvironment", "changeRightHand"]
 - ["PSo18UITraitEnvironment", "cursors"]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "detailView"]
 - ["PSo18UITraitEnvironment", "didChangeValue"]
 - ["PSo18UITraitEnvironment", "didTapOnCursor"]
@@ -1838,6 +1931,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "on"]
 - !private ["PSo18UITraitEnvironment", "onTintColor"]
 - !private ["PSo18UITraitEnvironment", "orbit"]
+- ["PSo18UITraitEnvironment", "periodicCollectionView"]
 - !private ["PSo18UITraitEnvironment", "periodicTable"]
 - ["PSo18UITraitEnvironment", "periodicView"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -1867,6 +1961,8 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "category"]
 - !private ["CSo6UIView", "center"]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "init"]
@@ -1901,8 +1997,11 @@ depends-member:
 - !private ["CSo16UIViewController", "NSArray"]
 - !private ["CSo16UIViewController", "NSTextAlignment"]
 - !private ["CSo16UIViewController", "NSTimeInterval"]
+- !private ["CSo16UIViewController", "PeriodicCollectionViewDataSource"]
+- !private ["CSo16UIViewController", "PeriodicCollectionViewDelegate"]
 - ["CSo16UIViewController", "PeriodicViewController"]
 - ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UICollectionView"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIFont"]
@@ -1924,6 +2023,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "initCursors"]
 - ["CSo16UIViewController", "newValue"]
+- ["CSo16UIViewController", "periodicCollectionView"]
 - !private ["CSo16UIViewController", "periodicTable"]
 - ["CSo16UIViewController", "periodicView"]
 - !private ["CSo16UIViewController", "reloadDelegate"]
@@ -1953,8 +2053,11 @@ depends-member:
 - !private ["C13PeriodicTable14ViewController", "NSArray"]
 - !private ["C13PeriodicTable14ViewController", "NSTextAlignment"]
 - !private ["C13PeriodicTable14ViewController", "NSTimeInterval"]
+- !private ["C13PeriodicTable14ViewController", "PeriodicCollectionViewDataSource"]
+- !private ["C13PeriodicTable14ViewController", "PeriodicCollectionViewDelegate"]
 - ["C13PeriodicTable14ViewController", "PeriodicViewController"]
 - ["C13PeriodicTable14ViewController", "UIButton"]
+- ["C13PeriodicTable14ViewController", "UICollectionView"]
 - !private ["C13PeriodicTable14ViewController", "UIColor"]
 - !private ["C13PeriodicTable14ViewController", "UIControlEvents"]
 - !private ["C13PeriodicTable14ViewController", "UIFont"]
@@ -1976,6 +2079,7 @@ depends-member:
 - ["C13PeriodicTable14ViewController", "init"]
 - ["C13PeriodicTable14ViewController", "initCursors"]
 - ["C13PeriodicTable14ViewController", "newValue"]
+- ["C13PeriodicTable14ViewController", "periodicCollectionView"]
 - ["C13PeriodicTable14ViewController", "periodicView"]
 - ["C13PeriodicTable14ViewController", "reloadDetailView"]
 - ["C13PeriodicTable14ViewController", "temperature"]
@@ -2072,6 +2176,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "category"]
 - !private ["Ps12_Reflectable", "center"]
+- !private ["Ps12_Reflectable", "dataSource"]
+- !private ["Ps12_Reflectable", "delegate"]
 - !private ["Ps12_Reflectable", "font"]
 - !private ["Ps12_Reflectable", "frame"]
 - !private ["Ps12_Reflectable", "height"]
@@ -2177,6 +2283,8 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
+- !private "C13PeriodicTable32PeriodicCollectionViewDataSource"
+- !private "C13PeriodicTable30PeriodicCollectionViewDelegate"
 - "C13PeriodicTable22PeriodicViewController"
 - !private "CSo13RLMObjectBase"
 - "Ps21RandomAccessIndexType"
@@ -2294,4 +2402,4 @@ depends-external:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "f5483935d27ebcf286bb6767b390e8cc"
+interface-hash: "3f24b1930503b25de616513ffe80f410"

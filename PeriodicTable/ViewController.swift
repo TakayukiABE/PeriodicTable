@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, DetailViewDelegate {
     
+    @IBOutlet weak var periodicCollectionView: UICollectionView!
+    
+    
     var temperatureSlider = UISlider()
     var temperature = UILabel()
     var value = 25
@@ -19,11 +22,22 @@ class ViewController: UIViewController, DetailViewDelegate {
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let delegate = PeriodicCollectionViewDelegate(periodicTable: periodicCollectionView)
+        let dataSource = PeriodicCollectionViewDataSource(periodicTable: periodicCollectionView)
+        periodicCollectionView.delegate = delegate
+        periodicCollectionView.dataSource = dataSource
+
+        
+        
+        
         self.periodicView.reloadDelegate = self
-        self.view.addSubview(periodicView.view)
-        self.view.addSubview(detailView.view)
+//        self.view.addSubview(periodicView.view)
+//        self.view.addSubview(detailView.view)
         temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
         temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/1.5)
         temperatureSlider.minimumValue = -273

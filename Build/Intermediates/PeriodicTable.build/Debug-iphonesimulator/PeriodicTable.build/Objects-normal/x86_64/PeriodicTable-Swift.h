@@ -172,12 +172,48 @@ SWIFT_CLASS("_TtC13PeriodicTable7Element")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC13PeriodicTable22PeriodicCollectionView")
+@interface PeriodicCollectionView : UICollectionView
+- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13PeriodicTable26PeriodicCollectionViewCell")
 @interface PeriodicCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified elementName;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewController")
+@interface PeriodicCollectionViewController : UICollectionViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewDataSource")
+@interface PeriodicCollectionViewDataSource : NSObject <UICollectionViewDataSource>
+- (nonnull instancetype)initWithPeriodicTable:(UICollectionView * _Nonnull)periodicTable OBJC_DESIGNATED_INITIALIZER;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+SWIFT_CLASS("_TtC13PeriodicTable30PeriodicCollectionViewDelegate")
+@interface PeriodicCollectionViewDelegate : NSObject <UIScrollViewDelegate, UICollectionViewDelegate>
+- (nonnull instancetype)initWithPeriodicTable:(UICollectionView * _Nonnull)periodicTable OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -192,9 +228,6 @@ SWIFT_CLASS("_TtC13PeriodicTable13PeriodicModel")
 @end
 
 @class UINib;
-@class UICollectionView;
-@class NSIndexPath;
-@class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC13PeriodicTable22PeriodicViewController")
 @interface PeriodicViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
@@ -232,6 +265,7 @@ SWIFT_CLASS("_TtC13PeriodicTable26SeparateCollectionViewCell")
 
 SWIFT_CLASS("_TtC13PeriodicTable14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified periodicCollectionView;
 @property (nonatomic, strong) UISlider * _Nonnull temperatureSlider;
 @property (nonatomic, strong) UILabel * _Nonnull temperature;
 @property (nonatomic) NSInteger value;
