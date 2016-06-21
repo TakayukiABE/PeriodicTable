@@ -60,7 +60,7 @@ class ViewController: UIViewController, DetailViewDelegate {
         temperature.font = UIFont.systemFontOfSize(30)
         temperature.text = "25℃"
         temperature.textAlignment = NSTextAlignment.Center
-        self.view.addSubview(temperature)
+//        self.view.addSubview(temperature)
         initCursors()
         handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
         handSwitch.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 20)
