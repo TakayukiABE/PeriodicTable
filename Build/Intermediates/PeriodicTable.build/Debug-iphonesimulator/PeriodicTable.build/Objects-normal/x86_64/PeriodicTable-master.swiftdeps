@@ -1,10 +1,10 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "776fb2e577f424d547368b73715280f4"
-build_time: [519795595, 251241000]
+build_time: [519806024, 348734000]
 inputs:
-  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/ViewController.swift": [519790230, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/ViewController.swift": [519806023, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicViewController.swift": [519366433, 0]
-  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewDataSource.swift": [519789082, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewDataSource.swift": [519804712, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/AppDelegate.swift": [515902882, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewCell.swift": [476605661, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailView.swift": [519365151, 0]

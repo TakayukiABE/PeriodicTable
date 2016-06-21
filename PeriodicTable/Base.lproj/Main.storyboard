@@ -98,7 +98,7 @@
                             <constraint firstItem="kGJ-IO-dy4" firstAttribute="top" secondItem="Dh2-hH-p38" secondAttribute="bottom" constant="8" id="5LJ-hA-Ide"/>
                             <constraint firstItem="a9G-pP-Ixp" firstAttribute="leading" secondItem="1eX-VM-rqN" secondAttribute="trailing" id="6Ql-Q7-tMa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HIE-2o-0za" secondAttribute="trailing" constant="506" id="8Yv-6D-cWK"/>
-                            <constraint firstItem="kGJ-IO-dy4" firstAttribute="top" secondItem="a9G-pP-Ixp" secondAttribute="bottom" constant="-333" id="ALB-EB-PIq"/>
+                            <constraint firstItem="kGJ-IO-dy4" firstAttribute="top" secondItem="a9G-pP-Ixp" secondAttribute="bottom" id="ALB-EB-PIq"/>
                             <constraint firstItem="a9G-pP-Ixp" firstAttribute="leading" secondItem="1eX-VM-rqN" secondAttribute="trailing" id="Arp-A0-dhy"/>
                             <constraint firstItem="1eX-VM-rqN" firstAttribute="height" secondItem="8E8-GC-0dG" secondAttribute="height" id="BV4-dK-hnb"/>
                             <constraint firstItem="8E8-GC-0dG" firstAttribute="height" secondItem="1eX-VM-rqN" secondAttribute="height" id="DLr-tN-bSW"/>
@@ -114,6 +114,7 @@
                             <constraint firstItem="a9G-pP-Ixp" firstAttribute="leading" secondItem="1eX-VM-rqN" secondAttribute="trailing" id="QSL-Hp-lWX"/>
                             <constraint firstItem="a9G-pP-Ixp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RdT-t7-nrc"/>
                             <constraint firstItem="HIE-2o-0za" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Uas-mO-JgI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a9G-pP-Ixp" secondAttribute="bottom" id="W66-6a-ELF"/>
                             <constraint firstItem="HIE-2o-0za" firstAttribute="top" secondItem="1eX-VM-rqN" secondAttribute="bottom" id="Ws1-xd-1R1"/>
                             <constraint firstItem="8E8-GC-0dG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cHy-Or-GQw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1eX-VM-rqN" secondAttribute="bottom" id="dAC-sn-7YV"/>
@@ -151,6 +152,7 @@
                                 <exclude reference="Nok-Uk-I52"/>
                                 <exclude reference="ohl-fV-BKS"/>
                                 <exclude reference="thC-Gn-awi"/>
+                                <exclude reference="ALB-EB-PIq"/>
                                 <exclude reference="8Yv-6D-cWK"/>
                                 <exclude reference="Ws1-xd-1R1"/>
                                 <exclude reference="pPY-oO-Hyq"/>
@@ -169,6 +171,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="periodicCollectionView" destination="XKH-Mi-oMc" id="erc-gt-CT1"/>
+                        <outlet property="temperatureSlider" destination="kGJ-IO-dy4" id="AfU-MJ-zyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "dc55d62601cecf2d9ea589d20f522132"
-build_time: [519364749, 648660000]
+build_time: [519804822, 284833000]
 inputs:
   "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Aliases.swift": [9223372036854775807, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Error.swift": [9223372036854775807, 0]

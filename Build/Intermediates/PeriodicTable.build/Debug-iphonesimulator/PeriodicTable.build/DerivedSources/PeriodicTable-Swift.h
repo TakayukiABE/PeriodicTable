@@ -260,14 +260,14 @@ SWIFT_CLASS("_TtC13PeriodicTable26SeparateCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISlider;
 @class UIButton;
 @class UISwitch;
+@class UISlider;
 
 SWIFT_CLASS("_TtC13PeriodicTable14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified periodicCollectionView;
-@property (nonatomic, strong) UISlider * _Nonnull temperatureSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified temperatureSlider;
 @property (nonatomic, strong) UILabel * _Nonnull temperature;
 @property (nonatomic) NSInteger value;
 @property (nonatomic) NSInteger newValue;

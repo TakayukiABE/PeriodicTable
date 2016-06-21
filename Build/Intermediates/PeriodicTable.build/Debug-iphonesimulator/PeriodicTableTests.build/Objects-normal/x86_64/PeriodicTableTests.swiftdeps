@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C18PeriodicTableTests18PeriodicTableTests", ""]
 provides-dynamic-lookup:
-- "testPerformanceExample"
-- "setUp"
 - "tearDown"
 - "testExample"
+- "setUp"
+- "testPerformanceExample"
 depends-top-level:
-- !private "StringLiteralType"
 - "PeriodicTableTests"
-- !private "BooleanLiteralType"
-- !private "XCTAssert"
 - "XCTestCase"
+- !private "XCTAssert"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "XCTAssert"]
 - ["Ps9AnyObject", "init"]

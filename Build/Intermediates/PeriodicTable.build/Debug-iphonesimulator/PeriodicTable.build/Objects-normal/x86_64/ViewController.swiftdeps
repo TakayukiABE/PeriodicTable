@@ -6,64 +6,64 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
-- "periodicView"
+- "detailView"
+- "changeRightHand"
+- "initCursors"
+- "cursors"
+- "periodicCollectionView"
+- "changeHand"
+- "handSwitch"
+- "changeLeftHand"
+- "didChangeValue"
+- "didTapOnCursor"
+- "newValue"
+- "value"
 - "reloadDetailView"
 - "temperatureSlider"
-- "didTapOnCursor"
-- "didChangeValue"
-- "periodicCollectionView"
-- "cursors"
-- "initCursors"
-- "temperature"
-- "changeRightHand"
-- "detailView"
-- "value"
-- "changeLeftHand"
-- "newValue"
-- "handSwitch"
 - "viewDidLoad"
-- "changeHand"
+- "temperature"
+- "periodicView"
 depends-top-level:
-- !private "UnicodeScalarType"
-- !private "NSArray"
-- "PeriodicCollectionViewDelegate"
-- !private "UIControlEvents"
-- "Element"
-- !private "-"
-- !private "/"
-- "Int"
-- !private "BooleanLiteralType"
-- !private "..."
-- !private "print"
-- !private "+"
-- "UIButton"
-- !private "abs"
-- !private "CGPoint"
-- "UICollectionView"
-- !private "AnyObject"
-- "PeriodicViewController"
-- !private "Void"
-- "DetailViewController"
-- !private "UIFont"
-- !private "=="
-- "UIViewController"
-- !private "NSTextAlignment"
-- !private "CGRectMake"
-- "DetailViewDelegate"
-- !private "Array"
-- "UILabel"
 - "PeriodicCollectionViewDataSource"
+- !private "print"
+- "UILabel"
+- "UIButton"
+- "UICollectionView"
+- !private "CGPoint"
 - !private "UIView"
-- "UISlider"
+- "Element"
+- !private "Array"
 - !private "NSTimeInterval"
+- !private "AnyObject"
+- !private "UIFont"
+- !private "UnicodeScalarType"
+- !private ">"
+- !private "BooleanLiteralType"
+- "DetailViewController"
+- !private "CGFloat"
+- !private "CGRectMake"
+- !private "UIControlEvents"
+- !private "UIColor"
+- !private "/"
+- !private "-"
+- !private "||"
+- !private "NSArray"
+- !private "Void"
+- !private "..."
+- "UISlider"
 - "UISwitch"
 - "ViewController"
-- !private "CGFloat"
-- !private "CAGradientLayer"
-- !private "UIColor"
-- !private ">"
+- !private "=="
+- "DetailViewDelegate"
+- "PeriodicViewController"
+- !private "NSTextAlignment"
+- !private "+"
+- !private "abs"
+- "Int"
 - !private "StringLiteralType"
-- !private "||"
+- "UIViewController"
+- "PeriodicCollectionViewDelegate"
+- !private "CAGradientLayer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -90,7 +90,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIControlEvents"]
 - !private ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "UILabel"]
-- ["Ps9AnyObject", "UISlider"]
 - ["Ps9AnyObject", "UISwitch"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "abs"]
@@ -256,7 +255,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIControlEvents"]
 - !private ["Ps11CVarArgType", "UIFont"]
 - ["Ps11CVarArgType", "UILabel"]
-- ["Ps11CVarArgType", "UISlider"]
 - ["Ps11CVarArgType", "UISwitch"]
 - !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
@@ -367,7 +365,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - ["Ps28CustomDebugStringConvertible", "UILabel"]
-- ["Ps28CustomDebugStringConvertible", "UISlider"]
 - ["Ps28CustomDebugStringConvertible", "UISwitch"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -468,7 +465,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIControlEvents"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - ["Ps23CustomStringConvertible", "UILabel"]
-- ["Ps23CustomStringConvertible", "UISlider"]
 - ["Ps23CustomStringConvertible", "UISwitch"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -577,7 +573,6 @@ depends-member:
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIControlEvents"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIFont"]
 - ["P13PeriodicTable18DetailViewDelegate", "UILabel"]
-- ["P13PeriodicTable18DetailViewDelegate", "UISlider"]
 - ["P13PeriodicTable18DetailViewDelegate", "UISwitch"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIView"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "abs"]
@@ -640,7 +635,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIControlEvents"]
 - !private ["Ps9Equatable", "UIFont"]
 - ["Ps9Equatable", "UILabel"]
-- ["Ps9Equatable", "UISlider"]
 - ["Ps9Equatable", "UISwitch"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "ValueChanged"]
@@ -759,7 +753,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIControlEvents"]
 - !private ["Ps8Hashable", "UIFont"]
 - ["Ps8Hashable", "UILabel"]
-- ["Ps8Hashable", "UISlider"]
 - ["Ps8Hashable", "UISwitch"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -920,7 +913,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIFont"]
 - ["PSo8NSCoding", "UILabel"]
-- ["PSo8NSCoding", "UISlider"]
 - ["PSo8NSCoding", "UISwitch"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "abs"]
@@ -1017,7 +1009,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "UILabel"]
-- ["PSo26NSExtensionRequestHandling", "UISlider"]
 - ["PSo26NSExtensionRequestHandling", "UISwitch"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "abs"]
@@ -1164,7 +1155,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - ["PSo16NSObjectProtocol", "UILabel"]
-- ["PSo16NSObjectProtocol", "UISlider"]
 - ["PSo16NSObjectProtocol", "UISwitch"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "abs"]
@@ -1430,7 +1420,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "UILabel"]
-- ["PSo21UIAppearanceContainer", "UISlider"]
 - ["PSo21UIAppearanceContainer", "UISwitch"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "abs"]
@@ -1541,7 +1530,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "UILabel"]
-- ["PSo18UIContentContainer", "UISlider"]
 - ["PSo18UIContentContainer", "UISwitch"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "abs"]
@@ -1678,7 +1666,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "UILabel"]
-- ["PSo18UIFocusEnvironment", "UISlider"]
 - ["PSo18UIFocusEnvironment", "UISwitch"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "abs"]
@@ -1839,9 +1826,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "setCurrentTemperature"]
 - !private ["CSo8UISlider", "addTarget"]
 - !private ["CSo8UISlider", "bounds"]
-- !private ["CSo8UISlider", "center"]
-- !private ["CSo8UISlider", "frame"]
-- ["CSo8UISlider", "init"]
 - !private ["CSo8UISlider", "layer"]
 - !private ["CSo8UISlider", "maximumValue"]
 - !private ["CSo8UISlider", "minimumValue"]
@@ -1862,7 +1846,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "UILabel"]
-- ["PSo16UIStateRestoring", "UISlider"]
 - ["PSo16UIStateRestoring", "UISwitch"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "abs"]
@@ -1916,7 +1899,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "UILabel"]
-- ["PSo18UITraitEnvironment", "UISlider"]
 - ["PSo18UITraitEnvironment", "UISwitch"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "abs"]
@@ -2358,7 +2340,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
-- "CSo8UISlider"
+- !private "CSo8UISlider"
 - "PSo16UIStateRestoring"
 - "CSo8UISwitch"
 - "PSo18UITraitEnvironment"
@@ -2435,4 +2417,4 @@ depends-external:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "b11c140790ad7f526770b12526ea9d68"
+interface-hash: "0eda36339d9b984079851a77d9bfed12"

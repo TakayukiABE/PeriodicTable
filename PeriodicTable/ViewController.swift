@@ -13,7 +13,8 @@ class ViewController: UIViewController, DetailViewDelegate {
     @IBOutlet weak var periodicCollectionView: UICollectionView!
     
     
-    var temperatureSlider = UISlider()
+    @IBOutlet weak var temperatureSlider: UISlider!
+//    var temperatureSlider = UISlider()
     var temperature = UILabel()
     var value = 25
     var newValue = Int()
@@ -38,23 +39,24 @@ class ViewController: UIViewController, DetailViewDelegate {
         self.periodicView.reloadDelegate = self
 //        self.view.addSubview(periodicView.view)
 //        self.view.addSubview(detailView.view)
-        temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
-        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/1.5)
+//        temperatureSlider.frame = CGRectMake(0, 0, self.view.frame.width - 100, 30)
+//        temperatureSlider.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/1.5)
         temperatureSlider.minimumValue = -273
         temperatureSlider.maximumValue = 6000
         temperatureSlider.value = 25
         temperatureSlider.addTarget(self, action: "didChangeValue:", forControlEvents: UIControlEvents.ValueChanged)
-        var gradient = CAGradientLayer()
-        gradient.frame = temperatureSlider.bounds
-        var colors:NSArray = [UIColor.redColor().CGColor, UIColor.blueColor().CGColor]
+        let gradient = CAGradientLayer()
+//        gradient.frame = temperatureSlider.bounds
+        gradient.frame = CGRectMake(0, 0, self.view.frame.width - 32, temperatureSlider.bounds.height)
+        let colors:NSArray = [UIColor.redColor().CGColor, UIColor.blueColor().CGColor]
         gradient.colors = colors as [AnyObject]
-        var start = CGPoint(x: 1.0, y: 0.5)
-        var end = CGPoint(x: 0.0, y: 0.5)
+        let start = CGPoint(x: 1.0, y: 0.5)
+        let end = CGPoint(x: 0.0, y: 0.5)
         gradient.startPoint = start
         gradient.endPoint = end
         gradient.cornerRadius = 15
         temperatureSlider.layer.insertSublayer(gradient, atIndex: 0)
-        self.view.addSubview(temperatureSlider)
+//        self.view.addSubview(temperatureSlider)
         temperature.frame = CGRectMake(0, 0, 200, 50)
         temperature.center = CGPoint(x: self.view.frame.width/2, y: 570)
         temperature.font = UIFont.systemFontOfSize(30)
@@ -166,6 +168,7 @@ class ViewController: UIViewController, DetailViewDelegate {
     }
 
     func didChangeValue(slider:UISlider) {
+        print(slider.value)
         newValue = Int(slider.value)
         if abs(value - newValue) > 100 || newValue == -273 || newValue == 6000 {
             value = newValue
