@@ -26,10 +26,9 @@ class PeriodicCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 //        periodicTable?.backgroundColor = UIColor.whiteColor()
-        print("datasource called\n")
         let cell:PeriodicCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
         let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
-        
+
         cell.alpha = 1.0
         cell.layer.cornerRadius = 0
         cell.elementName.text = ""

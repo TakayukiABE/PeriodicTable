@@ -8,8 +8,19 @@
 
 import UIKit
 
-class PeriodicCollectionViewDelegate: NSObject, UICollectionViewDelegate {
+class PeriodicCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+    private let numberOfGroups: CGFloat = 18.0
+    private let numberOfPeriods: CGFloat = 7.0
+    private let numberOfHeaders: CGFloat = 1.0
+    private let spacing: CGFloat = 3.0
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(collectionView.frame.width / (numberOfGroups + numberOfHeaders) - spacing, collectionView.frame.height / (numberOfPeriods + numberOfHeaders) - spacing)
+    }
     
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsetsMake(0, 0, insetForSection, 0)
+//    }
 //    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
 //        return 8
 //    }

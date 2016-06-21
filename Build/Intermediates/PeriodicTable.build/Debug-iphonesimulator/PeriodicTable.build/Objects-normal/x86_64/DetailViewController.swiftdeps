@@ -7,16 +7,16 @@ provides-member:
 - ["C13PeriodicTable20DetailViewController", ""]
 provides-dynamic-lookup:
 - "detailView"
-- "viewDidLoad"
 - "viewDidAppear"
+- "viewDidLoad"
 depends-top-level:
-- "Bool"
-- "DetailViewController"
-- "UIViewController"
 - !private "CGRectMake"
+- "Bool"
+- "UIViewController"
 - "DetailView"
-- !private "UIColor"
 - !private "BooleanLiteralType"
+- !private "UIColor"
+- "DetailViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - ["Ps9AnyObject", "DetailView"]

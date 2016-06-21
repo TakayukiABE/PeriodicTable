@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable7Element", ""]
 provides-dynamic-lookup:
-- "symbol"
-- "period"
-- "category"
-- "group"
-- "meltingPoint"
-- "ionization"
-- "massNumber"
-- "name"
-- "boilingPoint"
 - "number"
+- "name"
+- "group"
+- "boilingPoint"
 - "affinity"
 - "orbit"
+- "period"
 - "state"
+- "symbol"
+- "ionization"
+- "massNumber"
+- "category"
+- "meltingPoint"
 depends-top-level:
 - "Element"
 - "String"
-- "Int"
 - "Double"
 - "Object"
+- "Int"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "affinity"]

@@ -212,7 +212,8 @@ SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewDataSource")
 
 
 SWIFT_CLASS("_TtC13PeriodicTable30PeriodicCollectionViewDelegate")
-@interface PeriodicCollectionViewDelegate : NSObject <UIScrollViewDelegate, UICollectionViewDelegate>
+@interface PeriodicCollectionViewDelegate : NSObject <UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
