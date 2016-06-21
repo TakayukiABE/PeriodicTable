@@ -9,12 +9,13 @@
 import UIKit
 
 class PeriodicCollectionViewDataSource: NSObject, UICollectionViewDataSource {
-    private let periodicTable: UICollectionView?
+    //private let periodicTable: UICollectionView? = nil
     private let periodicModel = PeriodicModel()
     private var selectedCell = [1,1]
-    init(periodicTable: UICollectionView) {
-        self.periodicTable = periodicTable
-    }
+//    init(inout periodicTable: UICollectionView) {
+//        self.periodicTable = periodicTable
+//        print("collection: \(periodicTable)")
+//    }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 8
     }
@@ -24,7 +25,9 @@ class PeriodicCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell:PeriodicCollectionViewCell = periodicTable!.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
+//        periodicTable?.backgroundColor = UIColor.whiteColor()
+        print("datasource called\n")
+        let cell:PeriodicCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
         let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
         
         cell.alpha = 1.0

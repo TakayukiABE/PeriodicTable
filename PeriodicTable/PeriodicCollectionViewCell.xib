@@ -24,9 +24,6 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <size key="customSize" width="47" height="55"/>
-            <connections>
-                <outlet property="elementName" destination="Rda-tc-om6" id="bei-WR-J9P"/>
-            </connections>
             <point key="canvasLocation" x="431.5" y="423.5"/>
         </collectionViewCell>
     </objects>

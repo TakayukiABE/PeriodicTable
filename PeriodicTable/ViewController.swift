@@ -22,17 +22,17 @@ class ViewController: UIViewController, DetailViewDelegate {
     var periodicView = PeriodicViewController()
     var detailView = DetailViewController()
     
+    private let delegate = PeriodicCollectionViewDelegate()
+    private let dataSource = PeriodicCollectionViewDataSource()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let delegate = PeriodicCollectionViewDelegate(periodicTable: periodicCollectionView)
-        let dataSource = PeriodicCollectionViewDataSource(periodicTable: periodicCollectionView)
+        print("collection: \(periodicCollectionView)\n")
         periodicCollectionView.delegate = delegate
         periodicCollectionView.dataSource = dataSource
 
-        
+        print("dataSource: \(periodicCollectionView.dataSource)\n")
         
         
         self.periodicView.reloadDelegate = self

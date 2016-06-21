@@ -9,14 +9,6 @@
 import UIKit
 
 class PeriodicCollectionViewDelegate: NSObject, UICollectionViewDelegate {
-    private let periodicTable: UICollectionView?
-    private let periodicModel = PeriodicModel()
-    private var selectedCell = [1,1]
-
-
-    init(periodicTable: UICollectionView) {
-        self.periodicTable = periodicTable
-    }
     
 //    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
 //        return 8

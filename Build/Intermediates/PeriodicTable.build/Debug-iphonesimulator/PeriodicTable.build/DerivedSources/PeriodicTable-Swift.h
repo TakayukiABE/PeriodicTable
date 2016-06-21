@@ -204,16 +204,16 @@ SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewController")
 
 SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewDataSource")
 @interface PeriodicCollectionViewDataSource : NSObject <UICollectionViewDataSource>
-- (nonnull instancetype)initWithPeriodicTable:(UICollectionView * _Nonnull)periodicTable OBJC_DESIGNATED_INITIALIZER;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC13PeriodicTable30PeriodicCollectionViewDelegate")
 @interface PeriodicCollectionViewDelegate : NSObject <UIScrollViewDelegate, UICollectionViewDelegate>
-- (nonnull instancetype)initWithPeriodicTable:(UICollectionView * _Nonnull)periodicTable OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
