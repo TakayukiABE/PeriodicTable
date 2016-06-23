@@ -15,7 +15,8 @@ class ViewController: UIViewController, DetailViewDelegate {
     
     @IBOutlet weak var temperatureSlider: UISlider!
 //    var temperatureSlider = UISlider()
-    var temperature = UILabel()
+    @IBOutlet weak var temperatureLabel: UILabel!
+//    var temperature = UILabel()
     var value = 25
     var newValue = Int()
     var cursors = [UIButton]()
@@ -57,11 +58,11 @@ class ViewController: UIViewController, DetailViewDelegate {
         gradient.cornerRadius = 15
         temperatureSlider.layer.insertSublayer(gradient, atIndex: 0)
 //        self.view.addSubview(temperatureSlider)
-        temperature.frame = CGRectMake(0, 0, 200, 50)
-        temperature.center = CGPoint(x: self.view.frame.width/2, y: 570)
-        temperature.font = UIFont.systemFontOfSize(30)
-        temperature.text = "25℃"
-        temperature.textAlignment = NSTextAlignment.Center
+        temperatureLabel.frame = CGRectMake(0, 0, 200, 50)
+        temperatureLabel.center = CGPoint(x: self.view.frame.width/2, y: 570)
+        temperatureLabel.font = UIFont.systemFontOfSize(30)
+        temperatureLabel.text = "25℃"
+        temperatureLabel.textAlignment = NSTextAlignment.Center
 //        self.view.addSubview(temperature)
         initCursors()
         handSwitch.layer.position = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height - 200)
@@ -168,13 +169,13 @@ class ViewController: UIViewController, DetailViewDelegate {
     }
 
     func didChangeValue(slider:UISlider) {
-        print(slider.value)
+        dataSource.setTemperature(Int(slider.value))
         newValue = Int(slider.value)
         if abs(value - newValue) > 100 || newValue == -273 || newValue == 6000 {
             value = newValue
-            temperature.text = "\(value)℃"
-            periodicView.setCurrentTemperature(Int(temperatureSlider.value))
-            periodicView.periodicTable.reloadData()
+            temperatureLabel.text = "\(value)℃"
+           // periodicView.setCurrentTemperature(Int(temperatureSlider.value))
+            periodicCollectionView.reloadData()
         }
     }
 }

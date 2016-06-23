@@ -34,16 +34,9 @@
                                 <rect key="frame" x="20" y="473" width="472" height="275"/>
                                 <color key="backgroundColor" red="0.76738857780000003" green="1" blue="0.93782232710000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-hH-p38">
-                                <rect key="frame" x="463" y="392" width="98" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="6jW-JO-CHO"/>
-                                    <constraint firstAttribute="width" constant="98" id="fCd-C5-mxd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kGJ-IO-dy4">
+                                <rect key="frame" x="18" y="435" width="988" height="31"/>
+                            </slider>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-Mi-oMc">
                                 <rect key="frame" x="20" y="20" width="984" height="364"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,9 +80,16 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kGJ-IO-dy4">
-                                <rect key="frame" x="18" y="435" width="988" height="31"/>
-                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-hH-p38">
+                                <rect key="frame" x="439" y="392" width="147" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6jW-JO-CHO"/>
+                                    <constraint firstAttribute="width" constant="147" id="fCd-C5-mxd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -171,6 +171,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="periodicCollectionView" destination="XKH-Mi-oMc" id="erc-gt-CT1"/>
+                        <outlet property="temperatureLabel" destination="Dh2-hH-p38" id="HK4-fI-sXd"/>
                         <outlet property="temperatureSlider" destination="kGJ-IO-dy4" id="AfU-MJ-zyQ"/>
                     </connections>
                 </viewController>

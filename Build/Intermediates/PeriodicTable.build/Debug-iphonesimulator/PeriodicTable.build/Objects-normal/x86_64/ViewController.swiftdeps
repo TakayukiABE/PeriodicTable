@@ -6,64 +6,64 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
-- "detailView"
-- "changeRightHand"
-- "initCursors"
-- "cursors"
-- "periodicCollectionView"
-- "changeHand"
-- "handSwitch"
-- "changeLeftHand"
-- "didChangeValue"
-- "didTapOnCursor"
-- "newValue"
-- "value"
-- "reloadDetailView"
 - "temperatureSlider"
+- "handSwitch"
+- "newValue"
 - "viewDidLoad"
-- "temperature"
+- "reloadDetailView"
+- "initCursors"
+- "value"
 - "periodicView"
+- "changeRightHand"
+- "changeHand"
+- "temperatureLabel"
+- "didTapOnCursor"
+- "periodicCollectionView"
+- "cursors"
+- "didChangeValue"
+- "changeLeftHand"
+- "detailView"
 depends-top-level:
-- "PeriodicCollectionViewDataSource"
-- !private "print"
-- "UILabel"
-- "UIButton"
-- "UICollectionView"
-- !private "CGPoint"
-- !private "UIView"
-- "Element"
-- !private "Array"
-- !private "NSTimeInterval"
-- !private "AnyObject"
-- !private "UIFont"
-- !private "UnicodeScalarType"
-- !private ">"
-- !private "BooleanLiteralType"
-- "DetailViewController"
-- !private "CGFloat"
+- !private "NSTextAlignment"
+- !private "CAGradientLayer"
 - !private "CGRectMake"
-- !private "UIControlEvents"
 - !private "UIColor"
-- !private "/"
-- !private "-"
-- !private "||"
-- !private "NSArray"
-- !private "Void"
-- !private "..."
+- !private "StringLiteralType"
 - "UISlider"
 - "UISwitch"
-- "ViewController"
+- !private "NSArray"
+- !private "abs"
+- !private "UIFont"
+- "PeriodicCollectionViewDelegate"
 - !private "=="
+- !private ">"
+- "Int"
+- !private "..."
+- !private "UIView"
+- !private "BooleanLiteralType"
+- !private "+"
 - "DetailViewDelegate"
 - "PeriodicViewController"
-- !private "NSTextAlignment"
-- !private "+"
-- !private "abs"
-- "Int"
-- !private "StringLiteralType"
 - "UIViewController"
-- "PeriodicCollectionViewDelegate"
-- !private "CAGradientLayer"
+- "UILabel"
+- !private "UIControlEvents"
+- !private "CGPoint"
+- !private "||"
+- !private "Array"
+- !private "/"
+- "UICollectionView"
+- "UIButton"
+- !private "print"
+- !private "NSTimeInterval"
+- !private "UnicodeScalarType"
+- !private "Void"
+- !private "-"
+- "PeriodicCollectionViewDataSource"
+- "Element"
+- !private "AnyObject"
+- "ViewController"
+- "DetailViewController"
+- !private "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -89,7 +89,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIControlEvents"]
 - !private ["Ps9AnyObject", "UIFont"]
-- ["Ps9AnyObject", "UILabel"]
 - ["Ps9AnyObject", "UISwitch"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "abs"]
@@ -139,7 +138,6 @@ depends-member:
 - !private ["Ps9AnyObject", "onTintColor"]
 - !private ["Ps9AnyObject", "orbit"]
 - ["Ps9AnyObject", "periodicCollectionView"]
-- !private ["Ps9AnyObject", "periodicTable"]
 - ["Ps9AnyObject", "periodicView"]
 - !private ["Ps9AnyObject", "position"]
 - !private ["Ps9AnyObject", "print"]
@@ -147,14 +145,14 @@ depends-member:
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "reloadDelegate"]
 - ["Ps9AnyObject", "reloadDetailView"]
-- !private ["Ps9AnyObject", "setCurrentTemperature"]
+- !private ["Ps9AnyObject", "setTemperature"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "setTitleColor"]
 - !private ["Ps9AnyObject", "startPoint"]
 - !private ["Ps9AnyObject", "symbol"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
 - !private ["Ps9AnyObject", "tag"]
-- ["Ps9AnyObject", "temperature"]
+- ["Ps9AnyObject", "temperatureLabel"]
 - ["Ps9AnyObject", "temperatureSlider"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textAlignment"]
@@ -254,7 +252,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIControlEvents"]
 - !private ["Ps11CVarArgType", "UIFont"]
-- ["Ps11CVarArgType", "UILabel"]
 - ["Ps11CVarArgType", "UISwitch"]
 - !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
@@ -305,7 +302,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "onTintColor"]
 - !private ["Ps11CVarArgType", "orbit"]
 - ["Ps11CVarArgType", "periodicCollectionView"]
-- !private ["Ps11CVarArgType", "periodicTable"]
 - ["Ps11CVarArgType", "periodicView"]
 - !private ["Ps11CVarArgType", "position"]
 - !private ["Ps11CVarArgType", "print"]
@@ -313,14 +309,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "reloadDelegate"]
 - ["Ps11CVarArgType", "reloadDetailView"]
-- !private ["Ps11CVarArgType", "setCurrentTemperature"]
+- !private ["Ps11CVarArgType", "setTemperature"]
 - !private ["Ps11CVarArgType", "setTitle"]
 - !private ["Ps11CVarArgType", "setTitleColor"]
 - !private ["Ps11CVarArgType", "startPoint"]
 - !private ["Ps11CVarArgType", "symbol"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
 - !private ["Ps11CVarArgType", "tag"]
-- ["Ps11CVarArgType", "temperature"]
+- ["Ps11CVarArgType", "temperatureLabel"]
 - ["Ps11CVarArgType", "temperatureSlider"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "textAlignment"]
@@ -364,7 +360,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
-- ["Ps28CustomDebugStringConvertible", "UILabel"]
 - ["Ps28CustomDebugStringConvertible", "UISwitch"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -416,7 +411,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "onTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "orbit"]
 - ["Ps28CustomDebugStringConvertible", "periodicCollectionView"]
-- !private ["Ps28CustomDebugStringConvertible", "periodicTable"]
 - ["Ps28CustomDebugStringConvertible", "periodicView"]
 - !private ["Ps28CustomDebugStringConvertible", "position"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -424,7 +418,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadDelegate"]
 - ["Ps28CustomDebugStringConvertible", "reloadDetailView"]
-- !private ["Ps28CustomDebugStringConvertible", "setCurrentTemperature"]
+- !private ["Ps28CustomDebugStringConvertible", "setTemperature"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
 - !private ["Ps28CustomDebugStringConvertible", "startPoint"]
@@ -432,7 +426,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "symbol"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFontOfSize"]
 - !private ["Ps28CustomDebugStringConvertible", "tag"]
-- ["Ps28CustomDebugStringConvertible", "temperature"]
+- ["Ps28CustomDebugStringConvertible", "temperatureLabel"]
 - ["Ps28CustomDebugStringConvertible", "temperatureSlider"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textAlignment"]
@@ -464,7 +458,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIControlEvents"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
-- ["Ps23CustomStringConvertible", "UILabel"]
 - ["Ps23CustomStringConvertible", "UISwitch"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -518,7 +511,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "onTintColor"]
 - !private ["Ps23CustomStringConvertible", "orbit"]
 - ["Ps23CustomStringConvertible", "periodicCollectionView"]
-- !private ["Ps23CustomStringConvertible", "periodicTable"]
 - ["Ps23CustomStringConvertible", "periodicView"]
 - !private ["Ps23CustomStringConvertible", "position"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -526,7 +518,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "reloadDelegate"]
 - ["Ps23CustomStringConvertible", "reloadDetailView"]
-- !private ["Ps23CustomStringConvertible", "setCurrentTemperature"]
+- !private ["Ps23CustomStringConvertible", "setTemperature"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "setTitleColor"]
 - !private ["Ps23CustomStringConvertible", "startPoint"]
@@ -534,7 +526,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "symbol"]
 - !private ["Ps23CustomStringConvertible", "systemFontOfSize"]
 - !private ["Ps23CustomStringConvertible", "tag"]
-- ["Ps23CustomStringConvertible", "temperature"]
+- ["Ps23CustomStringConvertible", "temperatureLabel"]
 - ["Ps23CustomStringConvertible", "temperatureSlider"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textAlignment"]
@@ -572,7 +564,6 @@ depends-member:
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIColor"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIControlEvents"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIFont"]
-- ["P13PeriodicTable18DetailViewDelegate", "UILabel"]
 - ["P13PeriodicTable18DetailViewDelegate", "UISwitch"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "UIView"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "abs"]
@@ -592,7 +583,7 @@ depends-member:
 - !private ["P13PeriodicTable18DetailViewDelegate", "periodicView"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "print"]
 - ["P13PeriodicTable18DetailViewDelegate", "reloadDetailView"]
-- !private ["P13PeriodicTable18DetailViewDelegate", "temperature"]
+- !private ["P13PeriodicTable18DetailViewDelegate", "temperatureLabel"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "temperatureSlider"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "value"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "view"]
@@ -634,7 +625,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIControlEvents"]
 - !private ["Ps9Equatable", "UIFont"]
-- ["Ps9Equatable", "UILabel"]
 - ["Ps9Equatable", "UISwitch"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "ValueChanged"]
@@ -690,7 +680,6 @@ depends-member:
 - !private ["Ps9Equatable", "orbit"]
 - !private ["Ps9Equatable", "origin"]
 - ["Ps9Equatable", "periodicCollectionView"]
-- !private ["Ps9Equatable", "periodicTable"]
 - ["Ps9Equatable", "periodicView"]
 - !private ["Ps9Equatable", "position"]
 - !private ["Ps9Equatable", "print"]
@@ -698,7 +687,7 @@ depends-member:
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "reloadDelegate"]
 - ["Ps9Equatable", "reloadDetailView"]
-- !private ["Ps9Equatable", "setCurrentTemperature"]
+- !private ["Ps9Equatable", "setTemperature"]
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "setTitleColor"]
 - !private ["Ps9Equatable", "size"]
@@ -706,7 +695,7 @@ depends-member:
 - !private ["Ps9Equatable", "symbol"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
 - !private ["Ps9Equatable", "tag"]
-- ["Ps9Equatable", "temperature"]
+- ["Ps9Equatable", "temperatureLabel"]
 - ["Ps9Equatable", "temperatureSlider"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textAlignment"]
@@ -752,7 +741,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIControlEvents"]
 - !private ["Ps8Hashable", "UIFont"]
-- ["Ps8Hashable", "UILabel"]
 - ["Ps8Hashable", "UISwitch"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -804,7 +792,6 @@ depends-member:
 - !private ["Ps8Hashable", "onTintColor"]
 - !private ["Ps8Hashable", "orbit"]
 - ["Ps8Hashable", "periodicCollectionView"]
-- !private ["Ps8Hashable", "periodicTable"]
 - ["Ps8Hashable", "periodicView"]
 - !private ["Ps8Hashable", "position"]
 - !private ["Ps8Hashable", "print"]
@@ -812,14 +799,14 @@ depends-member:
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "reloadDelegate"]
 - ["Ps8Hashable", "reloadDetailView"]
-- !private ["Ps8Hashable", "setCurrentTemperature"]
+- !private ["Ps8Hashable", "setTemperature"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "setTitleColor"]
 - !private ["Ps8Hashable", "startPoint"]
 - !private ["Ps8Hashable", "symbol"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
 - !private ["Ps8Hashable", "tag"]
-- ["Ps8Hashable", "temperature"]
+- ["Ps8Hashable", "temperatureLabel"]
 - ["Ps8Hashable", "temperatureSlider"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textAlignment"]
@@ -912,7 +899,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIFont"]
-- ["PSo8NSCoding", "UILabel"]
 - ["PSo8NSCoding", "UISwitch"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "abs"]
@@ -962,7 +948,6 @@ depends-member:
 - !private ["PSo8NSCoding", "onTintColor"]
 - !private ["PSo8NSCoding", "orbit"]
 - ["PSo8NSCoding", "periodicCollectionView"]
-- !private ["PSo8NSCoding", "periodicTable"]
 - ["PSo8NSCoding", "periodicView"]
 - !private ["PSo8NSCoding", "position"]
 - !private ["PSo8NSCoding", "print"]
@@ -970,13 +955,12 @@ depends-member:
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "reloadDelegate"]
 - ["PSo8NSCoding", "reloadDetailView"]
-- !private ["PSo8NSCoding", "setCurrentTemperature"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "setTitleColor"]
 - !private ["PSo8NSCoding", "startPoint"]
 - !private ["PSo8NSCoding", "symbol"]
 - !private ["PSo8NSCoding", "tag"]
-- ["PSo8NSCoding", "temperature"]
+- ["PSo8NSCoding", "temperatureLabel"]
 - ["PSo8NSCoding", "temperatureSlider"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
@@ -1008,7 +992,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
-- ["PSo26NSExtensionRequestHandling", "UILabel"]
 - ["PSo26NSExtensionRequestHandling", "UISwitch"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "abs"]
@@ -1027,13 +1010,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "initCursors"]
 - ["PSo26NSExtensionRequestHandling", "newValue"]
 - ["PSo26NSExtensionRequestHandling", "periodicCollectionView"]
-- !private ["PSo26NSExtensionRequestHandling", "periodicTable"]
 - ["PSo26NSExtensionRequestHandling", "periodicView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "reloadDelegate"]
 - ["PSo26NSExtensionRequestHandling", "reloadDetailView"]
-- !private ["PSo26NSExtensionRequestHandling", "setCurrentTemperature"]
-- ["PSo26NSExtensionRequestHandling", "temperature"]
+- ["PSo26NSExtensionRequestHandling", "temperatureLabel"]
 - ["PSo26NSExtensionRequestHandling", "temperatureSlider"]
 - ["PSo26NSExtensionRequestHandling", "value"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -1114,7 +1095,6 @@ depends-member:
 - !private ["CSo8NSObject", "onTintColor"]
 - !private ["CSo8NSObject", "orbit"]
 - ["CSo8NSObject", "periodicCollectionView"]
-- !private ["CSo8NSObject", "periodicTable"]
 - ["CSo8NSObject", "periodicView"]
 - !private ["CSo8NSObject", "position"]
 - !private ["CSo8NSObject", "print"]
@@ -1122,14 +1102,14 @@ depends-member:
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "reloadDelegate"]
 - ["CSo8NSObject", "reloadDetailView"]
-- !private ["CSo8NSObject", "setCurrentTemperature"]
+- !private ["CSo8NSObject", "setTemperature"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "setTitleColor"]
 - !private ["CSo8NSObject", "startPoint"]
 - !private ["CSo8NSObject", "symbol"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "tag"]
-- ["CSo8NSObject", "temperature"]
+- ["CSo8NSObject", "temperatureLabel"]
 - ["CSo8NSObject", "temperatureSlider"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
@@ -1154,7 +1134,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
-- ["PSo16NSObjectProtocol", "UILabel"]
 - ["PSo16NSObjectProtocol", "UISwitch"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "abs"]
@@ -1204,7 +1183,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "onTintColor"]
 - !private ["PSo16NSObjectProtocol", "orbit"]
 - ["PSo16NSObjectProtocol", "periodicCollectionView"]
-- !private ["PSo16NSObjectProtocol", "periodicTable"]
 - ["PSo16NSObjectProtocol", "periodicView"]
 - !private ["PSo16NSObjectProtocol", "position"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1212,14 +1190,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "reloadDelegate"]
 - ["PSo16NSObjectProtocol", "reloadDetailView"]
-- !private ["PSo16NSObjectProtocol", "setCurrentTemperature"]
+- !private ["PSo16NSObjectProtocol", "setTemperature"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "setTitleColor"]
 - !private ["PSo16NSObjectProtocol", "startPoint"]
 - !private ["PSo16NSObjectProtocol", "symbol"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "tag"]
-- ["PSo16NSObjectProtocol", "temperature"]
+- ["PSo16NSObjectProtocol", "temperatureLabel"]
 - ["PSo16NSObjectProtocol", "temperatureSlider"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
@@ -1256,13 +1234,12 @@ depends-member:
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "deinit"]
 - ["C13PeriodicTable32PeriodicCollectionViewDataSource", "init"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "setTemperature"]
 - !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "deinit"]
 - ["C13PeriodicTable30PeriodicCollectionViewDelegate", "init"]
 - !private ["C13PeriodicTable22PeriodicViewController", "changeCell"]
 - ["C13PeriodicTable22PeriodicViewController", "init"]
-- !private ["C13PeriodicTable22PeriodicViewController", "periodicTable"]
 - !private ["C13PeriodicTable22PeriodicViewController", "reloadDelegate"]
-- !private ["C13PeriodicTable22PeriodicViewController", "setCurrentTemperature"]
 - !private ["CSo13RLMObjectBase", "affinity"]
 - !private ["CSo13RLMObjectBase", "boilingPoint"]
 - !private ["CSo13RLMObjectBase", "category"]
@@ -1419,7 +1396,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
-- ["PSo21UIAppearanceContainer", "UILabel"]
 - ["PSo21UIAppearanceContainer", "UISwitch"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "abs"]
@@ -1461,18 +1437,16 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "onTintColor"]
 - !private ["PSo21UIAppearanceContainer", "orbit"]
 - ["PSo21UIAppearanceContainer", "periodicCollectionView"]
-- !private ["PSo21UIAppearanceContainer", "periodicTable"]
 - ["PSo21UIAppearanceContainer", "periodicView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "reloadDelegate"]
 - ["PSo21UIAppearanceContainer", "reloadDetailView"]
-- !private ["PSo21UIAppearanceContainer", "setCurrentTemperature"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "setTitleColor"]
 - !private ["PSo21UIAppearanceContainer", "symbol"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
-- ["PSo21UIAppearanceContainer", "temperature"]
+- ["PSo21UIAppearanceContainer", "temperatureLabel"]
 - ["PSo21UIAppearanceContainer", "temperatureSlider"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
@@ -1495,19 +1469,14 @@ depends-member:
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["PSo26UICollectionViewDataSource", "changeCell"]
 - ["PSo26UICollectionViewDataSource", "init"]
-- !private ["PSo26UICollectionViewDataSource", "periodicTable"]
 - !private ["PSo26UICollectionViewDataSource", "reloadDelegate"]
-- !private ["PSo26UICollectionViewDataSource", "setCurrentTemperature"]
+- !private ["PSo26UICollectionViewDataSource", "setTemperature"]
 - !private ["PSo24UICollectionViewDelegate", "changeCell"]
 - ["PSo24UICollectionViewDelegate", "init"]
-- !private ["PSo24UICollectionViewDelegate", "periodicTable"]
 - !private ["PSo24UICollectionViewDelegate", "reloadDelegate"]
-- !private ["PSo24UICollectionViewDelegate", "setCurrentTemperature"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "changeCell"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "init"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "periodicTable"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "reloadDelegate"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "setCurrentTemperature"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "blueColor"]
@@ -1529,7 +1498,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIFont"]
-- ["PSo18UIContentContainer", "UILabel"]
 - ["PSo18UIContentContainer", "UISwitch"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "abs"]
@@ -1548,13 +1516,11 @@ depends-member:
 - ["PSo18UIContentContainer", "initCursors"]
 - ["PSo18UIContentContainer", "newValue"]
 - ["PSo18UIContentContainer", "periodicCollectionView"]
-- !private ["PSo18UIContentContainer", "periodicTable"]
 - ["PSo18UIContentContainer", "periodicView"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "reloadDelegate"]
 - ["PSo18UIContentContainer", "reloadDetailView"]
-- !private ["PSo18UIContentContainer", "setCurrentTemperature"]
-- ["PSo18UIContentContainer", "temperature"]
+- ["PSo18UIContentContainer", "temperatureLabel"]
 - ["PSo18UIContentContainer", "temperatureSlider"]
 - ["PSo18UIContentContainer", "value"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -1665,7 +1631,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
-- ["PSo18UIFocusEnvironment", "UILabel"]
 - ["PSo18UIFocusEnvironment", "UISwitch"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "abs"]
@@ -1707,18 +1672,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "onTintColor"]
 - !private ["PSo18UIFocusEnvironment", "orbit"]
 - ["PSo18UIFocusEnvironment", "periodicCollectionView"]
-- !private ["PSo18UIFocusEnvironment", "periodicTable"]
 - ["PSo18UIFocusEnvironment", "periodicView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "reloadDelegate"]
 - ["PSo18UIFocusEnvironment", "reloadDetailView"]
-- !private ["PSo18UIFocusEnvironment", "setCurrentTemperature"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
 - !private ["PSo18UIFocusEnvironment", "setTitleColor"]
 - !private ["PSo18UIFocusEnvironment", "symbol"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
-- ["PSo18UIFocusEnvironment", "temperature"]
+- ["PSo18UIFocusEnvironment", "temperatureLabel"]
 - ["PSo18UIFocusEnvironment", "temperatureSlider"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
@@ -1731,7 +1694,6 @@ depends-member:
 - !private ["CSo7UILabel", "center"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
-- ["CSo7UILabel", "init"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo11UIResponder", "AnyObject"]
@@ -1797,18 +1759,16 @@ depends-member:
 - !private ["CSo11UIResponder", "onTintColor"]
 - !private ["CSo11UIResponder", "orbit"]
 - ["CSo11UIResponder", "periodicCollectionView"]
-- !private ["CSo11UIResponder", "periodicTable"]
 - ["CSo11UIResponder", "periodicView"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "reloadDelegate"]
 - ["CSo11UIResponder", "reloadDetailView"]
-- !private ["CSo11UIResponder", "setCurrentTemperature"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "setTitleColor"]
 - !private ["CSo11UIResponder", "symbol"]
 - !private ["CSo11UIResponder", "tag"]
-- ["CSo11UIResponder", "temperature"]
+- ["CSo11UIResponder", "temperatureLabel"]
 - ["CSo11UIResponder", "temperatureSlider"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
@@ -1821,9 +1781,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "changeCell"]
 - ["PSo20UIScrollViewDelegate", "init"]
-- !private ["PSo20UIScrollViewDelegate", "periodicTable"]
 - !private ["PSo20UIScrollViewDelegate", "reloadDelegate"]
-- !private ["PSo20UIScrollViewDelegate", "setCurrentTemperature"]
 - !private ["CSo8UISlider", "addTarget"]
 - !private ["CSo8UISlider", "bounds"]
 - !private ["CSo8UISlider", "layer"]
@@ -1845,7 +1803,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
-- ["PSo16UIStateRestoring", "UILabel"]
 - ["PSo16UIStateRestoring", "UISwitch"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "abs"]
@@ -1864,13 +1821,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "initCursors"]
 - ["PSo16UIStateRestoring", "newValue"]
 - ["PSo16UIStateRestoring", "periodicCollectionView"]
-- !private ["PSo16UIStateRestoring", "periodicTable"]
 - ["PSo16UIStateRestoring", "periodicView"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "reloadDelegate"]
 - ["PSo16UIStateRestoring", "reloadDetailView"]
-- !private ["PSo16UIStateRestoring", "setCurrentTemperature"]
-- ["PSo16UIStateRestoring", "temperature"]
+- ["PSo16UIStateRestoring", "temperatureLabel"]
 - ["PSo16UIStateRestoring", "temperatureSlider"]
 - ["PSo16UIStateRestoring", "value"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -1898,7 +1853,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
-- ["PSo18UITraitEnvironment", "UILabel"]
 - ["PSo18UITraitEnvironment", "UISwitch"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "abs"]
@@ -1940,18 +1894,16 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "onTintColor"]
 - !private ["PSo18UITraitEnvironment", "orbit"]
 - ["PSo18UITraitEnvironment", "periodicCollectionView"]
-- !private ["PSo18UITraitEnvironment", "periodicTable"]
 - ["PSo18UITraitEnvironment", "periodicView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "reloadDelegate"]
 - ["PSo18UITraitEnvironment", "reloadDetailView"]
-- !private ["PSo18UITraitEnvironment", "setCurrentTemperature"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "setTitleColor"]
 - !private ["PSo18UITraitEnvironment", "symbol"]
 - !private ["PSo18UITraitEnvironment", "tag"]
-- ["PSo18UITraitEnvironment", "temperature"]
+- ["PSo18UITraitEnvironment", "temperatureLabel"]
 - ["PSo18UITraitEnvironment", "temperatureSlider"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
@@ -2035,13 +1987,11 @@ depends-member:
 - ["CSo16UIViewController", "initCursors"]
 - ["CSo16UIViewController", "newValue"]
 - ["CSo16UIViewController", "periodicCollectionView"]
-- !private ["CSo16UIViewController", "periodicTable"]
 - ["CSo16UIViewController", "periodicView"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "reloadDelegate"]
 - ["CSo16UIViewController", "reloadDetailView"]
-- !private ["CSo16UIViewController", "setCurrentTemperature"]
-- ["CSo16UIViewController", "temperature"]
+- ["CSo16UIViewController", "temperatureLabel"]
 - ["CSo16UIViewController", "temperatureSlider"]
 - ["CSo16UIViewController", "value"]
 - !private ["CSo16UIViewController", "view"]
@@ -2097,7 +2047,7 @@ depends-member:
 - ["C13PeriodicTable14ViewController", "periodicView"]
 - !private ["C13PeriodicTable14ViewController", "print"]
 - ["C13PeriodicTable14ViewController", "reloadDetailView"]
-- ["C13PeriodicTable14ViewController", "temperature"]
+- ["C13PeriodicTable14ViewController", "temperatureLabel"]
 - ["C13PeriodicTable14ViewController", "temperatureSlider"]
 - ["C13PeriodicTable14ViewController", "value"]
 - !private ["C13PeriodicTable14ViewController", "view"]
@@ -2336,7 +2286,7 @@ depends-nominal:
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "CSo6UIFont"
-- "CSo7UILabel"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
@@ -2417,4 +2367,4 @@ depends-external:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "0eda36339d9b984079851a77d9bfed12"
+interface-hash: "2a55de68b7bc30cd937043e374fb6037"

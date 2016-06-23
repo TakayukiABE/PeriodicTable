@@ -9,13 +9,14 @@
 import UIKit
 
 class PeriodicCollectionViewDataSource: NSObject, UICollectionViewDataSource {
-    //private let periodicTable: UICollectionView? = nil
     private let periodicModel = PeriodicModel()
     private var selectedCell = [1,1]
-//    init(inout periodicTable: UICollectionView) {
-//        self.periodicTable = periodicTable
-//        print("collection: \(periodicTable)")
-//    }
+    private var currentTemperature = 25
+    
+    func setTemperature(temperature: Int) {
+        self.currentTemperature = temperature
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 8
     }
@@ -61,14 +62,14 @@ class PeriodicCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         }
         cell.elementName.text = element.symbol
         //getTemperature的なものをつくる
-        //        if temperature > element.boilingPoint {
-        //            cell.alpha = 0.8
-        //            cell.layer.cornerRadius = 24
-        //            cell.elementName.textColor = UIColor.grayColor()
-        //        }else if temperature > element.meltingPoint {
-        //            cell.layer.cornerRadius = 13
-        //            cell.elementName.textColor = UIColor.blueColor()
-        //        }
+                if currentTemperature > element.boilingPoint {
+                    cell.alpha = 0.8
+                    cell.layer.cornerRadius = 24
+                    cell.elementName.textColor = UIColor.grayColor()
+                }else if currentTemperature > element.meltingPoint {
+                    cell.layer.cornerRadius = 13
+                    cell.elementName.textColor = UIColor.blueColor()
+                }
         if indexPath.row == selectedCell[0] && indexPath.section == selectedCell[1] {
             cell.backgroundColor = UIColor(red: 1.0,green: 0.1,blue: 0.3,alpha: 1)
         }

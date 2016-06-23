@@ -204,6 +204,7 @@ SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewController")
 
 SWIFT_CLASS("_TtC13PeriodicTable32PeriodicCollectionViewDataSource")
 @interface PeriodicCollectionViewDataSource : NSObject <UICollectionViewDataSource>
+- (void)setTemperature:(NSInteger)temperature;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -268,7 +269,7 @@ SWIFT_CLASS("_TtC13PeriodicTable14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified periodicCollectionView;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified temperatureSlider;
-@property (nonatomic, strong) UILabel * _Nonnull temperature;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified temperatureLabel;
 @property (nonatomic) NSInteger value;
 @property (nonatomic) NSInteger newValue;
 @property (nonatomic, copy) NSArray<UIButton *> * _Nonnull cursors;
