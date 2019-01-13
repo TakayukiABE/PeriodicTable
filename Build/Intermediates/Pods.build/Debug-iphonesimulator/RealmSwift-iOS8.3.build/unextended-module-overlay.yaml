@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift-iOS8.3/RealmSwift.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/hypersonicstab/Development/PeriodicTable/Build/Intermediates/Pods.build/Debug-iphonesimulator/RealmSwift-iOS8.3.build/unextended-module.modulemap',
+    }]
+  }]
+}

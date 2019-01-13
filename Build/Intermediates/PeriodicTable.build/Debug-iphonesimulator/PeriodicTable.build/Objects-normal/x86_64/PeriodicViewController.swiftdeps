@@ -11,59 +11,59 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 - "viewWillLayoutSubviews"
-- "numberOfSectionsInCollectionView"
-- "setCurrentTemperature"
-- "temperature"
-- "changeCell"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "selectedCell"
-- "Nib"
-- "periodicModel"
 - "periodicTable"
+- "numberOfSectionsInCollectionView"
+- "selectedCell"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "temperature"
+- "periodicModel"
+- "setCurrentTemperature"
+- "changeCell"
+- "Nib"
 depends-top-level:
-- !private "&&"
-- "UICollectionViewDelegate"
-- !private "+"
-- !private "<"
-- "UICollectionViewDataSource"
-- !private "!="
-- "UICollectionViewDelegateFlowLayout"
-- "UIEdgeInsets"
-- "Element"
-- !private "Double"
-- "Void"
-- "NSIndexPath"
-- "UICollectionView"
-- !private "CGRectMake"
-- "UICollectionViewLayout"
-- "CGRectZero"
 - !private ">="
-- !private "CGRectInset"
-- "PeriodicViewController"
-- "DetailViewDelegate"
-- !private "-"
-- "UINib"
-- "PeriodicModel"
-- "CGSize"
-- "Array"
-- "CGFloat"
-- !private "/"
-- !private "<="
-- "UICollectionViewCell"
-- !private "=="
-- !private "~="
-- "UIViewController"
-- "Int"
 - !private "UIColor"
-- !private "PeriodicCollectionViewCell"
-- "UICollectionViewFlowLayout"
+- "Array"
+- "UINib"
+- !private "CGRectMake"
+- !private "+"
+- !private "~="
+- !private "=="
+- "NSIndexPath"
+- "CGRectZero"
+- !private "&&"
+- "UICollectionView"
+- !private "CGRectInset"
 - "StringLiteralType"
+- "Void"
 - !private ">"
+- !private "Double"
+- "UICollectionViewFlowLayout"
+- !private "PeriodicCollectionViewCell"
+- !private "!="
+- !private "<="
+- "Element"
+- "PeriodicViewController"
+- "UIViewController"
+- "UICollectionViewDataSource"
+- !private "<"
+- "UICollectionViewDelegateFlowLayout"
+- "Int"
+- !private "-"
+- "UICollectionViewCell"
+- "UICollectionViewDelegate"
+- "DetailViewDelegate"
+- "CGFloat"
+- "UICollectionViewLayout"
+- !private "/"
+- "CGSize"
+- "PeriodicModel"
+- "UIEdgeInsets"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -158,6 +158,21 @@ depends-member:
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "dataSource"]
+- !private ["PSo15CALayerDelegate", "delegate"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo15CALayerDelegate", "elementName"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "registerNib"]
+- !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "textColor"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "IntegerLiteralType"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
@@ -1262,6 +1277,8 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillLayoutSubviews"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -1348,6 +1365,21 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "viewWillLayoutSubviews"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "dataSource"]
+- !private ["PSo11UIFocusItem", "delegate"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo11UIFocusItem", "elementName"]
+- !private ["PSo11UIFocusItem", "frame"]
+- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "registerNib"]
+- !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "textColor"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
 - ["CSo5UINib", "init"]
@@ -1411,6 +1443,61 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillLayoutSubviews"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectInset"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectMake"]
+- ["PSo30UIResponderStandardEditActions", "CGRectZero"]
+- !private ["PSo30UIResponderStandardEditActions", "CGSize"]
+- !private ["PSo30UIResponderStandardEditActions", "Double"]
+- !private ["PSo30UIResponderStandardEditActions", "NSIndexPath"]
+- ["PSo30UIResponderStandardEditActions", "Nib"]
+- ["PSo30UIResponderStandardEditActions", "PeriodicModel"]
+- ["PSo30UIResponderStandardEditActions", "UICollectionView"]
+- ["PSo30UIResponderStandardEditActions", "UICollectionViewFlowLayout"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsets"]
+- ["PSo30UIResponderStandardEditActions", "UINib"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- ["PSo30UIResponderStandardEditActions", "changeCell"]
+- ["PSo30UIResponderStandardEditActions", "collectionView"]
+- !private ["PSo30UIResponderStandardEditActions", "dataSource"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo30UIResponderStandardEditActions", "elementName"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
+- ["PSo30UIResponderStandardEditActions", "periodicModel"]
+- ["PSo30UIResponderStandardEditActions", "periodicTable"]
+- !private ["PSo30UIResponderStandardEditActions", "registerNib"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadData"]
+- ["PSo30UIResponderStandardEditActions", "reloadDelegate"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndScrollingAnimation"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndZooming"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidScroll"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidScrollToTop"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidZoom"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewShouldScrollToTop"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginDecelerating"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginDragging"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginZooming"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
+- ["PSo30UIResponderStandardEditActions", "selectedCell"]
+- ["PSo30UIResponderStandardEditActions", "setCurrentTemperature"]
+- ["PSo30UIResponderStandardEditActions", "temperature"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "textColor"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
+- ["PSo30UIResponderStandardEditActions", "viewWillLayoutSubviews"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "bounds"]
 - !private ["CSo12UIScrollView", "dataSource"]
@@ -1700,6 +1787,7 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - !private "CSo7CALayer"
+- "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC7CGPoint"
@@ -1769,13 +1857,16 @@ depends-nominal:
 - "CSo22UICollectionViewLayout"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - !private "VSC12UIEdgeInsets"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - !private "CSo7UILabel"
 - "CSo5UINib"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
@@ -1800,14 +1891,14 @@ depends-nominal:
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"

@@ -1,0 +1,650 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PeriodicCollectionViewDataSource"
+provides-nominal:
+- "C13PeriodicTable32PeriodicCollectionViewDataSource"
+provides-member:
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", ""]
+provides-dynamic-lookup:
+- "numberOfSectionsInCollectionView"
+- "collectionView"
+- "collectionView"
+- "setTemperature"
+depends-top-level:
+- "Int"
+- "NSObject"
+- "NSIndexPath"
+- "PeriodicModel"
+- !private "PeriodicCollectionViewCell"
+- !private ">"
+- !private "UIColor"
+- !private "StringLiteralType"
+- "UICollectionView"
+- !private "&&"
+- "Array"
+- "UICollectionViewDataSource"
+- "PeriodicCollectionViewDataSource"
+- !private "=="
+- "UICollectionViewCell"
+depends-member:
+- ["Ps9AnyObject", "PeriodicModel"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "alpha"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "blackColor"]
+- !private ["Ps9AnyObject", "blueColor"]
+- !private ["Ps9AnyObject", "boilingPoint"]
+- !private ["Ps9AnyObject", "category"]
+- !private ["Ps9AnyObject", "clearColor"]
+- ["Ps9AnyObject", "collectionView"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "currentTemperature"]
+- !private ["Ps9AnyObject", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps9AnyObject", "elementName"]
+- !private ["Ps9AnyObject", "grayColor"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "meltingPoint"]
+- !private ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
+- ["Ps9AnyObject", "periodicModel"]
+- !private ["Ps9AnyObject", "readElement"]
+- !private ["Ps9AnyObject", "row"]
+- !private ["Ps9AnyObject", "section"]
+- ["Ps9AnyObject", "selectedCell"]
+- ["Ps9AnyObject", "setTemperature"]
+- !private ["Ps9AnyObject", "symbol"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "Element"]
+- !private ["Sa", "subscript"]
+- ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo15CALayerDelegate", "elementName"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "textColor"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- ["Ps11CVarArgType", "PeriodicModel"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "alpha"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
+- !private ["Ps11CVarArgType", "blackColor"]
+- !private ["Ps11CVarArgType", "blueColor"]
+- !private ["Ps11CVarArgType", "boilingPoint"]
+- !private ["Ps11CVarArgType", "category"]
+- !private ["Ps11CVarArgType", "clearColor"]
+- ["Ps11CVarArgType", "collectionView"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- ["Ps11CVarArgType", "currentTemperature"]
+- !private ["Ps11CVarArgType", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps11CVarArgType", "elementName"]
+- !private ["Ps11CVarArgType", "grayColor"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "layer"]
+- !private ["Ps11CVarArgType", "meltingPoint"]
+- !private ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
+- ["Ps11CVarArgType", "periodicModel"]
+- !private ["Ps11CVarArgType", "readElement"]
+- !private ["Ps11CVarArgType", "row"]
+- !private ["Ps11CVarArgType", "section"]
+- ["Ps11CVarArgType", "selectedCell"]
+- ["Ps11CVarArgType", "setTemperature"]
+- !private ["Ps11CVarArgType", "symbol"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- ["Ps11CVarArgType", ""]
+- ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "PeriodicModel"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- !private ["Ps28CustomDebugStringConvertible", "blueColor"]
+- !private ["Ps28CustomDebugStringConvertible", "boilingPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "category"]
+- !private ["Ps28CustomDebugStringConvertible", "clearColor"]
+- ["Ps28CustomDebugStringConvertible", "collectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- ["Ps28CustomDebugStringConvertible", "currentTemperature"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "elementName"]
+- !private ["Ps28CustomDebugStringConvertible", "grayColor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "meltingPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
+- ["Ps28CustomDebugStringConvertible", "periodicModel"]
+- !private ["Ps28CustomDebugStringConvertible", "readElement"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "section"]
+- ["Ps28CustomDebugStringConvertible", "selectedCell"]
+- ["Ps28CustomDebugStringConvertible", "setTemperature"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "symbol"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "PeriodicModel"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
+- !private ["Ps23CustomStringConvertible", "blueColor"]
+- !private ["Ps23CustomStringConvertible", "boilingPoint"]
+- !private ["Ps23CustomStringConvertible", "category"]
+- !private ["Ps23CustomStringConvertible", "clearColor"]
+- ["Ps23CustomStringConvertible", "collectionView"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- ["Ps23CustomStringConvertible", "currentTemperature"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps23CustomStringConvertible", "elementName"]
+- !private ["Ps23CustomStringConvertible", "grayColor"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "meltingPoint"]
+- !private ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
+- ["Ps23CustomStringConvertible", "periodicModel"]
+- !private ["Ps23CustomStringConvertible", "readElement"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "section"]
+- ["Ps23CustomStringConvertible", "selectedCell"]
+- ["Ps23CustomStringConvertible", "setTemperature"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "symbol"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C13PeriodicTable7Element", "boilingPoint"]
+- !private ["C13PeriodicTable7Element", "category"]
+- !private ["C13PeriodicTable7Element", "meltingPoint"]
+- !private ["C13PeriodicTable7Element", "name"]
+- !private ["C13PeriodicTable7Element", "symbol"]
+- ["Ps9Equatable", "PeriodicModel"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "alpha"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "blackColor"]
+- !private ["Ps9Equatable", "blueColor"]
+- !private ["Ps9Equatable", "boilingPoint"]
+- !private ["Ps9Equatable", "category"]
+- !private ["Ps9Equatable", "clearColor"]
+- ["Ps9Equatable", "collectionView"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- ["Ps9Equatable", "currentTemperature"]
+- !private ["Ps9Equatable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps9Equatable", "elementName"]
+- !private ["Ps9Equatable", "grayColor"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "meltingPoint"]
+- !private ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "numberOfSectionsInCollectionView"]
+- ["Ps9Equatable", "periodicModel"]
+- !private ["Ps9Equatable", "readElement"]
+- !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "section"]
+- ["Ps9Equatable", "selectedCell"]
+- ["Ps9Equatable", "setTemperature"]
+- !private ["Ps9Equatable", "symbol"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "whiteColor"]
+- ["Ps9Equatable", ""]
+- !private ["Ps13GeneratorType", "Element"]
+- ["Ps8Hashable", "PeriodicModel"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "alpha"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "blackColor"]
+- !private ["Ps8Hashable", "blueColor"]
+- !private ["Ps8Hashable", "boilingPoint"]
+- !private ["Ps8Hashable", "category"]
+- !private ["Ps8Hashable", "clearColor"]
+- ["Ps8Hashable", "collectionView"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- ["Ps8Hashable", "currentTemperature"]
+- !private ["Ps8Hashable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps8Hashable", "elementName"]
+- !private ["Ps8Hashable", "grayColor"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "meltingPoint"]
+- !private ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "numberOfSectionsInCollectionView"]
+- ["Ps8Hashable", "periodicModel"]
+- !private ["Ps8Hashable", "readElement"]
+- !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "section"]
+- ["Ps8Hashable", "selectedCell"]
+- ["Ps8Hashable", "setTemperature"]
+- !private ["Ps8Hashable", "symbol"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "whiteColor"]
+- ["Ps8Hashable", ""]
+- ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "blueColor"]
+- !private ["PSo8NSCoding", "clearColor"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo8NSCoding", "elementName"]
+- !private ["PSo8NSCoding", "grayColor"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "row"]
+- !private ["PSo8NSCoding", "section"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "blueColor"]
+- !private ["PSo9NSCopying", "clearColor"]
+- !private ["PSo9NSCopying", "grayColor"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["PSo9NSCopying", "section"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo11NSIndexPath", "section"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "PeriodicCollectionViewCell"]
+- ["CSo8NSObject", "PeriodicModel"]
+- ["CSo8NSObject", "UICollectionView"]
+- ["CSo8NSObject", "UICollectionViewCell"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "alpha"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "blueColor"]
+- !private ["CSo8NSObject", "boilingPoint"]
+- !private ["CSo8NSObject", "category"]
+- !private ["CSo8NSObject", "clearColor"]
+- ["CSo8NSObject", "collectionView"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "currentTemperature"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo8NSObject", "elementName"]
+- !private ["CSo8NSObject", "grayColor"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "meltingPoint"]
+- !private ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "numberOfSectionsInCollectionView"]
+- ["CSo8NSObject", "periodicModel"]
+- !private ["CSo8NSObject", "readElement"]
+- !private ["CSo8NSObject", "row"]
+- !private ["CSo8NSObject", "section"]
+- ["CSo8NSObject", "selectedCell"]
+- ["CSo8NSObject", "setTemperature"]
+- !private ["CSo8NSObject", "symbol"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
+- !private ["CSo8NSObject", "whiteColor"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "PeriodicModel"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "blueColor"]
+- !private ["PSo16NSObjectProtocol", "boilingPoint"]
+- !private ["PSo16NSObjectProtocol", "category"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
+- ["PSo16NSObjectProtocol", "collectionView"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- ["PSo16NSObjectProtocol", "currentTemperature"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo16NSObjectProtocol", "elementName"]
+- !private ["PSo16NSObjectProtocol", "grayColor"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "meltingPoint"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
+- ["PSo16NSObjectProtocol", "periodicModel"]
+- !private ["PSo16NSObjectProtocol", "readElement"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- !private ["PSo16NSObjectProtocol", "section"]
+- ["PSo16NSObjectProtocol", "selectedCell"]
+- ["PSo16NSObjectProtocol", "setTemperature"]
+- !private ["PSo16NSObjectProtocol", "symbol"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "blueColor"]
+- !private ["PSo14NSSecureCoding", "clearColor"]
+- !private ["PSo14NSSecureCoding", "grayColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "section"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["C10RealmSwift6Object", "boilingPoint"]
+- !private ["C10RealmSwift6Object", "category"]
+- !private ["C10RealmSwift6Object", "meltingPoint"]
+- !private ["C10RealmSwift6Object", "name"]
+- !private ["C10RealmSwift6Object", "symbol"]
+- !private ["Sq", "deinit"]
+- !private ["C13PeriodicTable26PeriodicCollectionViewCell", "alpha"]
+- !private ["C13PeriodicTable26PeriodicCollectionViewCell", "backgroundColor"]
+- !private ["C13PeriodicTable26PeriodicCollectionViewCell", "elementName"]
+- !private ["C13PeriodicTable26PeriodicCollectionViewCell", "layer"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "Int"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "NSIndexPath"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "PeriodicCollectionViewCell"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "PeriodicModel"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "UICollectionView"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "UICollectionViewCell"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "UIColor"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "collectionView"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "currentTemperature"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "deinit"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "init"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "periodicModel"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewDataSource", "selectedCell"]
+- ["C13PeriodicTable32PeriodicCollectionViewDataSource", "setTemperature"]
+- ["C13PeriodicTable13PeriodicModel", "init"]
+- !private ["C13PeriodicTable13PeriodicModel", "readElement"]
+- !private ["CSo13RLMObjectBase", "boilingPoint"]
+- !private ["CSo13RLMObjectBase", "category"]
+- !private ["CSo13RLMObjectBase", "meltingPoint"]
+- !private ["CSo13RLMObjectBase", "name"]
+- !private ["CSo13RLMObjectBase", "symbol"]
+- ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
+- ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "elementName"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo12UIAppearance", "elementName"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "elementName"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
+- !private ["CSo24UICollectionReusableView", "alpha"]
+- !private ["CSo24UICollectionReusableView", "backgroundColor"]
+- !private ["CSo24UICollectionReusableView", "elementName"]
+- !private ["CSo24UICollectionReusableView", "layer"]
+- !private ["CSo16UICollectionView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo20UICollectionViewCell", "alpha"]
+- !private ["CSo20UICollectionViewCell", "backgroundColor"]
+- !private ["CSo20UICollectionViewCell", "deinit"]
+- !private ["CSo20UICollectionViewCell", "elementName"]
+- !private ["CSo20UICollectionViewCell", "layer"]
+- ["PSo26UICollectionViewDataSource", "PeriodicModel"]
+- !private ["PSo26UICollectionViewDataSource", "UIColor"]
+- ["PSo26UICollectionViewDataSource", "collectionView"]
+- !private ["PSo26UICollectionViewDataSource", "currentTemperature"]
+- ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "periodicModel"]
+- !private ["PSo26UICollectionViewDataSource", "selectedCell"]
+- ["PSo26UICollectionViewDataSource", ""]
+- !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "blueColor"]
+- !private ["CSo7UIColor", "clearColor"]
+- !private ["CSo7UIColor", "grayColor"]
+- !private ["CSo7UIColor", "init"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo17UICoordinateSpace", "elementName"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo13UIDynamicItem", "elementName"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "elementName"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo11UIFocusItem", "elementName"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "textColor"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "textColor"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo11UIResponder", "elementName"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo30UIResponderStandardEditActions", "elementName"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "textColor"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UITraitEnvironment", "elementName"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo6UIView", "elementName"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
+- ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_ColorLiteralConvertible", "blueColor"]
+- !private ["Ps24_ColorLiteralConvertible", "clearColor"]
+- !private ["Ps24_ColorLiteralConvertible", "grayColor"]
+- !private ["Ps24_ColorLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "alpha"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps12_Reflectable", "elementName"]
+- !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- "Ps11CVarArgType"
+- "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "C13PeriodicTable7Element"
+- "Ps9Equatable"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- "Ps21MutableCollectionType"
+- "Ps16MutableIndexable"
+- "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo11NSIndexPath"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "C10RealmSwift6Object"
+- !private "Sq"
+- !private "C13PeriodicTable26PeriodicCollectionViewCell"
+- "C13PeriodicTable32PeriodicCollectionViewDataSource"
+- "C13PeriodicTable13PeriodicModel"
+- !private "CSo13RLMObjectBase"
+- "Ps30RangeReplaceableCollectionType"
+- !private "P10RealmSwift17RealmOptionalType"
+- "Ps12SequenceType"
+- !private "Vs5Slice"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo24UICollectionReusableView"
+- !private "CSo16UICollectionView"
+- !private "CSo20UICollectionViewCell"
+- "PSo26UICollectionViewDataSource"
+- !private "CSo7UIColor"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- "Ps24_DestructorSafeContainer"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMListBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMResults.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMConstants.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMProperty.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObject.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMMigration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMCollection.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMArray.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Modules/module.modulemap"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "18c823a38152bcfeac7cb5234895825a"

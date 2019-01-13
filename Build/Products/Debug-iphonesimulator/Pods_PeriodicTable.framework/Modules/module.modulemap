@@ -1,6 +1,0 @@
-framework module Pods_PeriodicTable {
-  umbrella header "Pods-PeriodicTable-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -8,13 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "elementName"
 depends-top-level:
-- "UICollectionViewCell"
-- "PeriodicCollectionViewCell"
 - "UILabel"
+- "PeriodicCollectionViewCell"
+- "UICollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "elementName"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
+- ["PSo15CALayerDelegate", "elementName"]
+- ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", ""]
 - ["Ps11CVarArgType", "elementName"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", ""]
@@ -68,9 +71,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "elementName"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "elementName"]
+- ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", ""]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "elementName"]
 - ["CSo11UIResponder", "init"]
+- ["PSo30UIResponderStandardEditActions", "elementName"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - ["PSo18UITraitEnvironment", "elementName"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
@@ -82,6 +91,7 @@ depends-member:
 - ["Ps12_Reflectable", ""]
 depends-nominal:
 - "Ps9AnyObject"
+- "PSo15CALayerDelegate"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -99,20 +109,22 @@ depends-nominal:
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"

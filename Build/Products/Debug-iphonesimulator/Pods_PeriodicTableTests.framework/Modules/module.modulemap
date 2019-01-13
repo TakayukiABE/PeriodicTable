@@ -1,6 +1,0 @@
-framework module Pods_PeriodicTableTests {
-  umbrella header "Pods-PeriodicTableTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

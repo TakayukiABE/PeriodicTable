@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable20DetailViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "viewDidAppear"
 - "detailView"
+- "viewDidAppear"
+- "viewDidLoad"
 depends-top-level:
-- "Bool"
+- "DetailViewController"
+- !private "UIColor"
 - !private "CGRectMake"
-- !private "BooleanLiteralType"
+- "Bool"
 - "UIViewController"
 - "DetailView"
-- !private "UIColor"
-- "DetailViewController"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - ["Ps9AnyObject", "DetailView"]
@@ -45,6 +45,19 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "adjustsFontSizeToFitWidth"]
+- !private ["PSo15CALayerDelegate", "affinity"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "boilingPoint"]
+- ["PSo15CALayerDelegate", "createInstance"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- !private ["PSo15CALayerDelegate", "ionization"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "meltingPoint"]
+- !private ["PSo15CALayerDelegate", "name"]
+- !private ["PSo15CALayerDelegate", "orbit"]
+- !private ["PSo15CALayerDelegate", "symbol"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
@@ -336,6 +349,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "affinity"]
@@ -384,6 +398,19 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "adjustsFontSizeToFitWidth"]
+- !private ["PSo11UIFocusItem", "affinity"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "boilingPoint"]
+- ["PSo11UIFocusItem", "createInstance"]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["PSo11UIFocusItem", "ionization"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "meltingPoint"]
+- !private ["PSo11UIFocusItem", "name"]
+- !private ["PSo11UIFocusItem", "orbit"]
+- !private ["PSo11UIFocusItem", "symbol"]
 - !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRectMake"]
@@ -407,6 +434,28 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectMake"]
+- ["PSo30UIResponderStandardEditActions", "DetailView"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "adjustsFontSizeToFitWidth"]
+- !private ["PSo30UIResponderStandardEditActions", "affinity"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "boilingPoint"]
+- ["PSo30UIResponderStandardEditActions", "createInstance"]
+- ["PSo30UIResponderStandardEditActions", "detailView"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "ionization"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "meltingPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "name"]
+- !private ["PSo30UIResponderStandardEditActions", "orbit"]
+- !private ["PSo30UIResponderStandardEditActions", "symbol"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - ["PSo16UIStateRestoring", "DetailView"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -478,6 +527,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - !private "CSo7CALayer"
+- "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
@@ -498,11 +548,14 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
@@ -511,14 +564,14 @@ depends-nominal:
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"

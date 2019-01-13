@@ -6,64 +6,64 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
-- "temperatureSlider"
-- "handSwitch"
-- "newValue"
-- "viewDidLoad"
-- "reloadDetailView"
-- "initCursors"
-- "value"
-- "periodicView"
-- "changeRightHand"
-- "changeHand"
-- "temperatureLabel"
-- "didTapOnCursor"
-- "periodicCollectionView"
 - "cursors"
 - "didChangeValue"
-- "changeLeftHand"
+- "temperatureLabel"
+- "didTapOnCursor"
+- "reloadDetailView"
 - "detailView"
+- "changeHand"
+- "handSwitch"
+- "initCursors"
+- "temperatureSlider"
+- "viewDidLoad"
+- "newValue"
+- "changeRightHand"
+- "value"
+- "periodicView"
+- "changeLeftHand"
+- "periodicCollectionView"
 depends-top-level:
-- !private "NSTextAlignment"
-- !private "CAGradientLayer"
-- !private "CGRectMake"
-- !private "UIColor"
-- !private "StringLiteralType"
-- "UISlider"
-- "UISwitch"
-- !private "NSArray"
-- !private "abs"
-- !private "UIFont"
-- "PeriodicCollectionViewDelegate"
-- !private "=="
-- !private ">"
-- "Int"
+- !private "-"
+- !private "/"
+- "DetailViewDelegate"
+- !private "UIControlEvents"
 - !private "..."
-- !private "UIView"
+- "UIViewController"
+- "UIButton"
+- !private "Void"
+- "PeriodicCollectionViewDataSource"
+- !private "print"
+- !private "AnyObject"
+- !private ">"
+- "Element"
+- !private "Array"
 - !private "BooleanLiteralType"
 - !private "+"
-- "DetailViewDelegate"
-- "PeriodicViewController"
-- "UIViewController"
-- "UILabel"
-- !private "UIControlEvents"
 - !private "CGPoint"
-- !private "||"
-- !private "Array"
-- !private "/"
-- "UICollectionView"
-- "UIButton"
-- !private "print"
-- !private "NSTimeInterval"
-- !private "UnicodeScalarType"
-- !private "Void"
-- !private "-"
-- "PeriodicCollectionViewDataSource"
-- "Element"
-- !private "AnyObject"
-- "ViewController"
+- "UISlider"
 - "DetailViewController"
+- "ViewController"
+- !private "UIFont"
+- !private "StringLiteralType"
+- !private "abs"
+- "UISwitch"
+- !private "CAGradientLayer"
+- !private "UIView"
+- !private "NSTextAlignment"
+- !private "NSTimeInterval"
+- !private "||"
 - !private "CGFloat"
+- "UICollectionView"
+- "Int"
+- !private "CGRectMake"
+- "UILabel"
+- "PeriodicCollectionViewDelegate"
+- !private "UnicodeScalarType"
+- !private "NSArray"
+- !private "=="
+- "PeriodicViewController"
+- !private "UIColor"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -212,6 +212,41 @@ depends-member:
 - !private ["CSo7CALayer", "insertSublayer"]
 - !private ["CSo7CALayer", "position"]
 - !private ["CSo7CALayer", "startPoint"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "addTarget"]
+- !private ["PSo15CALayerDelegate", "affinity"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "animateWithDuration"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "boilingPoint"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "category"]
+- !private ["PSo15CALayerDelegate", "center"]
+- !private ["PSo15CALayerDelegate", "dataSource"]
+- !private ["PSo15CALayerDelegate", "delegate"]
+- !private ["PSo15CALayerDelegate", "font"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "ionization"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "massNumber"]
+- !private ["PSo15CALayerDelegate", "maximumValue"]
+- !private ["PSo15CALayerDelegate", "meltingPoint"]
+- !private ["PSo15CALayerDelegate", "minimumValue"]
+- !private ["PSo15CALayerDelegate", "name"]
+- !private ["PSo15CALayerDelegate", "number"]
+- !private ["PSo15CALayerDelegate", "on"]
+- !private ["PSo15CALayerDelegate", "onTintColor"]
+- !private ["PSo15CALayerDelegate", "orbit"]
+- !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "setTitle"]
+- !private ["PSo15CALayerDelegate", "setTitleColor"]
+- !private ["PSo15CALayerDelegate", "symbol"]
+- !private ["PSo15CALayerDelegate", "tag"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "textAlignment"]
+- !private ["PSo15CALayerDelegate", "titleLabel"]
+- !private ["PSo15CALayerDelegate", "value"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "colors"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
@@ -1526,6 +1561,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "center"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "frame"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textAlignment"]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - !private ["CSo9UIControl", "bounds"]
@@ -1690,6 +1730,41 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "addTarget"]
+- !private ["PSo11UIFocusItem", "affinity"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "animateWithDuration"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "boilingPoint"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "category"]
+- !private ["PSo11UIFocusItem", "center"]
+- !private ["PSo11UIFocusItem", "dataSource"]
+- !private ["PSo11UIFocusItem", "delegate"]
+- !private ["PSo11UIFocusItem", "font"]
+- !private ["PSo11UIFocusItem", "frame"]
+- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "ionization"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "massNumber"]
+- !private ["PSo11UIFocusItem", "maximumValue"]
+- !private ["PSo11UIFocusItem", "meltingPoint"]
+- !private ["PSo11UIFocusItem", "minimumValue"]
+- !private ["PSo11UIFocusItem", "name"]
+- !private ["PSo11UIFocusItem", "number"]
+- !private ["PSo11UIFocusItem", "on"]
+- !private ["PSo11UIFocusItem", "onTintColor"]
+- !private ["PSo11UIFocusItem", "orbit"]
+- !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "setTitle"]
+- !private ["PSo11UIFocusItem", "setTitleColor"]
+- !private ["PSo11UIFocusItem", "symbol"]
+- !private ["PSo11UIFocusItem", "tag"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "textAlignment"]
+- !private ["PSo11UIFocusItem", "titleLabel"]
+- !private ["PSo11UIFocusItem", "value"]
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UILabel", "center"]
 - !private ["CSo7UILabel", "font"]
@@ -1776,6 +1851,80 @@ depends-member:
 - ["CSo11UIResponder", "value"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "CAGradientLayer"]
+- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
+- !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectMake"]
+- ["PSo30UIResponderStandardEditActions", "DetailViewController"]
+- ["PSo30UIResponderStandardEditActions", "Int"]
+- !private ["PSo30UIResponderStandardEditActions", "NSTextAlignment"]
+- !private ["PSo30UIResponderStandardEditActions", "NSTimeInterval"]
+- ["PSo30UIResponderStandardEditActions", "PeriodicCollectionViewDataSource"]
+- ["PSo30UIResponderStandardEditActions", "PeriodicCollectionViewDelegate"]
+- ["PSo30UIResponderStandardEditActions", "PeriodicViewController"]
+- ["PSo30UIResponderStandardEditActions", "UIButton"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIControlEvents"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
+- ["PSo30UIResponderStandardEditActions", "UISwitch"]
+- !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "abs"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "addTarget"]
+- !private ["PSo30UIResponderStandardEditActions", "affinity"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "animateWithDuration"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "boilingPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- !private ["PSo30UIResponderStandardEditActions", "category"]
+- !private ["PSo30UIResponderStandardEditActions", "center"]
+- !private ["PSo30UIResponderStandardEditActions", "changeCell"]
+- ["PSo30UIResponderStandardEditActions", "changeHand"]
+- ["PSo30UIResponderStandardEditActions", "changeLeftHand"]
+- ["PSo30UIResponderStandardEditActions", "changeRightHand"]
+- ["PSo30UIResponderStandardEditActions", "cursors"]
+- ["PSo30UIResponderStandardEditActions", "dataSource"]
+- ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "detailView"]
+- ["PSo30UIResponderStandardEditActions", "didChangeValue"]
+- ["PSo30UIResponderStandardEditActions", "didTapOnCursor"]
+- !private ["PSo30UIResponderStandardEditActions", "font"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- ["PSo30UIResponderStandardEditActions", "handSwitch"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "initCursors"]
+- !private ["PSo30UIResponderStandardEditActions", "ionization"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "massNumber"]
+- !private ["PSo30UIResponderStandardEditActions", "maximumValue"]
+- !private ["PSo30UIResponderStandardEditActions", "meltingPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "minimumValue"]
+- !private ["PSo30UIResponderStandardEditActions", "name"]
+- ["PSo30UIResponderStandardEditActions", "newValue"]
+- !private ["PSo30UIResponderStandardEditActions", "number"]
+- !private ["PSo30UIResponderStandardEditActions", "on"]
+- !private ["PSo30UIResponderStandardEditActions", "onTintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "orbit"]
+- ["PSo30UIResponderStandardEditActions", "periodicCollectionView"]
+- ["PSo30UIResponderStandardEditActions", "periodicView"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadData"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadDelegate"]
+- ["PSo30UIResponderStandardEditActions", "reloadDetailView"]
+- !private ["PSo30UIResponderStandardEditActions", "setTitle"]
+- !private ["PSo30UIResponderStandardEditActions", "setTitleColor"]
+- !private ["PSo30UIResponderStandardEditActions", "symbol"]
+- !private ["PSo30UIResponderStandardEditActions", "tag"]
+- ["PSo30UIResponderStandardEditActions", "temperatureLabel"]
+- ["PSo30UIResponderStandardEditActions", "temperatureSlider"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
+- !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
+- ["PSo30UIResponderStandardEditActions", "value"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "reloadData"]
@@ -2193,6 +2342,7 @@ depends-nominal:
 - !private "Ps11BooleanType"
 - !private "CSo15CAGradientLayer"
 - !private "CSo7CALayer"
+- "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC7CGPoint"
@@ -2279,15 +2429,18 @@ depends-nominal:
 - "PSo34UICollectionViewDelegateFlowLayout"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "CSo9UIControl"
 - !private "VSC15UIControlEvents"
 - !private "VSC14UIControlState"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - !private "CSo8UISlider"
@@ -2325,14 +2478,14 @@ depends-nominal:
 - "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"

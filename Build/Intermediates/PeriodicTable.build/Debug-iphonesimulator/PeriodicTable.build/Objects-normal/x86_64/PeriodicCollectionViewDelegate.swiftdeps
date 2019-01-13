@@ -1,0 +1,402 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PeriodicCollectionViewDelegate"
+provides-nominal:
+- "C13PeriodicTable30PeriodicCollectionViewDelegate"
+provides-member:
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", ""]
+provides-dynamic-lookup:
+- "collectionView"
+depends-top-level:
+- !private "+"
+- !private "-"
+- "UICollectionView"
+- "UICollectionViewLayout"
+- "CGFloat"
+- "NSIndexPath"
+- "NSObject"
+- "PeriodicCollectionViewDelegate"
+- "CGSize"
+- "UICollectionViewDelegateFlowLayout"
+- !private "CGSizeMake"
+- !private "/"
+- "UICollectionViewDelegate"
+depends-member:
+- !private ["Ps9AnyObject", "CGSizeMake"]
+- ["Ps9AnyObject", "collectionView"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numberOfGroups"]
+- ["Ps9AnyObject", "numberOfHeaders"]
+- ["Ps9AnyObject", "numberOfPeriods"]
+- ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
+- ["Ps9AnyObject", "scrollViewDidEndDragging"]
+- ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
+- ["Ps9AnyObject", "scrollViewDidEndZooming"]
+- ["Ps9AnyObject", "scrollViewDidScroll"]
+- ["Ps9AnyObject", "scrollViewDidScrollToTop"]
+- ["Ps9AnyObject", "scrollViewDidZoom"]
+- ["Ps9AnyObject", "scrollViewShouldScrollToTop"]
+- ["Ps9AnyObject", "scrollViewWillBeginDecelerating"]
+- ["Ps9AnyObject", "scrollViewWillBeginDragging"]
+- ["Ps9AnyObject", "scrollViewWillBeginZooming"]
+- ["Ps9AnyObject", "scrollViewWillEndDragging"]
+- ["Ps9AnyObject", "spacing"]
+- ["Ps9AnyObject", "viewForZoomingInScrollView"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "frame"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps11CVarArgType", "CGSizeMake"]
+- ["Ps11CVarArgType", "collectionView"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "numberOfGroups"]
+- ["Ps11CVarArgType", "numberOfHeaders"]
+- ["Ps11CVarArgType", "numberOfPeriods"]
+- ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
+- ["Ps11CVarArgType", "scrollViewDidEndDragging"]
+- ["Ps11CVarArgType", "scrollViewDidEndScrollingAnimation"]
+- ["Ps11CVarArgType", "scrollViewDidEndZooming"]
+- ["Ps11CVarArgType", "scrollViewDidScroll"]
+- ["Ps11CVarArgType", "scrollViewDidScrollToTop"]
+- ["Ps11CVarArgType", "scrollViewDidZoom"]
+- ["Ps11CVarArgType", "scrollViewShouldScrollToTop"]
+- ["Ps11CVarArgType", "scrollViewWillBeginDecelerating"]
+- ["Ps11CVarArgType", "scrollViewWillBeginDragging"]
+- ["Ps11CVarArgType", "scrollViewWillBeginZooming"]
+- ["Ps11CVarArgType", "scrollViewWillEndDragging"]
+- ["Ps11CVarArgType", "spacing"]
+- ["Ps11CVarArgType", "viewForZoomingInScrollView"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
+- ["Ps28CustomDebugStringConvertible", "collectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "numberOfGroups"]
+- ["Ps28CustomDebugStringConvertible", "numberOfHeaders"]
+- ["Ps28CustomDebugStringConvertible", "numberOfPeriods"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidEndScrollingAnimation"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidEndZooming"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidScroll"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidScrollToTop"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewDidZoom"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewShouldScrollToTop"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginDecelerating"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginDragging"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginZooming"]
+- ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
+- ["Ps28CustomDebugStringConvertible", "spacing"]
+- ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGSizeMake"]
+- ["Ps23CustomStringConvertible", "collectionView"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "numberOfGroups"]
+- ["Ps23CustomStringConvertible", "numberOfHeaders"]
+- ["Ps23CustomStringConvertible", "numberOfPeriods"]
+- ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
+- ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
+- ["Ps23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
+- ["Ps23CustomStringConvertible", "scrollViewDidEndZooming"]
+- ["Ps23CustomStringConvertible", "scrollViewDidScroll"]
+- ["Ps23CustomStringConvertible", "scrollViewDidScrollToTop"]
+- ["Ps23CustomStringConvertible", "scrollViewDidZoom"]
+- ["Ps23CustomStringConvertible", "scrollViewShouldScrollToTop"]
+- ["Ps23CustomStringConvertible", "scrollViewWillBeginDecelerating"]
+- ["Ps23CustomStringConvertible", "scrollViewWillBeginDragging"]
+- ["Ps23CustomStringConvertible", "scrollViewWillBeginZooming"]
+- ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
+- ["Ps23CustomStringConvertible", "spacing"]
+- ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGSizeMake"]
+- ["Ps9Equatable", "collectionView"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "numberOfGroups"]
+- ["Ps9Equatable", "numberOfHeaders"]
+- ["Ps9Equatable", "numberOfPeriods"]
+- ["Ps9Equatable", "scrollViewDidEndDecelerating"]
+- ["Ps9Equatable", "scrollViewDidEndDragging"]
+- ["Ps9Equatable", "scrollViewDidEndScrollingAnimation"]
+- ["Ps9Equatable", "scrollViewDidEndZooming"]
+- ["Ps9Equatable", "scrollViewDidScroll"]
+- ["Ps9Equatable", "scrollViewDidScrollToTop"]
+- ["Ps9Equatable", "scrollViewDidZoom"]
+- ["Ps9Equatable", "scrollViewShouldScrollToTop"]
+- ["Ps9Equatable", "scrollViewWillBeginDecelerating"]
+- ["Ps9Equatable", "scrollViewWillBeginDragging"]
+- ["Ps9Equatable", "scrollViewWillBeginZooming"]
+- ["Ps9Equatable", "scrollViewWillEndDragging"]
+- ["Ps9Equatable", "spacing"]
+- ["Ps9Equatable", "viewForZoomingInScrollView"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "CGSizeMake"]
+- ["Ps8Hashable", "collectionView"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "numberOfGroups"]
+- ["Ps8Hashable", "numberOfHeaders"]
+- ["Ps8Hashable", "numberOfPeriods"]
+- ["Ps8Hashable", "scrollViewDidEndDecelerating"]
+- ["Ps8Hashable", "scrollViewDidEndDragging"]
+- ["Ps8Hashable", "scrollViewDidEndScrollingAnimation"]
+- ["Ps8Hashable", "scrollViewDidEndZooming"]
+- ["Ps8Hashable", "scrollViewDidScroll"]
+- ["Ps8Hashable", "scrollViewDidScrollToTop"]
+- ["Ps8Hashable", "scrollViewDidZoom"]
+- ["Ps8Hashable", "scrollViewShouldScrollToTop"]
+- ["Ps8Hashable", "scrollViewWillBeginDecelerating"]
+- ["Ps8Hashable", "scrollViewWillBeginDragging"]
+- ["Ps8Hashable", "scrollViewWillBeginZooming"]
+- ["Ps8Hashable", "scrollViewWillEndDragging"]
+- ["Ps8Hashable", "spacing"]
+- ["Ps8Hashable", "viewForZoomingInScrollView"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "frame"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "UICollectionView"]
+- ["CSo8NSObject", "UICollectionViewLayout"]
+- ["CSo8NSObject", "collectionView"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfGroups"]
+- ["CSo8NSObject", "numberOfHeaders"]
+- ["CSo8NSObject", "numberOfPeriods"]
+- ["CSo8NSObject", "scrollViewDidEndDecelerating"]
+- ["CSo8NSObject", "scrollViewDidEndDragging"]
+- ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
+- ["CSo8NSObject", "scrollViewDidEndZooming"]
+- ["CSo8NSObject", "scrollViewDidScroll"]
+- ["CSo8NSObject", "scrollViewDidScrollToTop"]
+- ["CSo8NSObject", "scrollViewDidZoom"]
+- ["CSo8NSObject", "scrollViewShouldScrollToTop"]
+- ["CSo8NSObject", "scrollViewWillBeginDecelerating"]
+- ["CSo8NSObject", "scrollViewWillBeginDragging"]
+- ["CSo8NSObject", "scrollViewWillBeginZooming"]
+- ["CSo8NSObject", "scrollViewWillEndDragging"]
+- ["CSo8NSObject", "spacing"]
+- ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- ["PSo16NSObjectProtocol", "collectionView"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfGroups"]
+- ["PSo16NSObjectProtocol", "numberOfHeaders"]
+- ["PSo16NSObjectProtocol", "numberOfPeriods"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
+- ["PSo16NSObjectProtocol", "scrollViewDidEndZooming"]
+- ["PSo16NSObjectProtocol", "scrollViewDidScroll"]
+- ["PSo16NSObjectProtocol", "scrollViewDidScrollToTop"]
+- ["PSo16NSObjectProtocol", "scrollViewDidZoom"]
+- ["PSo16NSObjectProtocol", "scrollViewShouldScrollToTop"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginDecelerating"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginDragging"]
+- ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
+- ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
+- ["PSo16NSObjectProtocol", "spacing"]
+- ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "CGFloat"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "CGSize"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "CGSizeMake"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "NSIndexPath"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "UICollectionView"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "UICollectionViewLayout"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "collectionView"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "deinit"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "init"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "numberOfGroups"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "numberOfHeaders"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "numberOfPeriods"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidEndDecelerating"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidEndDragging"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidEndZooming"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidScroll"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidScrollToTop"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewDidZoom"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewShouldScrollToTop"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewWillBeginDecelerating"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewWillBeginDragging"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewWillBeginZooming"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "scrollViewWillEndDragging"]
+- !private ["C13PeriodicTable30PeriodicCollectionViewDelegate", "spacing"]
+- ["C13PeriodicTable30PeriodicCollectionViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["CSo16UICollectionView", "frame"]
+- !private ["PSo24UICollectionViewDelegate", "CGSizeMake"]
+- ["PSo24UICollectionViewDelegate", "collectionView"]
+- ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "numberOfGroups"]
+- !private ["PSo24UICollectionViewDelegate", "numberOfHeaders"]
+- !private ["PSo24UICollectionViewDelegate", "numberOfPeriods"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidEndDragging"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidEndZooming"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidScroll"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidScrollToTop"]
+- ["PSo24UICollectionViewDelegate", "scrollViewDidZoom"]
+- ["PSo24UICollectionViewDelegate", "scrollViewShouldScrollToTop"]
+- ["PSo24UICollectionViewDelegate", "scrollViewWillBeginDecelerating"]
+- ["PSo24UICollectionViewDelegate", "scrollViewWillBeginDragging"]
+- ["PSo24UICollectionViewDelegate", "scrollViewWillBeginZooming"]
+- ["PSo24UICollectionViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo24UICollectionViewDelegate", "spacing"]
+- ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo24UICollectionViewDelegate", ""]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSizeMake"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "numberOfGroups"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "numberOfHeaders"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "numberOfPeriods"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDecelerating"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDragging"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndScrollingAnimation"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndZooming"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidScroll"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidScrollToTop"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidZoom"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewShouldScrollToTop"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillBeginDecelerating"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillBeginDragging"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillBeginZooming"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillEndDragging"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "spacing"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
+- ["PSo34UICollectionViewDelegateFlowLayout", ""]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["CSo12UIScrollView", "frame"]
+- !private ["PSo20UIScrollViewDelegate", "CGSizeMake"]
+- ["PSo20UIScrollViewDelegate", "collectionView"]
+- ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "numberOfGroups"]
+- !private ["PSo20UIScrollViewDelegate", "numberOfHeaders"]
+- !private ["PSo20UIScrollViewDelegate", "numberOfPeriods"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidEndZooming"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidScroll"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidScrollToTop"]
+- ["PSo20UIScrollViewDelegate", "scrollViewDidZoom"]
+- ["PSo20UIScrollViewDelegate", "scrollViewShouldScrollToTop"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDecelerating"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDragging"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
+- ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo20UIScrollViewDelegate", "spacing"]
+- ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["CSo6UIView", "frame"]
+- !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "width"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13PeriodicTable30PeriodicCollectionViewDelegate"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo16UICollectionView"
+- "PSo24UICollectionViewDelegate"
+- "PSo34UICollectionViewDelegateFlowLayout"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMListBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMResults.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMConstants.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMProperty.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObject.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMMigration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMCollection.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMArray.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Modules/module.modulemap"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "3de4a8f1f00790fa1fb8f8d327784f09"

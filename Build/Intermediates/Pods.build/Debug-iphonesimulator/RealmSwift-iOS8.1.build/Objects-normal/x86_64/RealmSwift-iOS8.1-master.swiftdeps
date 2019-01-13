@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "449629dc0bea927c1347dd212b1cf2e2"
+build_time: [519362848, 522252000]
+inputs:
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Aliases.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Error.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/LinkingObjects.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/List.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Migration.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Object.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/ObjectSchema.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Optional.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Property.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Realm.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/RealmCollectionType.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/RealmConfiguration.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Results.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Schema.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/SortDescriptor.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/SwiftVersion.swift": [9223372036854775807, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Util.swift": [9223372036854775807, 0]

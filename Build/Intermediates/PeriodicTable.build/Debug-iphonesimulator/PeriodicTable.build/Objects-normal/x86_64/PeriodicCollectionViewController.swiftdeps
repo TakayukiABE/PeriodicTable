@@ -1,0 +1,371 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PeriodicCollectionViewController"
+provides-nominal:
+- "C13PeriodicTable32PeriodicCollectionViewController"
+provides-member:
+- ["C13PeriodicTable32PeriodicCollectionViewController", ""]
+provides-dynamic-lookup:
+- "collectionView"
+- "collectionView"
+- "numberOfSectionsInCollectionView"
+- "viewDidLoad"
+depends-top-level:
+- "UICollectionView"
+- "UINib"
+- "UICollectionViewController"
+- "PeriodicCollectionViewController"
+- "Int"
+- "StringLiteralType"
+- "NSIndexPath"
+- !private "reuseIdentifier"
+- "UICollectionViewCell"
+depends-member:
+- ["Ps9AnyObject", "Nib"]
+- !private ["Ps9AnyObject", "UICollectionViewCell"]
+- ["Ps9AnyObject", "UINib"]
+- ["Ps9AnyObject", "collectionView"]
+- !private ["Ps9AnyObject", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
+- !private ["Ps9AnyObject", "registerClass"]
+- !private ["Ps9AnyObject", "reuseIdentifier"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo15CALayerDelegate", "registerClass"]
+- ["Ps11CVarArgType", "Nib"]
+- !private ["Ps11CVarArgType", "UICollectionViewCell"]
+- ["Ps11CVarArgType", "UINib"]
+- ["Ps11CVarArgType", "collectionView"]
+- !private ["Ps11CVarArgType", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
+- !private ["Ps11CVarArgType", "registerClass"]
+- !private ["Ps11CVarArgType", "reuseIdentifier"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "Nib"]
+- !private ["Ps28CustomDebugStringConvertible", "UICollectionViewCell"]
+- ["Ps28CustomDebugStringConvertible", "UINib"]
+- ["Ps28CustomDebugStringConvertible", "collectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "registerClass"]
+- !private ["Ps28CustomDebugStringConvertible", "reuseIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "Nib"]
+- !private ["Ps23CustomStringConvertible", "UICollectionViewCell"]
+- ["Ps23CustomStringConvertible", "UINib"]
+- ["Ps23CustomStringConvertible", "collectionView"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
+- !private ["Ps23CustomStringConvertible", "registerClass"]
+- !private ["Ps23CustomStringConvertible", "reuseIdentifier"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "Nib"]
+- !private ["Ps9Equatable", "UICollectionViewCell"]
+- ["Ps9Equatable", "UINib"]
+- ["Ps9Equatable", "collectionView"]
+- !private ["Ps9Equatable", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "numberOfSectionsInCollectionView"]
+- !private ["Ps9Equatable", "registerClass"]
+- !private ["Ps9Equatable", "reuseIdentifier"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "Nib"]
+- !private ["Ps8Hashable", "UICollectionViewCell"]
+- ["Ps8Hashable", "UINib"]
+- ["Ps8Hashable", "collectionView"]
+- !private ["Ps8Hashable", "dequeueReusableCellWithReuseIdentifier"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "numberOfSectionsInCollectionView"]
+- !private ["Ps8Hashable", "registerClass"]
+- !private ["Ps8Hashable", "reuseIdentifier"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "Nib"]
+- !private ["PSo8NSCoding", "UICollectionViewCell"]
+- ["PSo8NSCoding", "UINib"]
+- ["PSo8NSCoding", "collectionView"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
+- !private ["PSo8NSCoding", "registerClass"]
+- !private ["PSo8NSCoding", "reuseIdentifier"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "Nib"]
+- !private ["PSo26NSExtensionRequestHandling", "UICollectionViewCell"]
+- ["PSo26NSExtensionRequestHandling", "UINib"]
+- ["PSo26NSExtensionRequestHandling", "collectionView"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
+- !private ["PSo26NSExtensionRequestHandling", "reuseIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "Nib"]
+- ["CSo8NSObject", "UICollectionView"]
+- ["CSo8NSObject", "UICollectionViewCell"]
+- ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "collectionView"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithReuseIdentifier"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSectionsInCollectionView"]
+- !private ["CSo8NSObject", "registerClass"]
+- !private ["CSo8NSObject", "reuseIdentifier"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Nib"]
+- !private ["PSo16NSObjectProtocol", "UICollectionViewCell"]
+- ["PSo16NSObjectProtocol", "UINib"]
+- ["PSo16NSObjectProtocol", "collectionView"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
+- !private ["PSo16NSObjectProtocol", "registerClass"]
+- !private ["PSo16NSObjectProtocol", "reuseIdentifier"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "Int"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "NSIndexPath"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewController", "Nib"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "UICollectionView"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "UICollectionViewCell"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "UINib"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "collectionView"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "deinit"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "init"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "numberOfSectionsInCollectionView"]
+- !private ["C13PeriodicTable32PeriodicCollectionViewController", "reuseIdentifier"]
+- ["C13PeriodicTable32PeriodicCollectionViewController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "registerClass"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo12UIAppearance", "registerClass"]
+- ["PSo21UIAppearanceContainer", "Nib"]
+- !private ["PSo21UIAppearanceContainer", "UICollectionViewCell"]
+- ["PSo21UIAppearanceContainer", "UINib"]
+- ["PSo21UIAppearanceContainer", "collectionView"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo21UIAppearanceContainer", "registerClass"]
+- !private ["PSo21UIAppearanceContainer", "reuseIdentifier"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo16UICollectionView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo16UICollectionView", "registerClass"]
+- ["CSo26UICollectionViewController", "Int"]
+- ["CSo26UICollectionViewController", "NSIndexPath"]
+- ["CSo26UICollectionViewController", "Nib"]
+- ["CSo26UICollectionViewController", "UICollectionView"]
+- ["CSo26UICollectionViewController", "UICollectionViewCell"]
+- ["CSo26UICollectionViewController", "UINib"]
+- ["CSo26UICollectionViewController", "collectionView"]
+- ["CSo26UICollectionViewController", "init"]
+- ["CSo26UICollectionViewController", "numberOfSectionsInCollectionView"]
+- !private ["CSo26UICollectionViewController", "reuseIdentifier"]
+- ["CSo26UICollectionViewController", "viewDidLoad"]
+- ["CSo26UICollectionViewController", ""]
+- ["PSo26UICollectionViewDataSource", "Nib"]
+- !private ["PSo26UICollectionViewDataSource", "UICollectionViewCell"]
+- ["PSo26UICollectionViewDataSource", "UINib"]
+- ["PSo26UICollectionViewDataSource", "collectionView"]
+- ["PSo26UICollectionViewDataSource", "init"]
+- ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "reuseIdentifier"]
+- ["PSo26UICollectionViewDataSource", "viewDidLoad"]
+- ["PSo26UICollectionViewDataSource", ""]
+- ["PSo24UICollectionViewDelegate", "Nib"]
+- !private ["PSo24UICollectionViewDelegate", "UICollectionViewCell"]
+- ["PSo24UICollectionViewDelegate", "UINib"]
+- ["PSo24UICollectionViewDelegate", "collectionView"]
+- ["PSo24UICollectionViewDelegate", "init"]
+- ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "reuseIdentifier"]
+- ["PSo24UICollectionViewDelegate", "viewDidLoad"]
+- ["PSo24UICollectionViewDelegate", ""]
+- ["PSo18UIContentContainer", "Nib"]
+- !private ["PSo18UIContentContainer", "UICollectionViewCell"]
+- ["PSo18UIContentContainer", "UINib"]
+- ["PSo18UIContentContainer", "collectionView"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIContentContainer", "reuseIdentifier"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo17UICoordinateSpace", "registerClass"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo13UIDynamicItem", "registerClass"]
+- ["PSo18UIFocusEnvironment", "Nib"]
+- !private ["PSo18UIFocusEnvironment", "UICollectionViewCell"]
+- ["PSo18UIFocusEnvironment", "UINib"]
+- ["PSo18UIFocusEnvironment", "collectionView"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIFocusEnvironment", "registerClass"]
+- !private ["PSo18UIFocusEnvironment", "reuseIdentifier"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo11UIFocusItem", "registerClass"]
+- ["CSo5UINib", "init"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- ["CSo11UIResponder", "Nib"]
+- ["CSo11UIResponder", "UICollectionView"]
+- ["CSo11UIResponder", "UICollectionViewCell"]
+- ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "collectionView"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithReuseIdentifier"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
+- !private ["CSo11UIResponder", "registerClass"]
+- !private ["CSo11UIResponder", "reuseIdentifier"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "Nib"]
+- !private ["PSo30UIResponderStandardEditActions", "UICollectionViewCell"]
+- ["PSo30UIResponderStandardEditActions", "UINib"]
+- ["PSo30UIResponderStandardEditActions", "collectionView"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
+- !private ["PSo30UIResponderStandardEditActions", "registerClass"]
+- !private ["PSo30UIResponderStandardEditActions", "reuseIdentifier"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo12UIScrollView", "registerClass"]
+- ["PSo20UIScrollViewDelegate", "Nib"]
+- !private ["PSo20UIScrollViewDelegate", "UICollectionViewCell"]
+- ["PSo20UIScrollViewDelegate", "UINib"]
+- ["PSo20UIScrollViewDelegate", "collectionView"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "reuseIdentifier"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- ["PSo16UIStateRestoring", "Nib"]
+- !private ["PSo16UIStateRestoring", "UICollectionViewCell"]
+- ["PSo16UIStateRestoring", "UINib"]
+- ["PSo16UIStateRestoring", "collectionView"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
+- !private ["PSo16UIStateRestoring", "reuseIdentifier"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Nib"]
+- !private ["PSo18UITraitEnvironment", "UICollectionViewCell"]
+- ["PSo18UITraitEnvironment", "UINib"]
+- ["PSo18UITraitEnvironment", "collectionView"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UITraitEnvironment", "registerClass"]
+- !private ["PSo18UITraitEnvironment", "reuseIdentifier"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo6UIView", "registerClass"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- ["CSo16UIViewController", "Nib"]
+- ["CSo16UIViewController", "UICollectionView"]
+- ["CSo16UIViewController", "UICollectionViewCell"]
+- ["CSo16UIViewController", "UINib"]
+- ["CSo16UIViewController", "collectionView"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
+- !private ["CSo16UIViewController", "reuseIdentifier"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps12_Reflectable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps12_Reflectable", "registerClass"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13PeriodicTable32PeriodicCollectionViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo16UICollectionView"
+- "CSo26UICollectionViewController"
+- "PSo26UICollectionViewDataSource"
+- "PSo24UICollectionViewDelegate"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo5UINib"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMListBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMResults.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMRealm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMConstants.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMProperty.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMObject.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMMigration.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMCollection.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/RLMArray.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/Realm.framework/Modules/module.modulemap"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "fe2345af35a75aa97f6e985c8b6ced02"
