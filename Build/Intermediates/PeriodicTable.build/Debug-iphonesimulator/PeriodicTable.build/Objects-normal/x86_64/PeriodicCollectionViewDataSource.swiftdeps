@@ -6,49 +6,26 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable32PeriodicCollectionViewDataSource", ""]
 provides-dynamic-lookup:
+- "collectionView"
+- "collectionView"
 - "numberOfSectionsInCollectionView"
-- "collectionView"
-- "collectionView"
 - "setTemperature"
 depends-top-level:
+- "UICollectionView"
+- !private "&&"
+- !private ">"
+- "PeriodicCollectionViewDataSource"
+- "NSObject"
+- !private "PeriodicCollectionViewCell"
 - "Int"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- "NSObject"
+- "UICollectionViewDataSource"
+- "UICollectionViewCell"
+- !private "UIColor"
+- !private "=="
+- "Array"
 - "NSIndexPath"
 - "PeriodicModel"
-- !private "PeriodicCollectionViewCell"
-- !private ">"
-- !private "UIColor"
 - !private "StringLiteralType"
-- "UICollectionView"
-- !private "&&"
-- "Array"
-- "UICollectionViewDataSource"
-- "PeriodicCollectionViewDataSource"
-- !private "=="
-- "UICollectionViewCell"
-=======
-=======
->>>>>>> Stashed changes
-- "NSIndexPath"
-- !private "UIColor"
-- !private "&&"
-- "Array"
-- !private "PeriodicCollectionViewCell"
-- !private "=="
-- !private "StringLiteralType"
-- !private ">"
-- "UICollectionViewDataSource"
-- "PeriodicCollectionViewDataSource"
-- "PeriodicModel"
-- "UICollectionViewCell"
-- "UICollectionView"
-- "NSObject"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "PeriodicModel"]
 - !private ["Ps9AnyObject", "UIColor"]

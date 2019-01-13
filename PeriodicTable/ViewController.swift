@@ -17,16 +17,19 @@ class ViewController: UIViewController, DetailViewDelegate {
 //    var temperatureSlider = UISlider()
     @IBOutlet weak var temperatureLabel: UILabel!
 //    var temperature = UILabel()
+    
+    let detailView = DetailView()
+    
+    
     var value = 25
     var newValue = Int()
     var cursors = [UIButton]()
     var handSwitch = UISwitch()
     var periodicView = PeriodicViewController()
-    var detailView = DetailViewController()
+//    var detailView = DetailViewController()
     
     private let delegate = PeriodicCollectionViewDelegate()
     private let dataSource = PeriodicCollectionViewDataSource()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +77,8 @@ class ViewController: UIViewController, DetailViewDelegate {
         handSwitch.layer.cornerRadius = 15
         self.view.addSubview(handSwitch)
         
-        detailView.view.frame = CGRectMake(detailView.view.frame.origin.x, detailView.view.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.view.frame.origin.y - 8)
-        detailView.detailView.frame = CGRectMake(detailView.detailView.frame.origin.x, detailView.detailView.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.detailView.frame.origin.y - 8)
+        //detailView.view.frame = CGRectMake(detailView.view.frame.origin.x, detailView.view.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.view.frame.origin.y - 8)
+//        detailView.detailView.frame = CGRectMake(detailView.detailView.frame.origin.x, detailView.detailView.frame.origin.y, self.view.frame.midX - 80, self.view.frame.height - detailView.detailView.frame.origin.y - 8)
     }
     
     func changeHand(sender:UISwitch) {
@@ -93,7 +96,7 @@ class ViewController: UIViewController, DetailViewDelegate {
                 self.cursors[1].frame = CGRectMake(self.view.frame.width - 250, self.view.frame.height - 110, 100, 100)
                 self.cursors[2].frame = CGRectMake(self.view.frame.size.width - 250, self.view.frame.height - 210, 100, 100)
                 self.cursors[3].frame = CGRectMake(self.view.frame.size.width - 150, self.view.frame.height - 110, 100, 100)
-                self.detailView.view.frame = CGRectMake(8, 550, self.detailView.view.frame.width, self.detailView.view.frame.height)
+                self.detailView.frame = CGRectMake(8, 550, self.detailView.frame.width, self.detailView.frame.height)
                 
             }, completion: {(Bool) -> Void in
         })
@@ -107,38 +110,39 @@ class ViewController: UIViewController, DetailViewDelegate {
                 self.cursors[2].frame = CGRectMake(150, self.view.frame.height - 210, 100, 100)
                 self.cursors[3].frame = CGRectMake(250, self.view.frame.height - 110, 100, 100)
 
-                                self.detailView.view.frame = CGRectMake(self.view.frame.midX + 80 - 8, 550, self.detailView.view.frame.width, self.detailView.view.frame.height)
+//                                self.detailView.view.frame = CGRectMake(self.view.frame.midX + 80 - 8, 550, self.detailView.view.frame.width, self.detailView.view.frame.height)
             }, completion: {(Bool) -> Void in
         })
     }
     
     func reloadDetailView(element:Element) {
-        detailView.view.alpha = 0.5
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
-            self.detailView.view.alpha = 1
-        })
-        detailView.detailView.name.text = element.name
-        detailView.detailView.symbol.text = element.symbol
-        detailView.detailView.number.text = "\(element.number)"
-        detailView.detailView.massNumber.text = "\(element.massNumber)"
-        detailView.detailView.orbit.text = element.orbit
-        if element.meltingPoint == 9999 {
-            detailView.detailView.meltingPoint.text = "融点：なし"
-        }else {
-            detailView.detailView.meltingPoint.text = "融点：\(element.meltingPoint)℃"
-        }
-        if element.boilingPoint == 9999 {
-            detailView.detailView.boilingPoint.text = "沸点：-"
-        }else {
-            detailView.detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
-        }
-        detailView.detailView.category.text = "\(element.category)"
-        detailView.detailView.ionization.text = "第1イオン化エネルギー：\(element.ionization)kJ/mol"
-        if element.affinity == 9999 {
-            detailView.detailView.affinity.text = "電子親和力：-"
-        }else {
-            detailView.detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
-        }
+//        detailView.alpha = 0.5
+//        UIView.animateWithDuration(0.3, animations: { () -> Void in
+//            self.detailView.alpha = 1
+//        })
+        
+//        detailView.name.text = element.name
+        detailView.symbol.text = element.symbol
+//        detailView.number.text = "\(element.number)"
+//        detailView.massNumber.text = "\(element.massNumber)"
+//        detailView.orbit.text = element.orbit
+//        if element.meltingPoint == 9999 {
+//            detailView.meltingPoint.text = "融点：なし"
+//        }else {
+//            detailView.meltingPoint.text = "融点：\(element.meltingPoint)℃"
+//        }
+//        if element.boilingPoint == 9999 {
+//            detailView.boilingPoint.text = "沸点：-"
+//        }else {
+//            detailView.boilingPoint.text = "沸点：\(element.boilingPoint)℃"
+//        }
+//        detailView.category.text = "\(element.category)"
+//        detailView.ionization.text = "第1イオン化エネルギー：\(element.ionization)kJ/mol"
+//        if element.affinity == 9999 {
+//            detailView.affinity.text = "電子親和力：-"
+//        }else {
+//            detailView.affinity.text = "電子親和力：\(element.affinity)kJ/mol"
+//        }
     }
 
     func initCursors() {

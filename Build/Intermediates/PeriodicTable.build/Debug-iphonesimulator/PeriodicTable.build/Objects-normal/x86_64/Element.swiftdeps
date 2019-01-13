@@ -6,55 +6,26 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable7Element", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 - "ionization"
-- "orbit"
-- "name"
 - "category"
-- "group"
-- "number"
-- "state"
-- "period"
-- "meltingPoint"
-- "massNumber"
-- "boilingPoint"
-- "symbol"
-- "affinity"
-depends-top-level:
-- "Double"
-- "Element"
-- "Object"
-- "Int"
-- "StringLiteralType"
-- "String"
-=======
-=======
->>>>>>> Stashed changes
-- "boilingPoint"
-- "group"
-- "orbit"
-- "state"
-- "name"
-- "affinity"
-- "meltingPoint"
-- "category"
-- "symbol"
 - "period"
 - "number"
+- "boilingPoint"
+- "group"
+- "symbol"
+- "orbit"
+- "name"
+- "affinity"
 - "massNumber"
-- "ionization"
+- "meltingPoint"
+- "state"
 depends-top-level:
-- "Object"
-- "Double"
 - "Element"
 - "Int"
-- "String"
+- "Double"
+- "Object"
 - "StringLiteralType"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+- "String"
 depends-member:
 - ["Ps9AnyObject", "affinity"]
 - ["Ps9AnyObject", "boilingPoint"]

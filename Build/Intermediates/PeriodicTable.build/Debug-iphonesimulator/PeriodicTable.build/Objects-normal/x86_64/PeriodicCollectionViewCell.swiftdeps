@@ -8,21 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "elementName"
 depends-top-level:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- "UILabel"
-- "PeriodicCollectionViewCell"
-- "UICollectionViewCell"
-=======
 - "PeriodicCollectionViewCell"
 - "UICollectionViewCell"
 - "UILabel"
->>>>>>> Stashed changes
-=======
-- "PeriodicCollectionViewCell"
-- "UICollectionViewCell"
-- "UILabel"
->>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "elementName"]
 - ["Ps9AnyObject", "init"]

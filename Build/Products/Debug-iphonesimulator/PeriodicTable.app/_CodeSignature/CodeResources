@@ -54,19 +54,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-<<<<<<< Updated upstream
 		yyrcQgZtH41Igdh37JdIEJmDH18=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		RnnEdWILVUugWY5XxZFjFqZ0tBU=
-=======
-		SzcvL26Mq6xnosNsSaxZTZjtM80=
-		</data>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<data>
-		IpDAHYhv8Z6vhWPrv1jpj9nEWvE=
->>>>>>> Stashed changes
+		fpb+Y1hD7Oc/wII3EcmziAlbtBI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -74,19 +66,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-<<<<<<< Updated upstream
-		3CzXN1uM4Y8LUu/4op2Md/+M0jI=
+		gjXbVx67oXERfDGoKTwdQzB9Ib8=
 		</data>
 		<key>ElementDetailView.nib</key>
 		<data>
-		HJVVi1TIy1C8h4PaR41MWy8yxJM=
-=======
-		qOxS2nhTKrS/fyeIghCMHo3CTwE=
-		</data>
-		<key>ElementDetailView.nib</key>
-		<data>
-		bnJCbVTnFbk8OiKL31vNVySQEKw=
->>>>>>> Stashed changes
+		hYG+rHq3sv06wasf8cDgImp2BOs=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -110,11 +94,7 @@
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-<<<<<<< Updated upstream
-		osRbcON2AbvYqewyxvI4rIkW2wo=
-=======
-		83IHAbV4HSYy7SJBMix8c1pgPNk=
->>>>>>> Stashed changes
+		sSwV1MMApEtZWcZTOPbQ48m47ps=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -126,11 +106,7 @@
 		</data>
 		<key>Frameworks/RealmSwift.framework/RealmSwift</key>
 		<data>
-<<<<<<< Updated upstream
-		tB5uljRte225aRJYr0rIW3pSkHI=
-=======
-		wtAHllhoFpjPnEbOS9gR+NTIZiw=
->>>>>>> Stashed changes
+		Ymm+mZSyOOzY/hM4XubPc6kTEcA=
 		</data>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -355,19 +331,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-<<<<<<< Updated upstream
-		UeLjtkttFWC8KCtWoTH1rBu+B5w=
-		</data>
-		<key>PeriodicCollectionViewCell.nib</key>
-		<data>
-		CloFh+iP16gvpW95K1UGhBJHKwo=
-=======
 		wc37u0V9dR1tbIuB9y8TghoOId4=
 		</data>
 		<key>PeriodicCollectionViewCell.nib</key>
 		<data>
-		hge1wtvPrAurZADYgnL7arzBFf0=
->>>>>>> Stashed changes
+		CloFh+iP16gvpW95K1UGhBJHKwo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -419,19 +387,11 @@
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/PeriodicTableTests</key>
 		<data>
-<<<<<<< Updated upstream
-		d5T5Q/QN5t/joJUrs3aB/E26i3A=
+		LGWo62iOIcv2jx+lElLZVOiqPaw=
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
 		+7IpEgZxlof3BYiOREvOmRoEyeA=
-=======
-		hw8ifiO6GllrZBrkWldwLStDaGc=
-		</data>
-		<key>PlugIns/PeriodicTableTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		B0w9oQDzHbKPnrMYYG5Td4rXPFM=
->>>>>>> Stashed changes
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/libswiftRemoteMirror.dylib</key>
 		<data>
@@ -439,11 +399,7 @@
 		</data>
 		<key>SeparateCollectionViewCell.nib</key>
 		<data>
-<<<<<<< Updated upstream
 		tGThlb1ccmV5oRzVnLcBy4aKfbQ=
-=======
-		5kIn9EkNdBLwBAiTn+5SOb2shis=
->>>>>>> Stashed changes
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -588,38 +544,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
 			yyrcQgZtH41Igdh37JdIEJmDH18=
 			</data>
 			<key>hash2</key>
 			<data>
 			GG8hU5pAx2yDLZWlYagigdzVbDUcEV2zRK7BZrFm5Q0=
-=======
-			SzcvL26Mq6xnosNsSaxZTZjtM80=
-			</data>
-			<key>hash2</key>
-			<data>
-			5IFplXQaWYTFaetQ8avooY8qJV5m/ULGJrVD8gL4GhI=
->>>>>>> Stashed changes
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			RnnEdWILVUugWY5XxZFjFqZ0tBU=
+			fpb+Y1hD7Oc/wII3EcmziAlbtBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhx62OqZnhm0ZOavl1zIY+z2ZoLsGWfPmut22NheahQ=
-=======
-			IpDAHYhv8Z6vhWPrv1jpj9nEWvE=
-			</data>
-			<key>hash2</key>
-			<data>
-			2g1UFqn9P/cdHK5O08WmBGaOcU9Vq6hgqwK8yMvdfg8=
->>>>>>> Stashed changes
+			dnZNqxEeEP48FCenDiFweyYTLS4pU/LQsdARfMbLNTM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -637,38 +577,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			3CzXN1uM4Y8LUu/4op2Md/+M0jI=
+			gjXbVx67oXERfDGoKTwdQzB9Ib8=
 			</data>
 			<key>hash2</key>
 			<data>
-			aaAsLGy0O1exZovsiTREtLKe5UpEOWhem/xT9BQof6k=
-=======
-			qOxS2nhTKrS/fyeIghCMHo3CTwE=
-			</data>
-			<key>hash2</key>
-			<data>
-			s7LWkz/xIfbwUpbDB0dF0M7Oa/kxUU3g7bzr8jfM+J0=
->>>>>>> Stashed changes
+			NbsJ+NxAgi9KBj4cBMSPl8JzR/F1a7kZx2FeIu2fbro=
 			</data>
 		</dict>
 		<key>ElementDetailView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			HJVVi1TIy1C8h4PaR41MWy8yxJM=
+			hYG+rHq3sv06wasf8cDgImp2BOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AHDOpIgVsNY04xnUbSQjN2Dqa9S4h4L0XYCntpttEVs=
-=======
-			bnJCbVTnFbk8OiKL31vNVySQEKw=
-			</data>
-			<key>hash2</key>
-			<data>
-			YtDSP1qSPyg7GiqRhl2BhJdosn4jtT4ddKUerjnWMiM=
->>>>>>> Stashed changes
+			xq2SxMrRGYl3HqFkxZOsh/B9gpAnTQKZiW/5I2+Nt5s=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -730,19 +654,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			osRbcON2AbvYqewyxvI4rIkW2wo=
+			sSwV1MMApEtZWcZTOPbQ48m47ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			sQjOi+AYVmU5tgMf5mKerOnxrr5XbHFkExRME1IkbBM=
-=======
-			83IHAbV4HSYy7SJBMix8c1pgPNk=
-			</data>
-			<key>hash2</key>
-			<data>
-			GyDg2LfZHed8M0f9MgXGA/QnfRmhpvU+dhJeOnliKgU=
->>>>>>> Stashed changes
+			BiywIstuNgJTmuof/SeLiZQoWWvQT4f8ouo4iP0tG+Y=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -771,19 +687,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			tB5uljRte225aRJYr0rIW3pSkHI=
+			Ymm+mZSyOOzY/hM4XubPc6kTEcA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dUXVP4/7mzLEjlgOkfp7uYwrLN8dQ6rqMvc06a4YAF4=
-=======
-			wtAHllhoFpjPnEbOS9gR+NTIZiw=
-			</data>
-			<key>hash2</key>
-			<data>
-			VoVkIEqBSQnwykhkRJbeANJj6extUE5ZKPnhJ/E1ZL0=
->>>>>>> Stashed changes
+			7nM8txFJwqEN/448EY/vhW3QnqDQRLDCYig3RTPCkW0=
 			</data>
 		</dict>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
@@ -1391,19 +1299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
 			CloFh+iP16gvpW95K1UGhBJHKwo=
 			</data>
 			<key>hash2</key>
 			<data>
 			HBrI0Myj202CPeLJmEbf1TBu0InP5OKzXR6OBTtKF9M=
-=======
-			hge1wtvPrAurZADYgnL7arzBFf0=
-			</data>
-			<key>hash2</key>
-			<data>
-			fFljGObpNST+PbWusm95YzSxk6bcxznSy0yIz8dzGKw=
->>>>>>> Stashed changes
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/Frameworks/libswiftContacts.dylib</key>
@@ -1531,38 +1431,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
-			d5T5Q/QN5t/joJUrs3aB/E26i3A=
+			LGWo62iOIcv2jx+lElLZVOiqPaw=
 			</data>
 			<key>hash2</key>
 			<data>
-			t0UJD8VJs1zwBLik9I2LvnnWbJwfIHQZWrzrra2voTo=
-=======
-			hw8ifiO6GllrZBrkWldwLStDaGc=
-			</data>
-			<key>hash2</key>
-			<data>
-			U7u6iVXQ24Dlp5zzFoZPuz/1xIIpGa83krBjgLTH7G4=
->>>>>>> Stashed changes
+			AELd0lAlj2jwykLfBdOoVnWY+OGBY+jPsKUirmO3GLQ=
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
 			+7IpEgZxlof3BYiOREvOmRoEyeA=
 			</data>
 			<key>hash2</key>
 			<data>
 			PbhE6ePtr+qgse4k6R4e2MO6WP8Kkuz1iLR0x6ScWyo=
-=======
-			B0w9oQDzHbKPnrMYYG5Td4rXPFM=
-			</data>
-			<key>hash2</key>
-			<data>
-			LpOgHBDILjCZDi0o4EpAZRfDYhF4hpSsWmjMQkh62yE=
->>>>>>> Stashed changes
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/libswiftRemoteMirror.dylib</key>
@@ -1580,19 +1464,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< Updated upstream
 			tGThlb1ccmV5oRzVnLcBy4aKfbQ=
 			</data>
 			<key>hash2</key>
 			<data>
 			/ZQZ0LrzP26R670dfc4byHHVPQ2dLDMWaxKMjHcKfZ0=
-=======
-			5kIn9EkNdBLwBAiTn+5SOb2shis=
-			</data>
-			<key>hash2</key>
-			<data>
-			ppj3qHjZbUbkQ0PdIiN/F4WQE+50fmZ8EnEB/yoo5NY=
->>>>>>> Stashed changes
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

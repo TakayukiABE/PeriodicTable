@@ -131,7 +131,6 @@ SWIFT_CLASS("_TtC13PeriodicTable10DetailView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified category;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified ionization;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified affinity;
-+ (DetailView * _Nonnull)createInstance;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -140,9 +139,7 @@ SWIFT_CLASS("_TtC13PeriodicTable10DetailView")
 
 SWIFT_CLASS("_TtC13PeriodicTable20DetailViewController")
 @interface DetailViewController : UIViewController
-@property (nonatomic, strong) DetailView * _Nonnull detailView;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -270,12 +267,12 @@ SWIFT_CLASS("_TtC13PeriodicTable14ViewController")
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified periodicCollectionView;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified temperatureSlider;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified temperatureLabel;
+@property (nonatomic, readonly, strong) DetailView * _Nonnull detailView;
 @property (nonatomic) NSInteger value;
 @property (nonatomic) NSInteger newValue;
 @property (nonatomic, copy) NSArray<UIButton *> * _Nonnull cursors;
 @property (nonatomic, strong) UISwitch * _Nonnull handSwitch;
 @property (nonatomic, strong) PeriodicViewController * _Nonnull periodicView;
-@property (nonatomic, strong) DetailViewController * _Nonnull detailView;
 - (void)viewDidLoad;
 - (void)changeHand:(UISwitch * _Nonnull)sender;
 - (void)changeRightHand;

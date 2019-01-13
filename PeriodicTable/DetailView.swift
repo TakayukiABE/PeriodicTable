@@ -21,7 +21,7 @@ class DetailView: UIView {
     @IBOutlet weak var ionization: UILabel!
     @IBOutlet weak var affinity: UILabel!
     
-    class func createInstance() -> DetailView {
-        return UINib(nibName: "ElementDetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! DetailView
-    }
+//    class func createInstance() -> DetailView {
+    //        return UINib(nibName: "ElementDetailView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! DetailView
+//    }
 }

@@ -6,131 +6,63 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+- "value"
+- "initCursors"
+- "detailView"
+- "changeRightHand"
 - "cursors"
+- "periodicCollectionView"
+- "temperatureSlider"
+- "newValue"
+- "changeLeftHand"
+- "periodicView"
+- "changeHand"
+- "didTapOnCursor"
+- "handSwitch"
 - "didChangeValue"
 - "temperatureLabel"
-- "didTapOnCursor"
 - "reloadDetailView"
-- "detailView"
-- "changeHand"
-- "handSwitch"
-- "initCursors"
-- "temperatureSlider"
 - "viewDidLoad"
-- "newValue"
-- "changeRightHand"
-- "value"
-- "periodicView"
-- "changeLeftHand"
-- "periodicCollectionView"
 depends-top-level:
-- !private "-"
-- !private "/"
-- "DetailViewDelegate"
-- !private "UIControlEvents"
-- !private "..."
-- "UIViewController"
-- "UIButton"
-- !private "Void"
-- "PeriodicCollectionViewDataSource"
 - !private "print"
-- !private "AnyObject"
-- !private ">"
-- "Element"
-- !private "Array"
-- !private "BooleanLiteralType"
-- !private "+"
-- !private "CGPoint"
-- "UISlider"
-- "DetailViewController"
-- "ViewController"
-- !private "UIFont"
-- !private "StringLiteralType"
-- !private "abs"
-- "UISwitch"
-- !private "CAGradientLayer"
-- !private "UIView"
-- !private "NSTextAlignment"
-- !private "NSTimeInterval"
-- !private "||"
-- !private "CGFloat"
 - "UICollectionView"
-- "Int"
-- !private "CGRectMake"
-- "UILabel"
-- "PeriodicCollectionViewDelegate"
-- !private "UnicodeScalarType"
-- !private "NSArray"
-- !private "=="
-- "PeriodicViewController"
-- !private "UIColor"
-=======
-=======
->>>>>>> Stashed changes
-- "changeRightHand"
-- "periodicView"
-- "temperatureLabel"
-- "didTapOnCursor"
-- "didChangeValue"
-- "viewDidLoad"
-- "newValue"
-- "reloadDetailView"
-- "changeHand"
-- "value"
-- "handSwitch"
-- "changeLeftHand"
-- "temperatureSlider"
-- "initCursors"
-- "periodicCollectionView"
-- "cursors"
-- "detailView"
-depends-top-level:
-- "Int"
-- !private "CGRectMake"
-- "PeriodicCollectionViewDelegate"
-- !private "StringLiteralType"
-- !private "AnyObject"
-- !private "NSTextAlignment"
-- "PeriodicViewController"
+- !private "-"
+- "PeriodicCollectionViewDataSource"
 - !private "UIControlEvents"
-- !private "UIColor"
-- !private "Array"
-- "ViewController"
-- "Element"
-- !private "UnicodeScalarType"
+- !private "UIView"
+- "PeriodicViewController"
+- !private "=="
+- !private "CGFloat"
+- !private "StringLiteralType"
 - "UISwitch"
-- !private "NSArray"
-- !private "Void"
+- !private "NSTextAlignment"
+- !private "CAGradientLayer"
+- "Int"
+- "UILabel"
+- !private "CGPoint"
+- !private "UnicodeScalarType"
+- !private "Array"
+- !private "UIFont"
+- !private "NSTimeInterval"
+- "PeriodicCollectionViewDelegate"
+- !private "/"
+- "Element"
+- !private "AnyObject"
 - !private "..."
-- "DetailViewDelegate"
 - !private "abs"
+- !private "||"
+- "ViewController"
+- "DetailView"
+- !private "CGRectMake"
+- "DetailViewDelegate"
+- "UIButton"
 - "UISlider"
-- !private "+"
+- !private "NSArray"
 - "UIViewController"
 - !private ">"
-- !private "||"
-- !private "CGPoint"
-- !private "=="
-- !private "CAGradientLayer"
-- !private "CGFloat"
+- !private "UIColor"
+- !private "Void"
 - !private "BooleanLiteralType"
-- "DetailViewController"
-- !private "UIFont"
-- !private "-"
-- !private "NSTimeInterval"
-- "PeriodicCollectionViewDataSource"
-- !private "print"
-- !private "/"
-- "UILabel"
-- "UICollectionView"
-- "UIButton"
-- !private "UIView"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -144,7 +76,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRectMake"]
-- ["Ps9AnyObject", "DetailViewController"]
+- ["Ps9AnyObject", "DetailView"]
 - !private ["Ps9AnyObject", "Element"]
 - ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSTextAlignment"]
@@ -161,16 +93,12 @@ depends-member:
 - !private ["Ps9AnyObject", "abs"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
-- !private ["Ps9AnyObject", "affinity"]
-- !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "blackColor"]
 - !private ["Ps9AnyObject", "blueColor"]
-- !private ["Ps9AnyObject", "boilingPoint"]
 - !private ["Ps9AnyObject", "borderWidth"]
 - !private ["Ps9AnyObject", "bounds"]
-- !private ["Ps9AnyObject", "category"]
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "changeCell"]
 - ["Ps9AnyObject", "changeHand"]
@@ -192,18 +120,12 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "initCursors"]
 - !private ["Ps9AnyObject", "insertSublayer"]
-- !private ["Ps9AnyObject", "ionization"]
 - !private ["Ps9AnyObject", "layer"]
-- !private ["Ps9AnyObject", "massNumber"]
 - !private ["Ps9AnyObject", "maximumValue"]
-- !private ["Ps9AnyObject", "meltingPoint"]
 - !private ["Ps9AnyObject", "minimumValue"]
-- !private ["Ps9AnyObject", "name"]
 - ["Ps9AnyObject", "newValue"]
-- !private ["Ps9AnyObject", "number"]
 - !private ["Ps9AnyObject", "on"]
 - !private ["Ps9AnyObject", "onTintColor"]
-- !private ["Ps9AnyObject", "orbit"]
 - ["Ps9AnyObject", "periodicCollectionView"]
 - ["Ps9AnyObject", "periodicView"]
 - !private ["Ps9AnyObject", "position"]
@@ -281,30 +203,20 @@ depends-member:
 - !private ["CSo7CALayer", "startPoint"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "addTarget"]
-- !private ["PSo15CALayerDelegate", "affinity"]
-- !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "animateWithDuration"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
-- !private ["PSo15CALayerDelegate", "boilingPoint"]
 - !private ["PSo15CALayerDelegate", "bounds"]
-- !private ["PSo15CALayerDelegate", "category"]
 - !private ["PSo15CALayerDelegate", "center"]
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - ["PSo15CALayerDelegate", "init"]
-- !private ["PSo15CALayerDelegate", "ionization"]
 - !private ["PSo15CALayerDelegate", "layer"]
-- !private ["PSo15CALayerDelegate", "massNumber"]
 - !private ["PSo15CALayerDelegate", "maximumValue"]
-- !private ["PSo15CALayerDelegate", "meltingPoint"]
 - !private ["PSo15CALayerDelegate", "minimumValue"]
-- !private ["PSo15CALayerDelegate", "name"]
-- !private ["PSo15CALayerDelegate", "number"]
 - !private ["PSo15CALayerDelegate", "on"]
 - !private ["PSo15CALayerDelegate", "onTintColor"]
-- !private ["PSo15CALayerDelegate", "orbit"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "setTitleColor"]
@@ -326,11 +238,7 @@ depends-member:
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC7CGPoint", "init"]
-- !private ["VSC7CGPoint", "x"]
-- !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
-- !private ["VSC6CGRect", "midX"]
-- !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGRect", "width"]
 - !private ["VSC6CGSize", "width"]
@@ -339,7 +247,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "CGFloat"]
 - !private ["Ps11CVarArgType", "CGPoint"]
 - !private ["Ps11CVarArgType", "CGRectMake"]
-- ["Ps11CVarArgType", "DetailViewController"]
+- ["Ps11CVarArgType", "DetailView"]
 - ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "Element"]
 - ["Ps11CVarArgType", "Int"]
@@ -360,16 +268,12 @@ depends-member:
 - !private ["Ps11CVarArgType", "abs"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
-- !private ["Ps11CVarArgType", "affinity"]
-- !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "blackColor"]
 - !private ["Ps11CVarArgType", "blueColor"]
-- !private ["Ps11CVarArgType", "boilingPoint"]
 - !private ["Ps11CVarArgType", "borderWidth"]
 - !private ["Ps11CVarArgType", "bounds"]
-- !private ["Ps11CVarArgType", "category"]
 - !private ["Ps11CVarArgType", "center"]
 - !private ["Ps11CVarArgType", "changeCell"]
 - ["Ps11CVarArgType", "changeHand"]
@@ -391,18 +295,12 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "initCursors"]
 - !private ["Ps11CVarArgType", "insertSublayer"]
-- !private ["Ps11CVarArgType", "ionization"]
 - !private ["Ps11CVarArgType", "layer"]
-- !private ["Ps11CVarArgType", "massNumber"]
 - !private ["Ps11CVarArgType", "maximumValue"]
-- !private ["Ps11CVarArgType", "meltingPoint"]
 - !private ["Ps11CVarArgType", "minimumValue"]
-- !private ["Ps11CVarArgType", "name"]
 - ["Ps11CVarArgType", "newValue"]
-- !private ["Ps11CVarArgType", "number"]
 - !private ["Ps11CVarArgType", "on"]
 - !private ["Ps11CVarArgType", "onTintColor"]
-- !private ["Ps11CVarArgType", "orbit"]
 - ["Ps11CVarArgType", "periodicCollectionView"]
 - ["Ps11CVarArgType", "periodicView"]
 - !private ["Ps11CVarArgType", "position"]
@@ -446,7 +344,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
-- ["Ps28CustomDebugStringConvertible", "DetailViewController"]
+- ["Ps28CustomDebugStringConvertible", "DetailView"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
@@ -468,17 +366,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "abs"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
-- !private ["Ps28CustomDebugStringConvertible", "affinity"]
-- !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blueColor"]
-- !private ["Ps28CustomDebugStringConvertible", "boilingPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
-- !private ["Ps28CustomDebugStringConvertible", "category"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "changeCell"]
 - ["Ps28CustomDebugStringConvertible", "changeHand"]
@@ -500,18 +394,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "initCursors"]
 - !private ["Ps28CustomDebugStringConvertible", "insertSublayer"]
-- !private ["Ps28CustomDebugStringConvertible", "ionization"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
-- !private ["Ps28CustomDebugStringConvertible", "massNumber"]
 - !private ["Ps28CustomDebugStringConvertible", "maximumValue"]
-- !private ["Ps28CustomDebugStringConvertible", "meltingPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumValue"]
-- !private ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", "newValue"]
-- !private ["Ps28CustomDebugStringConvertible", "number"]
 - !private ["Ps28CustomDebugStringConvertible", "on"]
 - !private ["Ps28CustomDebugStringConvertible", "onTintColor"]
-- !private ["Ps28CustomDebugStringConvertible", "orbit"]
 - ["Ps28CustomDebugStringConvertible", "periodicCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "periodicView"]
 - !private ["Ps28CustomDebugStringConvertible", "position"]
@@ -542,7 +430,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGPoint"]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
-- ["Ps23CustomStringConvertible", "DetailViewController"]
+- ["Ps23CustomStringConvertible", "DetailView"]
 - ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "Generator"]
@@ -568,17 +456,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "abs"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
-- !private ["Ps23CustomStringConvertible", "affinity"]
-- !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
 - !private ["Ps23CustomStringConvertible", "blueColor"]
-- !private ["Ps23CustomStringConvertible", "boilingPoint"]
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
-- !private ["Ps23CustomStringConvertible", "category"]
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "changeCell"]
 - ["Ps23CustomStringConvertible", "changeHand"]
@@ -600,18 +484,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "initCursors"]
 - !private ["Ps23CustomStringConvertible", "insertSublayer"]
-- !private ["Ps23CustomStringConvertible", "ionization"]
 - !private ["Ps23CustomStringConvertible", "layer"]
-- !private ["Ps23CustomStringConvertible", "massNumber"]
 - !private ["Ps23CustomStringConvertible", "maximumValue"]
-- !private ["Ps23CustomStringConvertible", "meltingPoint"]
 - !private ["Ps23CustomStringConvertible", "minimumValue"]
-- !private ["Ps23CustomStringConvertible", "name"]
 - ["Ps23CustomStringConvertible", "newValue"]
-- !private ["Ps23CustomStringConvertible", "number"]
 - !private ["Ps23CustomStringConvertible", "on"]
 - !private ["Ps23CustomStringConvertible", "onTintColor"]
-- !private ["Ps23CustomStringConvertible", "orbit"]
 - ["Ps23CustomStringConvertible", "periodicCollectionView"]
 - ["Ps23CustomStringConvertible", "periodicView"]
 - !private ["Ps23CustomStringConvertible", "position"]
@@ -637,25 +515,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["C13PeriodicTable10DetailView", "affinity"]
-- !private ["C13PeriodicTable10DetailView", "boilingPoint"]
-- !private ["C13PeriodicTable10DetailView", "category"]
 - !private ["C13PeriodicTable10DetailView", "frame"]
-- !private ["C13PeriodicTable10DetailView", "ionization"]
-- !private ["C13PeriodicTable10DetailView", "massNumber"]
-- !private ["C13PeriodicTable10DetailView", "meltingPoint"]
-- !private ["C13PeriodicTable10DetailView", "name"]
-- !private ["C13PeriodicTable10DetailView", "number"]
-- !private ["C13PeriodicTable10DetailView", "orbit"]
+- ["C13PeriodicTable10DetailView", "init"]
 - !private ["C13PeriodicTable10DetailView", "symbol"]
-- !private ["C13PeriodicTable20DetailViewController", "detailView"]
-- ["C13PeriodicTable20DetailViewController", "init"]
-- !private ["C13PeriodicTable20DetailViewController", "view"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "CAGradientLayer"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "CGFloat"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "CGPoint"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "CGRectMake"]
-- ["P13PeriodicTable18DetailViewDelegate", "DetailViewController"]
+- ["P13PeriodicTable18DetailViewDelegate", "DetailView"]
 - ["P13PeriodicTable18DetailViewDelegate", "Int"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "NSTextAlignment"]
 - !private ["P13PeriodicTable18DetailViewDelegate", "NSTimeInterval"]
@@ -692,15 +559,6 @@ depends-member:
 - ["P13PeriodicTable18DetailViewDelegate", ""]
 - !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
-- !private ["C13PeriodicTable7Element", "affinity"]
-- !private ["C13PeriodicTable7Element", "boilingPoint"]
-- !private ["C13PeriodicTable7Element", "category"]
-- !private ["C13PeriodicTable7Element", "ionization"]
-- !private ["C13PeriodicTable7Element", "massNumber"]
-- !private ["C13PeriodicTable7Element", "meltingPoint"]
-- !private ["C13PeriodicTable7Element", "name"]
-- !private ["C13PeriodicTable7Element", "number"]
-- !private ["C13PeriodicTable7Element", "orbit"]
 - !private ["C13PeriodicTable7Element", "symbol"]
 - !private ["Ps9Equatable", "CAGradientLayer"]
 - !private ["Ps9Equatable", "CGColor"]
@@ -708,7 +566,7 @@ depends-member:
 - !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "Center"]
-- ["Ps9Equatable", "DetailViewController"]
+- ["Ps9Equatable", "DetailView"]
 - ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "Generator"]
@@ -735,16 +593,12 @@ depends-member:
 - !private ["Ps9Equatable", "abs"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
-- !private ["Ps9Equatable", "affinity"]
-- !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "animateWithDuration"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "blackColor"]
 - !private ["Ps9Equatable", "blueColor"]
-- !private ["Ps9Equatable", "boilingPoint"]
 - !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "bounds"]
-- !private ["Ps9Equatable", "category"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "changeCell"]
 - ["Ps9Equatable", "changeHand"]
@@ -767,20 +621,12 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "initCursors"]
 - !private ["Ps9Equatable", "insertSublayer"]
-- !private ["Ps9Equatable", "ionization"]
 - !private ["Ps9Equatable", "layer"]
-- !private ["Ps9Equatable", "massNumber"]
 - !private ["Ps9Equatable", "maximumValue"]
-- !private ["Ps9Equatable", "meltingPoint"]
-- !private ["Ps9Equatable", "midX"]
 - !private ["Ps9Equatable", "minimumValue"]
-- !private ["Ps9Equatable", "name"]
 - ["Ps9Equatable", "newValue"]
-- !private ["Ps9Equatable", "number"]
 - !private ["Ps9Equatable", "on"]
 - !private ["Ps9Equatable", "onTintColor"]
-- !private ["Ps9Equatable", "orbit"]
-- !private ["Ps9Equatable", "origin"]
 - ["Ps9Equatable", "periodicCollectionView"]
 - ["Ps9Equatable", "periodicView"]
 - !private ["Ps9Equatable", "position"]
@@ -806,8 +652,6 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
-- !private ["Ps9Equatable", "x"]
-- !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "IntegerLiteralType"]
@@ -828,7 +672,7 @@ depends-member:
 - !private ["Ps8Hashable", "CGPoint"]
 - !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "Center"]
-- ["Ps8Hashable", "DetailViewController"]
+- ["Ps8Hashable", "DetailView"]
 - ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Element"]
 - ["Ps8Hashable", "Int"]
@@ -850,16 +694,12 @@ depends-member:
 - !private ["Ps8Hashable", "abs"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
-- !private ["Ps8Hashable", "affinity"]
-- !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "animateWithDuration"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "blackColor"]
 - !private ["Ps8Hashable", "blueColor"]
-- !private ["Ps8Hashable", "boilingPoint"]
 - !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "bounds"]
-- !private ["Ps8Hashable", "category"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "changeCell"]
 - ["Ps8Hashable", "changeHand"]
@@ -881,18 +721,12 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "initCursors"]
 - !private ["Ps8Hashable", "insertSublayer"]
-- !private ["Ps8Hashable", "ionization"]
 - !private ["Ps8Hashable", "layer"]
-- !private ["Ps8Hashable", "massNumber"]
 - !private ["Ps8Hashable", "maximumValue"]
-- !private ["Ps8Hashable", "meltingPoint"]
 - !private ["Ps8Hashable", "minimumValue"]
-- !private ["Ps8Hashable", "name"]
 - ["Ps8Hashable", "newValue"]
-- !private ["Ps8Hashable", "number"]
 - !private ["Ps8Hashable", "on"]
 - !private ["Ps8Hashable", "onTintColor"]
-- !private ["Ps8Hashable", "orbit"]
 - ["Ps8Hashable", "periodicCollectionView"]
 - ["Ps8Hashable", "periodicView"]
 - !private ["Ps8Hashable", "position"]
@@ -989,7 +823,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "CGRectMake"]
-- ["PSo8NSCoding", "DetailViewController"]
+- ["PSo8NSCoding", "DetailView"]
 - !private ["PSo8NSCoding", "Element"]
 - ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
@@ -1006,16 +840,12 @@ depends-member:
 - !private ["PSo8NSCoding", "abs"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
-- !private ["PSo8NSCoding", "affinity"]
-- !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
 - !private ["PSo8NSCoding", "blueColor"]
-- !private ["PSo8NSCoding", "boilingPoint"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
-- !private ["PSo8NSCoding", "category"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "changeCell"]
 - ["PSo8NSCoding", "changeHand"]
@@ -1037,18 +867,12 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "initCursors"]
 - !private ["PSo8NSCoding", "insertSublayer"]
-- !private ["PSo8NSCoding", "ionization"]
 - !private ["PSo8NSCoding", "layer"]
-- !private ["PSo8NSCoding", "massNumber"]
 - !private ["PSo8NSCoding", "maximumValue"]
-- !private ["PSo8NSCoding", "meltingPoint"]
 - !private ["PSo8NSCoding", "minimumValue"]
-- !private ["PSo8NSCoding", "name"]
 - ["PSo8NSCoding", "newValue"]
-- !private ["PSo8NSCoding", "number"]
 - !private ["PSo8NSCoding", "on"]
 - !private ["PSo8NSCoding", "onTintColor"]
-- !private ["PSo8NSCoding", "orbit"]
 - ["PSo8NSCoding", "periodicCollectionView"]
 - ["PSo8NSCoding", "periodicView"]
 - !private ["PSo8NSCoding", "position"]
@@ -1083,7 +907,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
-- ["PSo26NSExtensionRequestHandling", "DetailViewController"]
+- ["PSo26NSExtensionRequestHandling", "DetailView"]
 - ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTimeInterval"]
@@ -1131,7 +955,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGPoint"]
 - !private ["CSo8NSObject", "CGRectMake"]
-- ["CSo8NSObject", "DetailViewController"]
+- ["CSo8NSObject", "DetailView"]
 - ["CSo8NSObject", "Element"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSArray"]
@@ -1153,16 +977,12 @@ depends-member:
 - !private ["CSo8NSObject", "abs"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
-- !private ["CSo8NSObject", "affinity"]
-- !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animateWithDuration"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "blueColor"]
-- !private ["CSo8NSObject", "boilingPoint"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
-- !private ["CSo8NSObject", "category"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "changeCell"]
 - ["CSo8NSObject", "changeHand"]
@@ -1184,18 +1004,12 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "initCursors"]
 - !private ["CSo8NSObject", "insertSublayer"]
-- !private ["CSo8NSObject", "ionization"]
 - !private ["CSo8NSObject", "layer"]
-- !private ["CSo8NSObject", "massNumber"]
 - !private ["CSo8NSObject", "maximumValue"]
-- !private ["CSo8NSObject", "meltingPoint"]
 - !private ["CSo8NSObject", "minimumValue"]
-- !private ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "newValue"]
-- !private ["CSo8NSObject", "number"]
 - !private ["CSo8NSObject", "on"]
 - !private ["CSo8NSObject", "onTintColor"]
-- !private ["CSo8NSObject", "orbit"]
 - ["CSo8NSObject", "periodicCollectionView"]
 - ["CSo8NSObject", "periodicView"]
 - !private ["CSo8NSObject", "position"]
@@ -1224,7 +1038,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
-- ["PSo16NSObjectProtocol", "DetailViewController"]
+- ["PSo16NSObjectProtocol", "DetailView"]
 - !private ["PSo16NSObjectProtocol", "Element"]
 - ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
@@ -1241,16 +1055,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "abs"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
-- !private ["PSo16NSObjectProtocol", "affinity"]
-- !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "blueColor"]
-- !private ["PSo16NSObjectProtocol", "boilingPoint"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
-- !private ["PSo16NSObjectProtocol", "category"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "changeCell"]
 - ["PSo16NSObjectProtocol", "changeHand"]
@@ -1272,18 +1082,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "initCursors"]
 - !private ["PSo16NSObjectProtocol", "insertSublayer"]
-- !private ["PSo16NSObjectProtocol", "ionization"]
 - !private ["PSo16NSObjectProtocol", "layer"]
-- !private ["PSo16NSObjectProtocol", "massNumber"]
 - !private ["PSo16NSObjectProtocol", "maximumValue"]
-- !private ["PSo16NSObjectProtocol", "meltingPoint"]
 - !private ["PSo16NSObjectProtocol", "minimumValue"]
-- !private ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "newValue"]
-- !private ["PSo16NSObjectProtocol", "number"]
 - !private ["PSo16NSObjectProtocol", "on"]
 - !private ["PSo16NSObjectProtocol", "onTintColor"]
-- !private ["PSo16NSObjectProtocol", "orbit"]
 - ["PSo16NSObjectProtocol", "periodicCollectionView"]
 - ["PSo16NSObjectProtocol", "periodicView"]
 - !private ["PSo16NSObjectProtocol", "position"]
@@ -1318,15 +1122,6 @@ depends-member:
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["OSC15NSTextAlignment", "Center"]
-- !private ["C10RealmSwift6Object", "affinity"]
-- !private ["C10RealmSwift6Object", "boilingPoint"]
-- !private ["C10RealmSwift6Object", "category"]
-- !private ["C10RealmSwift6Object", "ionization"]
-- !private ["C10RealmSwift6Object", "massNumber"]
-- !private ["C10RealmSwift6Object", "meltingPoint"]
-- !private ["C10RealmSwift6Object", "name"]
-- !private ["C10RealmSwift6Object", "number"]
-- !private ["C10RealmSwift6Object", "orbit"]
 - !private ["C10RealmSwift6Object", "symbol"]
 - !private ["Ps13OptionSetType", "Highlighted"]
 - !private ["Ps13OptionSetType", "Normal"]
@@ -1342,15 +1137,6 @@ depends-member:
 - !private ["C13PeriodicTable22PeriodicViewController", "changeCell"]
 - ["C13PeriodicTable22PeriodicViewController", "init"]
 - !private ["C13PeriodicTable22PeriodicViewController", "reloadDelegate"]
-- !private ["CSo13RLMObjectBase", "affinity"]
-- !private ["CSo13RLMObjectBase", "boilingPoint"]
-- !private ["CSo13RLMObjectBase", "category"]
-- !private ["CSo13RLMObjectBase", "ionization"]
-- !private ["CSo13RLMObjectBase", "massNumber"]
-- !private ["CSo13RLMObjectBase", "meltingPoint"]
-- !private ["CSo13RLMObjectBase", "name"]
-- !private ["CSo13RLMObjectBase", "number"]
-- !private ["CSo13RLMObjectBase", "orbit"]
 - !private ["CSo13RLMObjectBase", "symbol"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1415,30 +1201,20 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
-- !private ["PSo29UIAccessibilityIdentification", "affinity"]
-- !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
-- !private ["PSo29UIAccessibilityIdentification", "boilingPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
-- !private ["PSo29UIAccessibilityIdentification", "category"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "ionization"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
-- !private ["PSo29UIAccessibilityIdentification", "massNumber"]
 - !private ["PSo29UIAccessibilityIdentification", "maximumValue"]
-- !private ["PSo29UIAccessibilityIdentification", "meltingPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
-- !private ["PSo29UIAccessibilityIdentification", "name"]
-- !private ["PSo29UIAccessibilityIdentification", "number"]
 - !private ["PSo29UIAccessibilityIdentification", "on"]
 - !private ["PSo29UIAccessibilityIdentification", "onTintColor"]
-- !private ["PSo29UIAccessibilityIdentification", "orbit"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
@@ -1450,30 +1226,20 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
-- !private ["PSo12UIAppearance", "affinity"]
-- !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
-- !private ["PSo12UIAppearance", "boilingPoint"]
 - !private ["PSo12UIAppearance", "bounds"]
-- !private ["PSo12UIAppearance", "category"]
 - !private ["PSo12UIAppearance", "center"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - ["PSo12UIAppearance", "init"]
-- !private ["PSo12UIAppearance", "ionization"]
 - !private ["PSo12UIAppearance", "layer"]
-- !private ["PSo12UIAppearance", "massNumber"]
 - !private ["PSo12UIAppearance", "maximumValue"]
-- !private ["PSo12UIAppearance", "meltingPoint"]
 - !private ["PSo12UIAppearance", "minimumValue"]
-- !private ["PSo12UIAppearance", "name"]
-- !private ["PSo12UIAppearance", "number"]
 - !private ["PSo12UIAppearance", "on"]
 - !private ["PSo12UIAppearance", "onTintColor"]
-- !private ["PSo12UIAppearance", "orbit"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "setTitleColor"]
@@ -1487,7 +1253,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGPoint"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
-- ["PSo21UIAppearanceContainer", "DetailViewController"]
+- ["PSo21UIAppearanceContainer", "DetailView"]
 - ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - !private ["PSo21UIAppearanceContainer", "NSTimeInterval"]
@@ -1503,13 +1269,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "abs"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
-- !private ["PSo21UIAppearanceContainer", "affinity"]
-- !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
-- !private ["PSo21UIAppearanceContainer", "boilingPoint"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
-- !private ["PSo21UIAppearanceContainer", "category"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "changeCell"]
 - ["PSo21UIAppearanceContainer", "changeHand"]
@@ -1526,18 +1288,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "handSwitch"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "initCursors"]
-- !private ["PSo21UIAppearanceContainer", "ionization"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
-- !private ["PSo21UIAppearanceContainer", "massNumber"]
 - !private ["PSo21UIAppearanceContainer", "maximumValue"]
-- !private ["PSo21UIAppearanceContainer", "meltingPoint"]
 - !private ["PSo21UIAppearanceContainer", "minimumValue"]
-- !private ["PSo21UIAppearanceContainer", "name"]
 - ["PSo21UIAppearanceContainer", "newValue"]
-- !private ["PSo21UIAppearanceContainer", "number"]
 - !private ["PSo21UIAppearanceContainer", "on"]
 - !private ["PSo21UIAppearanceContainer", "onTintColor"]
-- !private ["PSo21UIAppearanceContainer", "orbit"]
 - ["PSo21UIAppearanceContainer", "periodicCollectionView"]
 - ["PSo21UIAppearanceContainer", "periodicView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -1589,7 +1345,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGPoint"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
-- ["PSo18UIContentContainer", "DetailViewController"]
+- ["PSo18UIContentContainer", "DetailView"]
 - ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - !private ["PSo18UIContentContainer", "NSTimeInterval"]
@@ -1655,30 +1411,20 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
-- !private ["PSo17UICoordinateSpace", "affinity"]
-- !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
-- !private ["PSo17UICoordinateSpace", "boilingPoint"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
-- !private ["PSo17UICoordinateSpace", "category"]
 - !private ["PSo17UICoordinateSpace", "center"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo17UICoordinateSpace", "init"]
-- !private ["PSo17UICoordinateSpace", "ionization"]
 - !private ["PSo17UICoordinateSpace", "layer"]
-- !private ["PSo17UICoordinateSpace", "massNumber"]
 - !private ["PSo17UICoordinateSpace", "maximumValue"]
-- !private ["PSo17UICoordinateSpace", "meltingPoint"]
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
-- !private ["PSo17UICoordinateSpace", "name"]
-- !private ["PSo17UICoordinateSpace", "number"]
 - !private ["PSo17UICoordinateSpace", "on"]
 - !private ["PSo17UICoordinateSpace", "onTintColor"]
-- !private ["PSo17UICoordinateSpace", "orbit"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "setTitleColor"]
@@ -1690,30 +1436,20 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
-- !private ["PSo13UIDynamicItem", "affinity"]
-- !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
-- !private ["PSo13UIDynamicItem", "boilingPoint"]
 - !private ["PSo13UIDynamicItem", "bounds"]
-- !private ["PSo13UIDynamicItem", "category"]
 - !private ["PSo13UIDynamicItem", "center"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - ["PSo13UIDynamicItem", "init"]
-- !private ["PSo13UIDynamicItem", "ionization"]
 - !private ["PSo13UIDynamicItem", "layer"]
-- !private ["PSo13UIDynamicItem", "massNumber"]
 - !private ["PSo13UIDynamicItem", "maximumValue"]
-- !private ["PSo13UIDynamicItem", "meltingPoint"]
 - !private ["PSo13UIDynamicItem", "minimumValue"]
-- !private ["PSo13UIDynamicItem", "name"]
-- !private ["PSo13UIDynamicItem", "number"]
 - !private ["PSo13UIDynamicItem", "on"]
 - !private ["PSo13UIDynamicItem", "onTintColor"]
-- !private ["PSo13UIDynamicItem", "orbit"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
@@ -1727,7 +1463,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGPoint"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
-- ["PSo18UIFocusEnvironment", "DetailViewController"]
+- ["PSo18UIFocusEnvironment", "DetailView"]
 - ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
 - !private ["PSo18UIFocusEnvironment", "NSTimeInterval"]
@@ -1743,13 +1479,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "abs"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
-- !private ["PSo18UIFocusEnvironment", "affinity"]
-- !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
-- !private ["PSo18UIFocusEnvironment", "boilingPoint"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
-- !private ["PSo18UIFocusEnvironment", "category"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "changeCell"]
 - ["PSo18UIFocusEnvironment", "changeHand"]
@@ -1766,18 +1498,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "handSwitch"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "initCursors"]
-- !private ["PSo18UIFocusEnvironment", "ionization"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
-- !private ["PSo18UIFocusEnvironment", "massNumber"]
 - !private ["PSo18UIFocusEnvironment", "maximumValue"]
-- !private ["PSo18UIFocusEnvironment", "meltingPoint"]
 - !private ["PSo18UIFocusEnvironment", "minimumValue"]
-- !private ["PSo18UIFocusEnvironment", "name"]
 - ["PSo18UIFocusEnvironment", "newValue"]
-- !private ["PSo18UIFocusEnvironment", "number"]
 - !private ["PSo18UIFocusEnvironment", "on"]
 - !private ["PSo18UIFocusEnvironment", "onTintColor"]
-- !private ["PSo18UIFocusEnvironment", "orbit"]
 - ["PSo18UIFocusEnvironment", "periodicCollectionView"]
 - ["PSo18UIFocusEnvironment", "periodicView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1799,30 +1525,20 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
-- !private ["PSo11UIFocusItem", "affinity"]
-- !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "animateWithDuration"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
-- !private ["PSo11UIFocusItem", "boilingPoint"]
 - !private ["PSo11UIFocusItem", "bounds"]
-- !private ["PSo11UIFocusItem", "category"]
 - !private ["PSo11UIFocusItem", "center"]
 - !private ["PSo11UIFocusItem", "dataSource"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "frame"]
 - ["PSo11UIFocusItem", "init"]
-- !private ["PSo11UIFocusItem", "ionization"]
 - !private ["PSo11UIFocusItem", "layer"]
-- !private ["PSo11UIFocusItem", "massNumber"]
 - !private ["PSo11UIFocusItem", "maximumValue"]
-- !private ["PSo11UIFocusItem", "meltingPoint"]
 - !private ["PSo11UIFocusItem", "minimumValue"]
-- !private ["PSo11UIFocusItem", "name"]
-- !private ["PSo11UIFocusItem", "number"]
 - !private ["PSo11UIFocusItem", "on"]
 - !private ["PSo11UIFocusItem", "onTintColor"]
-- !private ["PSo11UIFocusItem", "orbit"]
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "setTitleColor"]
@@ -1843,7 +1559,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGPoint"]
 - !private ["CSo11UIResponder", "CGRectMake"]
-- ["CSo11UIResponder", "DetailViewController"]
+- ["CSo11UIResponder", "DetailView"]
 - ["CSo11UIResponder", "Element"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSArray"]
@@ -1865,13 +1581,9 @@ depends-member:
 - !private ["CSo11UIResponder", "abs"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
-- !private ["CSo11UIResponder", "affinity"]
-- !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
 - !private ["CSo11UIResponder", "backgroundColor"]
-- !private ["CSo11UIResponder", "boilingPoint"]
 - !private ["CSo11UIResponder", "bounds"]
-- !private ["CSo11UIResponder", "category"]
 - !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "changeCell"]
 - ["CSo11UIResponder", "changeHand"]
@@ -1888,18 +1600,12 @@ depends-member:
 - ["CSo11UIResponder", "handSwitch"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "initCursors"]
-- !private ["CSo11UIResponder", "ionization"]
 - !private ["CSo11UIResponder", "layer"]
-- !private ["CSo11UIResponder", "massNumber"]
 - !private ["CSo11UIResponder", "maximumValue"]
-- !private ["CSo11UIResponder", "meltingPoint"]
 - !private ["CSo11UIResponder", "minimumValue"]
-- !private ["CSo11UIResponder", "name"]
 - ["CSo11UIResponder", "newValue"]
-- !private ["CSo11UIResponder", "number"]
 - !private ["CSo11UIResponder", "on"]
 - !private ["CSo11UIResponder", "onTintColor"]
-- !private ["CSo11UIResponder", "orbit"]
 - ["CSo11UIResponder", "periodicCollectionView"]
 - ["CSo11UIResponder", "periodicView"]
 - !private ["CSo11UIResponder", "print"]
@@ -1922,7 +1628,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRectMake"]
-- ["PSo30UIResponderStandardEditActions", "DetailViewController"]
+- ["PSo30UIResponderStandardEditActions", "DetailView"]
 - ["PSo30UIResponderStandardEditActions", "Int"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTextAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTimeInterval"]
@@ -1938,13 +1644,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "abs"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
-- !private ["PSo30UIResponderStandardEditActions", "affinity"]
-- !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "animateWithDuration"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
-- !private ["PSo30UIResponderStandardEditActions", "boilingPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "bounds"]
-- !private ["PSo30UIResponderStandardEditActions", "category"]
 - !private ["PSo30UIResponderStandardEditActions", "center"]
 - !private ["PSo30UIResponderStandardEditActions", "changeCell"]
 - ["PSo30UIResponderStandardEditActions", "changeHand"]
@@ -1961,18 +1663,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "handSwitch"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "initCursors"]
-- !private ["PSo30UIResponderStandardEditActions", "ionization"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
-- !private ["PSo30UIResponderStandardEditActions", "massNumber"]
 - !private ["PSo30UIResponderStandardEditActions", "maximumValue"]
-- !private ["PSo30UIResponderStandardEditActions", "meltingPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "minimumValue"]
-- !private ["PSo30UIResponderStandardEditActions", "name"]
 - ["PSo30UIResponderStandardEditActions", "newValue"]
-- !private ["PSo30UIResponderStandardEditActions", "number"]
 - !private ["PSo30UIResponderStandardEditActions", "on"]
 - !private ["PSo30UIResponderStandardEditActions", "onTintColor"]
-- !private ["PSo30UIResponderStandardEditActions", "orbit"]
 - ["PSo30UIResponderStandardEditActions", "periodicCollectionView"]
 - ["PSo30UIResponderStandardEditActions", "periodicView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -2008,7 +1704,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGPoint"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
-- ["PSo16UIStateRestoring", "DetailViewController"]
+- ["PSo16UIStateRestoring", "DetailView"]
 - ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - !private ["PSo16UIStateRestoring", "NSTimeInterval"]
@@ -2058,7 +1754,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
-- ["PSo18UITraitEnvironment", "DetailViewController"]
+- ["PSo18UITraitEnvironment", "DetailView"]
 - ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - !private ["PSo18UITraitEnvironment", "NSTimeInterval"]
@@ -2074,13 +1770,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "abs"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
-- !private ["PSo18UITraitEnvironment", "affinity"]
-- !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
-- !private ["PSo18UITraitEnvironment", "boilingPoint"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
-- !private ["PSo18UITraitEnvironment", "category"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "changeCell"]
 - ["PSo18UITraitEnvironment", "changeHand"]
@@ -2097,18 +1789,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "handSwitch"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "initCursors"]
-- !private ["PSo18UITraitEnvironment", "ionization"]
 - !private ["PSo18UITraitEnvironment", "layer"]
-- !private ["PSo18UITraitEnvironment", "massNumber"]
 - !private ["PSo18UITraitEnvironment", "maximumValue"]
-- !private ["PSo18UITraitEnvironment", "meltingPoint"]
 - !private ["PSo18UITraitEnvironment", "minimumValue"]
-- !private ["PSo18UITraitEnvironment", "name"]
 - ["PSo18UITraitEnvironment", "newValue"]
-- !private ["PSo18UITraitEnvironment", "number"]
 - !private ["PSo18UITraitEnvironment", "on"]
 - !private ["PSo18UITraitEnvironment", "onTintColor"]
-- !private ["PSo18UITraitEnvironment", "orbit"]
 - ["PSo18UITraitEnvironment", "periodicCollectionView"]
 - ["PSo18UITraitEnvironment", "periodicView"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -2130,30 +1816,20 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
-- !private ["CSo6UIView", "affinity"]
-- !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "backgroundColor"]
-- !private ["CSo6UIView", "boilingPoint"]
 - !private ["CSo6UIView", "bounds"]
-- !private ["CSo6UIView", "category"]
 - !private ["CSo6UIView", "center"]
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "init"]
-- !private ["CSo6UIView", "ionization"]
 - !private ["CSo6UIView", "layer"]
-- !private ["CSo6UIView", "massNumber"]
 - !private ["CSo6UIView", "maximumValue"]
-- !private ["CSo6UIView", "meltingPoint"]
 - !private ["CSo6UIView", "minimumValue"]
-- !private ["CSo6UIView", "name"]
-- !private ["CSo6UIView", "number"]
 - !private ["CSo6UIView", "on"]
 - !private ["CSo6UIView", "onTintColor"]
-- !private ["CSo6UIView", "orbit"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "setTitleColor"]
@@ -2168,7 +1844,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGPoint"]
 - !private ["CSo16UIViewController", "CGRectMake"]
-- ["CSo16UIViewController", "DetailViewController"]
+- ["CSo16UIViewController", "DetailView"]
 - ["CSo16UIViewController", "Element"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSArray"]
@@ -2225,7 +1901,7 @@ depends-member:
 - !private ["C13PeriodicTable14ViewController", "CGFloat"]
 - !private ["C13PeriodicTable14ViewController", "CGPoint"]
 - !private ["C13PeriodicTable14ViewController", "CGRectMake"]
-- ["C13PeriodicTable14ViewController", "DetailViewController"]
+- ["C13PeriodicTable14ViewController", "DetailView"]
 - ["C13PeriodicTable14ViewController", "Element"]
 - ["C13PeriodicTable14ViewController", "Int"]
 - !private ["C13PeriodicTable14ViewController", "NSArray"]
@@ -2348,14 +2024,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "addTarget"]
-- !private ["Ps12_Reflectable", "affinity"]
-- !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "append"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
-- !private ["Ps12_Reflectable", "boilingPoint"]
 - !private ["Ps12_Reflectable", "bounds"]
-- !private ["Ps12_Reflectable", "category"]
 - !private ["Ps12_Reflectable", "center"]
 - !private ["Ps12_Reflectable", "dataSource"]
 - !private ["Ps12_Reflectable", "delegate"]
@@ -2363,19 +2035,11 @@ depends-member:
 - !private ["Ps12_Reflectable", "frame"]
 - !private ["Ps12_Reflectable", "height"]
 - ["Ps12_Reflectable", "init"]
-- !private ["Ps12_Reflectable", "ionization"]
 - !private ["Ps12_Reflectable", "layer"]
-- !private ["Ps12_Reflectable", "massNumber"]
 - !private ["Ps12_Reflectable", "maximumValue"]
-- !private ["Ps12_Reflectable", "meltingPoint"]
-- !private ["Ps12_Reflectable", "midX"]
 - !private ["Ps12_Reflectable", "minimumValue"]
-- !private ["Ps12_Reflectable", "name"]
-- !private ["Ps12_Reflectable", "number"]
 - !private ["Ps12_Reflectable", "on"]
 - !private ["Ps12_Reflectable", "onTintColor"]
-- !private ["Ps12_Reflectable", "orbit"]
-- !private ["Ps12_Reflectable", "origin"]
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "setTitle"]
 - !private ["Ps12_Reflectable", "setTitleColor"]
@@ -2388,8 +2052,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "titleLabel"]
 - !private ["Ps12_Reflectable", "value"]
 - !private ["Ps12_Reflectable", "width"]
-- !private ["Ps12_Reflectable", "x"]
-- !private ["Ps12_Reflectable", "y"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps18_SignedIntegerType", "Stride"]
@@ -2422,8 +2084,7 @@ depends-nominal:
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "C13PeriodicTable10DetailView"
-- "C13PeriodicTable20DetailViewController"
+- "C13PeriodicTable10DetailView"
 - "P13PeriodicTable18DetailViewDelegate"
 - !private "Sd"
 - !private "C13PeriodicTable7Element"
@@ -2587,4 +2248,4 @@ depends-external:
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/hypersonicstab/Development/PeriodicTable/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "2a55de68b7bc30cd937043e374fb6037"
+interface-hash: "093bca084deb29d61f066b1763d8e6e7"

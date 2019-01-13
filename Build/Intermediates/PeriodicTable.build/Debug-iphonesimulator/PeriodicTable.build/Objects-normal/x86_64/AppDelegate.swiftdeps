@@ -6,53 +6,23 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable11AppDelegate", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-- "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
->>>>>>> Stashed changes
-=======
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
->>>>>>> Stashed changes
-- "window"
 - "applicationWillEnterForeground"
+- "window"
 - "application"
 - "applicationDidEnterBackground"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- "applicationWillResignActive"
 - "applicationWillTerminate"
-- "applicationDidBecomeActive"
+- "applicationWillResignActive"
 depends-top-level:
-- "UIApplication"
-- "Bool"
-- "UIApplicationDelegate"
-- "UIWindow"
-- "NSObject"
-- "AnyObject"
 - "AppDelegate"
 - !private "BooleanLiteralType"
-=======
-=======
->>>>>>> Stashed changes
-depends-top-level:
-- "UIWindow"
-- "Bool"
-- "UIApplication"
-- !private "BooleanLiteralType"
-- "NSObject"
-- "AppDelegate"
-- "UIApplicationDelegate"
 - "AnyObject"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+- "UIApplicationDelegate"
+- "NSObject"
 - "UIResponder"
+- "UIApplication"
+- "UIWindow"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

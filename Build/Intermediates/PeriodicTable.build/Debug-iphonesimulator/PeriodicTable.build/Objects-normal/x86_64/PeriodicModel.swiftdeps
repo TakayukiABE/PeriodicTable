@@ -6,72 +6,35 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable13PeriodicModel", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- "isActinide"
-- "setElementProperties"
-- "readElement"
-- "isLanthanide"
-- "elements"
-depends-top-level:
-- "BooleanLiteralType"
-- "Double"
-- "String"
-- "Int"
-- !private "Array"
-- "NSObject"
-- "PeriodicModel"
-- "Element"
-- !private "Realm"
-- !private "..."
-- !private "NSPredicate"
-- !private ">"
-- !private "-"
-- !private "print"
-- !private "<="
-- !private "??"
-- !private "!="
-- !private "+"
-- !private "StringLiteralType"
-- !private "<"
-- !private "=="
-- !private "&&"
-=======
-=======
->>>>>>> Stashed changes
-- "isLanthanide"
 - "elements"
 - "readElement"
 - "isActinide"
+- "isLanthanide"
 - "setElementProperties"
 depends-top-level:
-- "String"
-- "NSObject"
-- "PeriodicModel"
-- !private "=="
-- !private "StringLiteralType"
 - "Int"
+- "Double"
+- "NSObject"
+- !private "NSPredicate"
+- "BooleanLiteralType"
+- "PeriodicModel"
+- !private "-"
+- !private "+"
 - !private "Array"
 - "Element"
 - !private "<"
-- !private "!="
-- !private "&&"
-- !private "..."
-- "Double"
-- !private "??"
-- !private ">"
-- !private "-"
-- !private "NSPredicate"
-- !private "Realm"
-- "BooleanLiteralType"
-- !private "print"
-- !private "+"
-- !private "<="
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 - !private "UnicodeScalarType"
+- !private "print"
+- !private "&&"
+- !private "??"
+- !private "<="
+- !private "StringLiteralType"
+- "String"
+- !private "..."
+- !private ">"
+- !private "!="
+- !private "Realm"
+- !private "=="
 depends-member:
 - !private ["P10RealmSwift11AddableType", "Distance"]
 - !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]

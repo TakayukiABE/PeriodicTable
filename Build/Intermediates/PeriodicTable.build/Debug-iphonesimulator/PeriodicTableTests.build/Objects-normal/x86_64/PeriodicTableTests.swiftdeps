@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "setUp"
 - "tearDown"
 - "testExample"
@@ -22,10 +23,15 @@ depends-top-level:
 =======
 >>>>>>> Stashed changes
 - "testExample"
+=======
+- "testExample"
+- "tearDown"
+>>>>>>> Stashed changes
 - "setUp"
 - "testPerformanceExample"
 - "tearDown"
 depends-top-level:
+<<<<<<< Updated upstream
 - !private "BooleanLiteralType"
 - "PeriodicTableTests"
 - "XCTestCase"
@@ -34,6 +40,13 @@ depends-top-level:
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+- !private "StringLiteralType"
+- !private "XCTAssert"
+- "XCTestCase"
+- !private "BooleanLiteralType"
+- "PeriodicTableTests"
 >>>>>>> Stashed changes
 depends-member:
 - !private ["Ps9AnyObject", "XCTAssert"]
