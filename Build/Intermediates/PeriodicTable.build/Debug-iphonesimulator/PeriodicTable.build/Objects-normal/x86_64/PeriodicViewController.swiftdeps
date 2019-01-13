@@ -9,61 +9,62 @@ provides-member:
 - ["C13PeriodicTable22PeriodicViewController", ""]
 - ["P13PeriodicTable18DetailViewDelegate", ""]
 provides-dynamic-lookup:
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "changeCell"
 - "periodicTable"
 - "selectedCell"
 - "numberOfSectionsInCollectionView"
 - "Nib"
 - "viewDidLoad"
 - "setCurrentTemperature"
-- "changeCell"
 - "periodicModel"
 - "temperature"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
 - "viewWillLayoutSubviews"
 depends-top-level:
+- !private "BooleanLiteralType"
 - !private "PeriodicCollectionViewCell"
-- "DetailViewDelegate"
-- "CGFloat"
-- !private "Double"
 - !private "<"
-- !private "<="
 - "UICollectionViewDelegateFlowLayout"
-- "CGSize"
-- !private "CGRectInset"
-- "UICollectionViewFlowLayout"
-- "Element"
-- "UIViewController"
-- "PeriodicModel"
-- "CGRectZero"
-- !private "-"
-- "UINib"
-- "PeriodicViewController"
-- "UIEdgeInsets"
-- !private "&&"
-- !private "=="
-- !private "~="
-- "Void"
-- !private ">"
-- !private "+"
-- "Array"
-- !private "UIColor"
-- "UICollectionViewLayout"
-- "Int"
-- !private ">="
 - !private "/"
-- "UICollectionView"
-- "UICollectionViewDelegate"
+- !private ">"
+- "UICollectionViewFlowLayout"
+- !private "~="
+- !private "=="
+- !private "CGRectInset"
+- !private ">="
+- "PeriodicModel"
+- "DetailViewDelegate"
 - "StringLiteralType"
+- !private "!="
+- "UINib"
+- "CGRectZero"
 - "NSIndexPath"
+- "Void"
+- !private "<="
+- "UIViewController"
+- !private "UIColor"
+- !private "-"
+- "Element"
+- "Int"
+- !private "+"
+- "UICollectionView"
+- "PeriodicViewController"
+- !private "Double"
+- "Array"
+- !private "CGRectMake"
+- "UICollectionViewLayout"
+- !private "&&"
+- "UIEdgeInsets"
 - "UICollectionViewDataSource"
 - "UICollectionViewCell"
-- !private "CGRectMake"
-- !private "!="
+- "CGFloat"
+- "UICollectionViewDelegate"
+- "CGSize"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -86,6 +87,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIEdgeInsets"]
 - ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "blackColor"]
@@ -159,6 +161,7 @@ depends-member:
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "adjustsFontSizeToFitWidth"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "bounds"]
@@ -202,6 +205,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIEdgeInsets"]
 - ["Ps11CVarArgType", "UINib"]
 - !private ["Ps11CVarArgType", "addSubview"]
+- !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
 - !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "blackColor"]
@@ -287,6 +291,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsets"]
 - ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
@@ -365,6 +370,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
@@ -455,6 +461,7 @@ depends-member:
 - ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "blackColor"]
@@ -546,6 +553,7 @@ depends-member:
 - ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "blackColor"]
@@ -653,6 +661,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
 - ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
@@ -775,6 +784,7 @@ depends-member:
 - ["CSo8NSObject", "UIEdgeInsets"]
 - ["CSo8NSObject", "UINib"]
 - !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
@@ -847,6 +857,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
 - ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
@@ -1017,6 +1028,7 @@ depends-member:
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
@@ -1032,6 +1044,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounds"]
@@ -1060,6 +1073,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
 - ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
@@ -1277,9 +1291,11 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillLayoutSubviews"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "adjustsFontSizeToFitWidth"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
@@ -1295,6 +1311,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
@@ -1324,6 +1341,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
 - ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
@@ -1366,6 +1384,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillLayoutSubviews"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "adjustsFontSizeToFitWidth"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "bounds"]
@@ -1380,6 +1399,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textColor"]
+- !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
 - ["CSo5UINib", "init"]
@@ -1403,6 +1423,7 @@ depends-member:
 - ["CSo11UIResponder", "UIEdgeInsets"]
 - ["CSo11UIResponder", "UINib"]
 - !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
@@ -1457,6 +1478,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsets"]
 - ["PSo30UIResponderStandardEditActions", "UINib"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "adjustsFontSizeToFitWidth"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "bounds"]
@@ -1599,6 +1621,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
 - ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
@@ -1641,6 +1664,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillLayoutSubviews"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounds"]
@@ -1752,6 +1776,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "Stride"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addSubview"]
+- !private ["Ps12_Reflectable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "bounds"]

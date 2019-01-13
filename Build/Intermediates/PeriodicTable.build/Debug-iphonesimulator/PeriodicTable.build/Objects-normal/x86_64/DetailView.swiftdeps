@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable10DetailView", ""]
 provides-dynamic-lookup:
-- "affinity"
+- "symbol"
+- "name"
+- "massNumber"
 - "boilingPoint"
+- "affinity"
 - "orbit"
 - "category"
-- "massNumber"
-- "name"
-- "ionization"
-- "symbol"
-- "meltingPoint"
 - "number"
+- "meltingPoint"
+- "ionization"
 depends-top-level:
-- "UIView"
-- "UILabel"
 - "DetailView"
+- "UILabel"
+- "UIView"
 depends-member:
 - ["Ps9AnyObject", "affinity"]
 - ["Ps9AnyObject", "boilingPoint"]

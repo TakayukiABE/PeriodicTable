@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "DetailViewController"
 - "UIViewController"
+- "DetailViewController"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "viewDidLoad"]

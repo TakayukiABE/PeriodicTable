@@ -7,8 +7,8 @@ provides-member:
 - ["C13PeriodicTable22PeriodicCollectionView", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UICollectionView"
 - "PeriodicCollectionView"
+- "UICollectionView"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

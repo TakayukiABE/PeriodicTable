@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "elementName"
 depends-top-level:
-- "PeriodicCollectionViewCell"
 - "UICollectionViewCell"
 - "UILabel"
+- "PeriodicCollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "elementName"]
 - ["Ps9AnyObject", "init"]

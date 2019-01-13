@@ -44,6 +44,7 @@ class PeriodicViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:PeriodicCollectionViewCell = periodicTable.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! PeriodicCollectionViewCell
+        cell.elementName.adjustsFontSizeToFitWidth = true
         let element = periodicModel.readElement(indexPath.row, period: indexPath.section, cell: selectedCell)
         
         cell.alpha = 1.0

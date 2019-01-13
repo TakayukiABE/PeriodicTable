@@ -58,7 +58,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		fpb+Y1hD7Oc/wII3EcmziAlbtBI=
+		Z/yXEWhUIXMu6y3jrRT1z1DG0k8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		gjXbVx67oXERfDGoKTwdQzB9Ib8=
+		JQnCoKk04Lsj7iyNE5y+mKcMw9o=
 		</data>
 		<key>ElementDetailView.nib</key>
 		<data>
@@ -335,7 +335,7 @@
 		</data>
 		<key>PeriodicCollectionViewCell.nib</key>
 		<data>
-		CloFh+iP16gvpW95K1UGhBJHKwo=
+		C63hbbKUaGfxtO9x8gYAP9Pvs7Y=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -387,11 +387,11 @@
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/PeriodicTableTests</key>
 		<data>
-		LGWo62iOIcv2jx+lElLZVOiqPaw=
+		9vTNbExrmKiVXTq4qkt4hmxVbQw=
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		+7IpEgZxlof3BYiOREvOmRoEyeA=
+		B0w9oQDzHbKPnrMYYG5Td4rXPFM=
 		</data>
 		<key>PlugIns/PeriodicTableTests.xctest/libswiftRemoteMirror.dylib</key>
 		<data>
@@ -555,11 +555,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fpb+Y1hD7Oc/wII3EcmziAlbtBI=
+			Z/yXEWhUIXMu6y3jrRT1z1DG0k8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dnZNqxEeEP48FCenDiFweyYTLS4pU/LQsdARfMbLNTM=
+			WylH8OaEupQ/pw0fLrE95AcroS/iq925v3PTIBkU0Ss=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -577,11 +577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gjXbVx67oXERfDGoKTwdQzB9Ib8=
+			JQnCoKk04Lsj7iyNE5y+mKcMw9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			NbsJ+NxAgi9KBj4cBMSPl8JzR/F1a7kZx2FeIu2fbro=
+			r72k/a9DqzYbwDqcWZcha+VgPmWxtC2E1zMhXdO6k7w=
 			</data>
 		</dict>
 		<key>ElementDetailView.nib</key>
@@ -1299,11 +1299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CloFh+iP16gvpW95K1UGhBJHKwo=
+			C63hbbKUaGfxtO9x8gYAP9Pvs7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			HBrI0Myj202CPeLJmEbf1TBu0InP5OKzXR6OBTtKF9M=
+			s44zSJgj0yfgSXQOpbbtCyGXZM8mWx9hlwsdUHCMm/A=
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/Frameworks/libswiftContacts.dylib</key>
@@ -1431,22 +1431,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LGWo62iOIcv2jx+lElLZVOiqPaw=
+			9vTNbExrmKiVXTq4qkt4hmxVbQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AELd0lAlj2jwykLfBdOoVnWY+OGBY+jPsKUirmO3GLQ=
+			9iLaVDnPyM0Zxwe97UdAdayAKu7S4BOAGYWcJ94Ck10=
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+7IpEgZxlof3BYiOREvOmRoEyeA=
+			B0w9oQDzHbKPnrMYYG5Td4rXPFM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PbhE6ePtr+qgse4k6R4e2MO6WP8Kkuz1iLR0x6ScWyo=
+			LpOgHBDILjCZDi0o4EpAZRfDYhF4hpSsWmjMQkh62yE=
 			</data>
 		</dict>
 		<key>PlugIns/PeriodicTableTests.xctest/libswiftRemoteMirror.dylib</key>

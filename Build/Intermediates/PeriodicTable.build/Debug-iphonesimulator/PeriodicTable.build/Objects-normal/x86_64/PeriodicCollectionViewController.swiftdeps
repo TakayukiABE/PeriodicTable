@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable32PeriodicCollectionViewController", ""]
 provides-dynamic-lookup:
-- "collectionView"
-- "collectionView"
-- "viewDidLoad"
 - "numberOfSectionsInCollectionView"
+- "viewDidLoad"
+- "collectionView"
+- "collectionView"
 depends-top-level:
 - !private "reuseIdentifier"
-- "StringLiteralType"
-- "UINib"
 - "UICollectionViewCell"
-- "NSIndexPath"
-- "Int"
-- "PeriodicCollectionViewController"
-- "UICollectionView"
 - "UICollectionViewController"
+- "PeriodicCollectionViewController"
+- "NSIndexPath"
+- "StringLiteralType"
+- "Int"
+- "UICollectionView"
+- "UINib"
 depends-member:
 - ["Ps9AnyObject", "Nib"]
 - !private ["Ps9AnyObject", "UICollectionViewCell"]
