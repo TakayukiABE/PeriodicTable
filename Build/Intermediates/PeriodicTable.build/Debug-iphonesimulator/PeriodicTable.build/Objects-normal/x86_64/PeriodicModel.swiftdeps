@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable13PeriodicModel", ""]
 provides-dynamic-lookup:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "isActinide"
 - "setElementProperties"
 - "readElement"
@@ -34,6 +36,41 @@ depends-top-level:
 - !private "<"
 - !private "=="
 - !private "&&"
+=======
+=======
+>>>>>>> Stashed changes
+- "isLanthanide"
+- "elements"
+- "readElement"
+- "isActinide"
+- "setElementProperties"
+depends-top-level:
+- "String"
+- "NSObject"
+- "PeriodicModel"
+- !private "=="
+- !private "StringLiteralType"
+- "Int"
+- !private "Array"
+- "Element"
+- !private "<"
+- !private "!="
+- !private "&&"
+- !private "..."
+- "Double"
+- !private "??"
+- !private ">"
+- !private "-"
+- !private "NSPredicate"
+- !private "Realm"
+- "BooleanLiteralType"
+- !private "print"
+- !private "+"
+- !private "<="
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 - !private "UnicodeScalarType"
 depends-member:
 - !private ["P10RealmSwift11AddableType", "Distance"]

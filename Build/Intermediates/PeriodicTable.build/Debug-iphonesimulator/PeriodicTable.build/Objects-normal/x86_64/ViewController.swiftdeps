@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable14ViewController", ""]
 provides-dynamic-lookup:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "cursors"
 - "didChangeValue"
 - "temperatureLabel"
@@ -64,6 +66,71 @@ depends-top-level:
 - !private "=="
 - "PeriodicViewController"
 - !private "UIColor"
+=======
+=======
+>>>>>>> Stashed changes
+- "changeRightHand"
+- "periodicView"
+- "temperatureLabel"
+- "didTapOnCursor"
+- "didChangeValue"
+- "viewDidLoad"
+- "newValue"
+- "reloadDetailView"
+- "changeHand"
+- "value"
+- "handSwitch"
+- "changeLeftHand"
+- "temperatureSlider"
+- "initCursors"
+- "periodicCollectionView"
+- "cursors"
+- "detailView"
+depends-top-level:
+- "Int"
+- !private "CGRectMake"
+- "PeriodicCollectionViewDelegate"
+- !private "StringLiteralType"
+- !private "AnyObject"
+- !private "NSTextAlignment"
+- "PeriodicViewController"
+- !private "UIControlEvents"
+- !private "UIColor"
+- !private "Array"
+- "ViewController"
+- "Element"
+- !private "UnicodeScalarType"
+- "UISwitch"
+- !private "NSArray"
+- !private "Void"
+- !private "..."
+- "DetailViewDelegate"
+- !private "abs"
+- "UISlider"
+- !private "+"
+- "UIViewController"
+- !private ">"
+- !private "||"
+- !private "CGPoint"
+- !private "=="
+- !private "CAGradientLayer"
+- !private "CGFloat"
+- !private "BooleanLiteralType"
+- "DetailViewController"
+- !private "UIFont"
+- !private "-"
+- !private "NSTimeInterval"
+- "PeriodicCollectionViewDataSource"
+- !private "print"
+- !private "/"
+- "UILabel"
+- "UICollectionView"
+- "UIButton"
+- !private "UIView"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "init"]

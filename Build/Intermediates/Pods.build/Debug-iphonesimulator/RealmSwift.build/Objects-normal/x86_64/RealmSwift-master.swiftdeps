@@ -1,6 +1,14 @@
 version: "Apple Swift version 2.3 (swiftlang-800.10.13 clang-800.0.42.1)"
 options: "d1e38c4d9053251c3196f0828387a6c4"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 build_time: [600675409, 35689000]
+=======
+build_time: [600674041, 434100000]
+>>>>>>> Stashed changes
+=======
+build_time: [600674041, 434100000]
+>>>>>>> Stashed changes
 inputs:
   "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Aliases.swift": [9223372036854775807, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/Pods/RealmSwift/RealmSwift/Error.swift": [9223372036854775807, 0]

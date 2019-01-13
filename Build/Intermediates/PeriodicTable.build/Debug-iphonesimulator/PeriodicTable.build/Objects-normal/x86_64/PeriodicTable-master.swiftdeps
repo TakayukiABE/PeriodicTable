@@ -1,5 +1,7 @@
 version: "Apple Swift version 2.3 (swiftlang-800.10.13 clang-800.0.42.1)"
 options: "fe53926741d76081dbc36eef9c4d1af5"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 build_time: [600675411, 982547000]
 inputs:
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/ViewController.swift": [600675033, 0]
@@ -16,3 +18,26 @@ inputs:
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewDelegate.swift": [600675033, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/Element.swift": [600674359, 0]
   "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailViewController.swift": [600674359, 0]
+=======
+=======
+>>>>>>> Stashed changes
+build_time: [600674044, 425431000]
+inputs:
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/ViewController.swift": [600673924, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicViewController.swift": [600623264, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewDataSource.swift": [519973844, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/AppDelegate.swift": [515902882, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewCell.swift": [476605661, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailView.swift": [600673924, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionView.swift": [519782384, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicModel.swift": [505373022, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewController.swift": [519381902, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/TemperatureSliderViewController.swift": [476712514, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/SeparateCollectionViewCell.swift": [476708522, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/PeriodicCollectionViewDelegate.swift": [519795594, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/Element.swift": [502259245, 0]
+  "/Users/hypersonicstab/Development/PeriodicTable/PeriodicTable/DetailViewController.swift": [600673924, 0]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

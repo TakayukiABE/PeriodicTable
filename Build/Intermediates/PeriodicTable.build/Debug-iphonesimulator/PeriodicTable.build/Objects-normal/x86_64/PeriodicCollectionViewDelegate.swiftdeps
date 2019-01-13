@@ -8,6 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "collectionView"
 depends-top-level:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - !private "+"
 - !private "-"
 - "UICollectionView"
@@ -21,6 +23,26 @@ depends-top-level:
 - !private "CGSizeMake"
 - !private "/"
 - "UICollectionViewDelegate"
+=======
+=======
+>>>>>>> Stashed changes
+- !private "CGSizeMake"
+- "UICollectionView"
+- "UICollectionViewLayout"
+- !private "-"
+- "UICollectionViewDelegate"
+- "UICollectionViewDelegateFlowLayout"
+- !private "+"
+- "PeriodicCollectionViewDelegate"
+- "CGFloat"
+- "NSObject"
+- "CGSize"
+- !private "/"
+- "NSIndexPath"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - ["Ps9AnyObject", "collectionView"]

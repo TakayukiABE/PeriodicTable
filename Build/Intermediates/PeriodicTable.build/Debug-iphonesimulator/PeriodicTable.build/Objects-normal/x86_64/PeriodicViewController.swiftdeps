@@ -9,17 +9,31 @@ provides-member:
 - ["C13PeriodicTable22PeriodicViewController", ""]
 - ["P13PeriodicTable18DetailViewDelegate", ""]
 provides-dynamic-lookup:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "viewDidLoad"
 - "viewWillLayoutSubviews"
 - "periodicTable"
 - "numberOfSectionsInCollectionView"
 - "selectedCell"
+=======
+- "viewWillLayoutSubviews"
+- "changeCell"
+- "periodicTable"
+>>>>>>> Stashed changes
+=======
+- "viewWillLayoutSubviews"
+- "changeCell"
+- "periodicTable"
+>>>>>>> Stashed changes
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "temperature"
 - "periodicModel"
 - "setCurrentTemperature"
@@ -64,6 +78,59 @@ depends-top-level:
 - "CGSize"
 - "PeriodicModel"
 - "UIEdgeInsets"
+=======
+=======
+>>>>>>> Stashed changes
+- "numberOfSectionsInCollectionView"
+- "setCurrentTemperature"
+- "temperature"
+- "periodicModel"
+- "Nib"
+- "viewDidLoad"
+- "selectedCell"
+depends-top-level:
+- !private "+"
+- "CGRectZero"
+- "NSIndexPath"
+- "UICollectionView"
+- "UICollectionViewLayout"
+- "Element"
+- !private "<"
+- !private "!="
+- !private "UIColor"
+- "Array"
+- !private "/"
+- "UICollectionViewCell"
+- !private "-"
+- "CGFloat"
+- "CGSize"
+- !private "CGRectMake"
+- !private "=="
+- !private "&&"
+- !private "~="
+- "UICollectionViewFlowLayout"
+- "UICollectionViewDelegate"
+- !private "<="
+- "PeriodicModel"
+- "UICollectionViewDataSource"
+- "UIEdgeInsets"
+- !private "PeriodicCollectionViewCell"
+- !private ">"
+- "UICollectionViewDelegateFlowLayout"
+- !private "CGRectInset"
+- "PeriodicViewController"
+- "DetailViewDelegate"
+- !private ">="
+- !private "Double"
+- "Void"
+- "UINib"
+- "Int"
+- "UIViewController"
+- "StringLiteralType"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]

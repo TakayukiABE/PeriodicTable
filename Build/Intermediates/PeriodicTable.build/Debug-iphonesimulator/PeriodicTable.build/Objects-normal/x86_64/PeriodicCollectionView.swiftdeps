@@ -7,8 +7,18 @@ provides-member:
 - ["C13PeriodicTable22PeriodicCollectionView", ""]
 provides-dynamic-lookup:
 depends-top-level:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "UICollectionView"
 - "PeriodicCollectionView"
+=======
+- "PeriodicCollectionView"
+- "UICollectionView"
+>>>>>>> Stashed changes
+=======
+- "PeriodicCollectionView"
+- "UICollectionView"
+>>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

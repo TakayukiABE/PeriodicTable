@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["C18PeriodicTableTests18PeriodicTableTests", ""]
 provides-dynamic-lookup:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "setUp"
 - "tearDown"
 - "testExample"
@@ -16,6 +18,23 @@ depends-top-level:
 - "XCTestCase"
 - !private "BooleanLiteralType"
 - "PeriodicTableTests"
+=======
+=======
+>>>>>>> Stashed changes
+- "testExample"
+- "setUp"
+- "testPerformanceExample"
+- "tearDown"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "PeriodicTableTests"
+- "XCTestCase"
+- !private "XCTAssert"
+- !private "StringLiteralType"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 depends-member:
 - !private ["Ps9AnyObject", "XCTAssert"]
 - ["Ps9AnyObject", "init"]

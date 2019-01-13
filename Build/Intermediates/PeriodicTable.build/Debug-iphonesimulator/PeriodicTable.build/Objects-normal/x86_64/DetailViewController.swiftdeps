@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["C13PeriodicTable20DetailViewController", ""]
 provides-dynamic-lookup:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "detailView"
 - "viewDidAppear"
 - "viewDidLoad"
@@ -16,6 +18,23 @@ depends-top-level:
 - "Bool"
 - "UIViewController"
 - "DetailView"
+=======
+=======
+>>>>>>> Stashed changes
+- "viewDidLoad"
+- "detailView"
+- "viewDidAppear"
+depends-top-level:
+- "DetailView"
+- "UIViewController"
+- "Bool"
+- "DetailViewController"
+- !private "CGRectMake"
+- !private "UIColor"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]

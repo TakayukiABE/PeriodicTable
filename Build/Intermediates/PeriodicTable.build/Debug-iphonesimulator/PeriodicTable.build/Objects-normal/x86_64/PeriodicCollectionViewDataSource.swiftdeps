@@ -12,6 +12,8 @@ provides-dynamic-lookup:
 - "setTemperature"
 depends-top-level:
 - "Int"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "NSObject"
 - "NSIndexPath"
 - "PeriodicModel"
@@ -26,6 +28,27 @@ depends-top-level:
 - "PeriodicCollectionViewDataSource"
 - !private "=="
 - "UICollectionViewCell"
+=======
+=======
+>>>>>>> Stashed changes
+- "NSIndexPath"
+- !private "UIColor"
+- !private "&&"
+- "Array"
+- !private "PeriodicCollectionViewCell"
+- !private "=="
+- !private "StringLiteralType"
+- !private ">"
+- "UICollectionViewDataSource"
+- "PeriodicCollectionViewDataSource"
+- "PeriodicModel"
+- "UICollectionViewCell"
+- "UICollectionView"
+- "NSObject"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "PeriodicModel"]
 - !private ["Ps9AnyObject", "UIColor"]

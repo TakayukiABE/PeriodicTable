@@ -8,8 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "awakeFromNib"
 depends-top-level:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - "SeparateCollectionViewCell"
 - "UICollectionViewCell"
+=======
+- "UICollectionViewCell"
+- "SeparateCollectionViewCell"
+>>>>>>> Stashed changes
+=======
+- "UICollectionViewCell"
+- "SeparateCollectionViewCell"
+>>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]
